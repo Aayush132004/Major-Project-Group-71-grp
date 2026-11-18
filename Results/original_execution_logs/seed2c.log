@@ -1,0 +1,155 @@
+
+=== gate (quick, groq) ===
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:entity | pass 2
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 2
+  .. plannerllm | cuad:expiration date | pass 2
+WARNING clustering 80 points to 8 centroids: please provide at least 312 training points
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 2
+  .. plannerllm | spider:employee_hire_evaluation | pass 2
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed2\gate.json
+
+=== memory (quick, groq) ===
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:entity | pass 2
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:entity | pass 2
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:entity | pass 2
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 2
+  .. plannerllm | cuad:expiration date | pass 2
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 2
+  .. plannerllm | cuad:expiration date | pass 2
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 2
+  .. plannerllm | cuad:expiration date | pass 2
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 2
+  .. plannerllm | spider:employee_hire_evaluation | pass 2
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 2
+  .. plannerllm | spider:employee_hire_evaluation | pass 2
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 2
+  .. plannerllm | spider:employee_hire_evaluation | pass 2
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed2\memory.json
+
+=== cost_model (quick, groq) ===
+  .. cost telemetry | msmarco
+  .. cost telemetry | cuad
+  .. cost telemetry | spider
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed2\cost_model.json
+
+=== latency (quick, groq) ===
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed2\latency.json
+
+=== ablation (quick, groq) ===
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:entity | pass 2
+  .. no_gate | msmarco:location | pass 1
+  .. no_gate | msmarco:entity | pass 1
+  .. no_gate | msmarco:location | pass 2
+  .. no_gate | msmarco:entity | pass 2
+  .. no_memory | msmarco:location | pass 1
+  .. no_memory | msmarco:entity | pass 1
+  .. no_memory | msmarco:location | pass 2
+  .. no_memory | msmarco:entity | pass 2
+  .. symbolic_only | msmarco:location | pass 1
+  .. symbolic_only | msmarco:entity | pass 1
+  .. symbolic_only | msmarco:location | pass 2
+  .. symbolic_only | msmarco:entity | pass 2
+  .. neural_only | msmarco:location | pass 1
+  .. neural_only | msmarco:entity | pass 1
+  .. neural_only | msmarco:location | pass 2
+  .. neural_only | msmarco:entity | pass 2
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 2
+  .. plannerllm | cuad:expiration date | pass 2
+  .. no_gate | cuad:parties | pass 1
+  .. no_gate | cuad:expiration date | pass 1
+  .. no_gate | cuad:parties | pass 2
+  .. no_gate | cuad:expiration date | pass 2
+  .. no_memory | cuad:parties | pass 1
+  .. no_memory | cuad:expiration date | pass 1
+  .. no_memory | cuad:parties | pass 2
+  .. no_memory | cuad:expiration date | pass 2
+  .. symbolic_only | cuad:parties | pass 1
+  .. symbolic_only | cuad:expiration date | pass 1
+  .. symbolic_only | cuad:parties | pass 2
+  .. symbolic_only | cuad:expiration date | pass 2
+  .. neural_only | cuad:parties | pass 1
+  .. neural_only | cuad:expiration date | pass 1
+  .. neural_only | cuad:parties | pass 2
+  .. neural_only | cuad:expiration date | pass 2
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 2
+  .. plannerllm | spider:employee_hire_evaluation | pass 2
+  .. no_gate | spider:flight_2 | pass 1
+  .. no_gate | spider:employee_hire_evaluation | pass 1
+  .. no_gate | spider:flight_2 | pass 2
+  .. no_gate | spider:employee_hire_evaluation | pass 2
+  .. no_memory | spider:flight_2 | pass 1
+  .. no_memory | spider:employee_hire_evaluation | pass 1
+  .. no_memory | spider:flight_2 | pass 2
+  .. no_memory | spider:employee_hire_evaluation | pass 2
+  .. symbolic_only | spider:flight_2 | pass 1
+  .. symbolic_only | spider:employee_hire_evaluation | pass 1
+  .. symbolic_only | spider:flight_2 | pass 2
+  .. symbolic_only | spider:employee_hire_evaluation | pass 2
+  .. neural_only | spider:flight_2 | pass 1
+  .. neural_only | spider:employee_hire_evaluation | pass 1
+  .. neural_only | spider:flight_2 | pass 2
+  .. neural_only | spider:employee_hire_evaluation | pass 2
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed2\ablation.json
+
+=== transcripts (quick, groq) ===
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed2\transcripts.json
+total 21.5 min

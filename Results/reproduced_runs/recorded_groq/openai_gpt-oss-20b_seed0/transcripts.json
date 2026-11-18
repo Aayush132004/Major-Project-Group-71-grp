@@ -1,0 +1,426 @@
+{
+ "experiment": "transcripts",
+ "backend": "groq",
+ "model": "openai/gpt-oss-20b",
+ "created": "2026-11-14 17:49:58",
+ "seed": 0,
+ "sampling_seed": 13,
+ "transcripts": [
+  {
+   "workload": "cuad",
+   "task": "cuad:governing law",
+   "round": 0,
+   "directive": "ADD_RERANK",
+   "detail": "retrieve top_k 8->20, cross-encoder keeps 8",
+   "plan": "retrieve(k=20,hnsw) -> filter -> rerank(k=8) -> generate",
+   "score": -0.02326328950809378,
+   "cost_usd": 3.36835524595311e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=5.00 vs p=2.00, 5 items, 0.4s",
+   "gate": {
+    "validate": true,
+    "voi": 0.009198411784249017,
+    "threshold": 0.0009558561138077618,
+    "p_flip": 0.5,
+    "p_raw": 0.5,
+    "h_dir": 0.5,
+    "h_trials": 0,
+    "judge_p": 0.5861576899399543,
+    "agreement": 0.5,
+    "d_acc": 0.04,
+    "d_cost": 0.0016031764315019657,
+    "d_value": 0.018396823568498033,
+    "val_cost_usd": 0.0009558561138077618,
+    "val_cost_tokens": 9273.94,
+    "rationale": "P(flip)=0.50 [h=0.50 over 0, judge=0.59, agree=0.50] x |dV|=$0.01840 (dAcc^=+0.040, dC=$+0.00160) = VoI $0.00920 > theta*tokenCost $0.00096 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 5.0,
+    "score_p": 2.0,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The extracted clause must precisely match the text in the contract that directly answers the question, with no additions or omissions."
+     },
+     {
+      "name": "Completeness",
+      "description": "All relevant clauses that answer the question should be extracted; if none exist, the output must be exactly \"NONE\"."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The output must not alter, paraphrase, or infer beyond the literal wording of the contract; it should reflect the original language verbatim."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a single string containing the clause text or the word \"NONE\"; no extra characters, headings, or annotations are allowed."
+     }
+    ],
+    "pairwise_win_rate": null,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 4380,
+    "note": "rating c=5.00 vs p=2.00, 5 items, 0.4s",
+    "items": [
+     {
+      "qid": "c5_governing_law",
+      "question": "Governing Law: find the text of this contract that states it. (Which state/country's law governs the interpretation of the contract?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 2.0
+     },
+     {
+      "qid": "c23_governing_law",
+      "question": "Governing Law: find the text of this contract that states it. (Which state/country's law governs the interpretation of the contract?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 2.0
+     },
+     {
+      "qid": "c42_governing_law",
+      "question": "Governing Law: find the text of this contract that states it. (Which state/country's law governs the interpretation of the contract?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 2.0
+     },
+     {
+      "qid": "c3_governing_law",
+      "question": "Governing Law: find the text of this contract that states it. (Which state/country's law governs the interpretation of the contract?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 2.0
+     },
+     {
+      "qid": "c48_governing_law",
+      "question": "Governing Law: find the text of this contract that states it. (Which state/country's law governs the interpretation of the contract?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 2.0
+     }
+    ],
+    "acc_delta": 0.75
+   },
+   "signature": "c007f1464d13b9a4"
+  },
+  {
+   "workload": "cuad",
+   "task": "cuad:cap on liability",
+   "round": 0,
+   "directive": "ADD_RERANK",
+   "detail": "retrieve top_k 8->20, cross-encoder keeps 8",
+   "plan": "retrieve(k=20,hnsw) -> filter -> rerank(k=8) -> generate",
+   "score": -0.09072191036203117,
+   "cost_usd": 3.59035524595311e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=4.53 vs p=2.75, 5 items, 0.4s",
+   "gate": {
+    "validate": true,
+    "voi": 0.05296058179874712,
+    "threshold": 0.0009780561138077618,
+    "p_flip": 0.6,
+    "p_raw": 0.6,
+    "h_dir": 0.6666666666666666,
+    "h_trials": 1,
+    "judge_p": 0.9786433815194168,
+    "agreement": 0.8253968253968254,
+    "d_acc": 0.17974162552549433,
+    "d_cost": 0.0016031764315019663,
+    "d_value": 0.0882676363312452,
+    "val_cost_usd": 0.0009780561138077618,
+    "val_cost_tokens": 9569.94,
+    "rationale": "P(flip)=0.60 [h=0.67 over 1, judge=0.98, agree=0.83] x |dV|=$0.08827 (dAcc^=+0.180, dC=$+0.00160) = VoI $0.05296 > theta*tokenCost $0.00098 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 4.533333333333333,
+    "score_p": 2.75,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The extracted clause must precisely match the text in the contract that directly answers the question, with no additions or omissions."
+     },
+     {
+      "name": "Completeness",
+      "description": "All relevant clauses that answer the question should be extracted; if none exist, the output must be exactly \"NONE\"."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The output must not alter, paraphrase, or infer beyond the literal wording of the contract; it should reflect the original language verbatim."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a single string containing the clause text or the word \"NONE\"; no extra characters, headings, or annotations are allowed."
+     }
+    ],
+    "pairwise_win_rate": null,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 5105,
+    "note": "rating c=4.53 vs p=2.75, 5 items, 0.4s",
+    "items": [
+     {
+      "qid": "c47_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "**Clause text that states a cap on liability:**\n\n> \u201cEXCEPT FOR LIABILITY ARISING FROM BREACHES OF A PARTY'S CONFIDENTIALITY OBLIGATIONS CONTAINED IN THE NON\u2011DISCLOSURE CLAUSE IN SECTION 12.17 OF THE CHINA JV OPERATING AGREEMENT, BREACHES OF LICENSE GRANTS CONTAINED HEREIN, AND EXCEPT FOR AMOUNTS PAYABLE TO THIRD PARTIES TO FULFILL INDEMNITY OBLIGATIONS DESCRIBED IN ARTICLE 8, (A) IN NO EVENT SHALL",
+      "incumbent": "NONE",
+      "score_c": 2.6666666666666665,
+      "score_p": 2.75
+     },
+     {
+      "qid": "c54_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 2.75
+     },
+     {
+      "qid": "c57_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 2.75
+     },
+     {
+      "qid": "c48_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 2.75
+     },
+     {
+      "qid": "c0_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 2.75
+     }
+    ],
+    "acc_delta": 0.4458333333333333
+   },
+   "signature": "c007f1464d13b9a4"
+  },
+  {
+   "workload": "cuad",
+   "task": "cuad:cap on liability",
+   "round": 1,
+   "directive": "DECOMPOSE",
+   "detail": "per-record extraction before the final answer",
+   "plan": "retrieve(k=20,hnsw) -> filter -> rerank(k=8) -> map -> generate",
+   "score": 0.012031322461891179,
+   "cost_usd": 6.10365564595311e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=4.60 vs p=4.53, pairwise win-rate 1.00, 5 items, 0.2s",
+   "gate": {
+    "validate": true,
+    "voi": 0.001608512256,
+    "threshold": 0.0011438005445953108,
+    "p_flip": 0.32,
+    "p_raw": 0.32,
+    "h_dir": 0.2,
+    "h_trials": 3,
+    "judge_p": null,
+    "agreement": 0.7857142857142858,
+    "d_acc": 0.0,
+    "d_cost": 0.005026600799999999,
+    "d_value": -0.005026600799999999,
+    "val_cost_usd": 0.0011438005445953108,
+    "val_cost_tokens": 11245.473600000001,
+    "rationale": "P(flip)=0.32 [h=0.20 over 3, judge=-, agree=0.79] x |dV|=$0.00503 (dAcc^=+0.000, dC=$+0.00503) = VoI $0.00161 > theta*tokenCost $0.00114 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 4.6,
+    "score_p": 4.533333333333333,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The extracted clause must precisely match the text in the contract that directly answers the question, with no additions or omissions."
+     },
+     {
+      "name": "Completeness",
+      "description": "All relevant clauses that answer the question should be extracted; if none exist, the output must be exactly \"NONE\"."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The output must not alter, paraphrase, or infer beyond the literal wording of the contract; it should reflect the original language verbatim."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a single string containing the clause text or the word \"NONE\"; no extra characters, headings, or annotations are allowed."
+     }
+    ],
+    "pairwise_win_rate": 1.0,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 5625,
+    "note": "rating c=4.60 vs p=4.53, pairwise win-rate 1.00, 5 items, 0.2s",
+    "items": [
+     {
+      "qid": "c47_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "EXCEPT FOR LIABILITY ARISING FROM BREACHES OF A PARTY'S CONFIDENTIALITY OBLIGATIONS CONTAINED IN THE NON\u2011DISCLOSURE CLAUSE IN SECTION 12.17 OF THE CHINA JV OPERATING AGREEMENT, BREACHES OF LICENSE GRANTS CONTAINED HEREIN, AND EXCEPT FOR AMOUNTS PAYABLE TO THIRD PARTIES TO FULFILL INDEMNITY OBLIGATIONS DESCRIBED IN ARTICLE 8, (A) IN NO EVENT SHALL ANY PARTY HAVE ANY LIABILITY TO THE OTHERS, OR TO A",
+      "incumbent": "**Clause text that states a cap on liability:**\n\n> \u201cEXCEPT FOR LIABILITY ARISING FROM BREACHES OF A PARTY'S CONFIDENTIALITY OBLIGATIONS CONTAINED IN THE NON\u2011DISCLOSURE CLAUSE IN SECTION 12.17 OF THE CHINA JV OPERATING AGREEMENT, BREACHES OF LICENSE GRANTS CONTAINED HEREIN, AND EXCEPT FOR AMOUNTS PAYABLE TO THIRD PARTIES TO FULFILL INDEMNITY OBLIGATIONS DESCRIBED IN ARTICLE 8, (A) IN NO EVENT SHALL",
+      "score_c": 4.0,
+      "score_p": 2.6666666666666665,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "c54_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "c57_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "c48_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "c0_cap_on_liability",
+      "question": "Cap On Liability: find the text of this contract that states it. (Does the contract include a cap on liability upon the breach of a party\u2019s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.)",
+      "candidate": "IN NO EVENT SHALL DEVELOPER BE LIABLE FOR ANY LOSS OF PROFIT OR ANY OTHER COMMERCIAL DAMAGE, INCLUDING BUT NOT LIMITED TO SPECIAL, INCIDENTAL, CONSEQUENTIAL OR OTHER INDIRECT.",
+      "incumbent": "NONE",
+      "score_c": 4.0,
+      "score_p": 5.0,
+      "pairwise": "candidate"
+     }
+    ],
+    "acc_delta": 0.016666666666666607
+   },
+   "signature": "971855fe36b23a5d"
+  },
+  {
+   "workload": "cuad",
+   "task": "cuad:governing law",
+   "round": 1,
+   "directive": "PROMPT_REWRITE",
+   "detail": "agent-rewritten instruction for 'answer'",
+   "plan": "retrieve(k=20,hnsw) -> filter -> rerank(k=8) -> generate",
+   "score": 0.06573671049190621,
+   "cost_usd": 3.36835524595311e-05,
+   "source": "gate-skip",
+   "verdict": "skip",
+   "note": "P(flip)=0.40 [h=0.33 over 1, judge=-, agree=0.83] x |dV|=$0.00000 (dAcc^=+0.000, dC=$+0.00000) = VoI $0.00000 <= theta*tokenCost $0.00100 -> SKIP",
+   "gate": {
+    "validate": false,
+    "voi": 0.0,
+    "threshold": 0.0009959355245953109,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": null,
+    "agreement": 0.8253968253968254,
+    "d_acc": 0.0,
+    "d_cost": 0.0,
+    "d_value": 0.0,
+    "val_cost_usd": 0.0009959355245953109,
+    "val_cost_tokens": 9716.2,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=-, agree=0.83] x |dV|=$0.00000 (dAcc^=+0.000, dC=$+0.00000) = VoI $0.00000 <= theta*tokenCost $0.00100 -> SKIP"
+   },
+   "memory": null,
+   "validation": null,
+   "signature": "bee2ba7e9e3d34e9"
+  },
+  {
+   "workload": "cuad",
+   "task": "cuad:governing law",
+   "round": 1,
+   "directive": "TUNE_TOPK",
+   "detail": "rerank top_k 8 -> 4",
+   "plan": "retrieve(k=20,hnsw) -> filter -> rerank(k=4) -> generate",
+   "score": 0.08273671049190622,
+   "cost_usd": 3.36835524595311e-05,
+   "source": "gate-skip",
+   "verdict": "skip",
+   "note": "P(flip)=0.40 [h=0.33 over 1, judge=0.50, agree=0.83] x |dV|=$0.00000 (dAcc^=+0.000, dC=$+0.00000) = VoI $0.00000 <= theta*tokenCost $0.00100 -> SKIP",
+   "gate": {
+    "validate": false,
+    "voi": 0.0,
+    "threshold": 0.0009959355245953109,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": 0.5,
+    "agreement": 0.8253968253968254,
+    "d_acc": 0.0,
+    "d_cost": 0.0,
+    "d_value": 0.0,
+    "val_cost_usd": 0.0009959355245953109,
+    "val_cost_tokens": 9716.2,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=0.50, agree=0.83] x |dV|=$0.00000 (dAcc^=+0.000, dC=$+0.00000) = VoI $0.00000 <= theta*tokenCost $0.00100 -> SKIP"
+   },
+   "memory": null,
+   "validation": null,
+   "signature": "f1b8d27e4eaea6e6"
+  },
+  {
+   "workload": "cuad",
+   "task": "cuad:governing law",
+   "round": 1,
+   "directive": "SWAP_INDEX",
+   "detail": "index hnsw -> ivf",
+   "plan": "retrieve(k=20,ivf) -> filter -> rerank(k=8) -> generate",
+   "score": 0.0907363925005609,
+   "cost_usd": 3.368196250280452e-05,
+   "source": "gate-skip",
+   "verdict": "skip",
+   "note": "P(flip)=0.40 [h=0.33 over 1, judge=0.41, agree=0.83] x |dV|=$0.00000 (dAcc^=+0.000, dC=$-0.00000) = VoI $0.00000 <= theta*tokenCost $0.00100 -> SKIP",
+   "gate": {
+    "validate": false,
+    "voi": 1.2719653812642492e-07,
+    "threshold": 0.000995927574811678,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": 0.4138423100600457,
+    "agreement": 0.8253968253968254,
+    "d_acc": 0.0,
+    "d_cost": -3.179913453160623e-07,
+    "d_value": -3.179913453160623e-07,
+    "val_cost_usd": 0.000995927574811678,
+    "val_cost_tokens": 9716.2,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=0.41, agree=0.83] x |dV|=$0.00000 (dAcc^=+0.000, dC=$-0.00000) = VoI $0.00000 <= theta*tokenCost $0.00100 -> SKIP"
+   },
+   "memory": null,
+   "validation": null,
+   "signature": "9a697b10d4d79c9e"
+  }
+ ],
+ "counts": {
+  "accepted": 3,
+  "gate_skipped": 5,
+  "memory_reused": 0
+ },
+ "elapsed_s": 0.010447502136230469
+}

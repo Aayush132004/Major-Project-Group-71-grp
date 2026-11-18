@@ -1,0 +1,30 @@
+no_opt | msmarco:location | pass 1
+no_opt | msmarco:entity | pass 1
+random | msmarco:location | pass 1
+random | msmarco:entity | pass 1
+cost_only | msmarco:location | pass 1
+cost_only | msmarco:entity | pass 1
+docetl | msmarco:location | pass 1
+docetl | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+no_opt | cuad:parties | pass 1
+no_opt | cuad:expiration date | pass 1
+random | cuad:parties | pass 1
+random | cuad:expiration date | pass 1
+cost_only | cuad:parties | pass 1
+cost_only | cuad:expiration date | pass 1
+docetl | cuad:parties | pass 1
+docetl | cuad:expiration date | pass 1
+plannerllm | cuad:parties | pass 1
+plannerllm | cuad:expiration date | pass 1
+no_opt | spider:flight_2 | pass 1
+no_opt | spider:employee_hire_evaluation | pass 1
+random | spider:flight_2 | pass 1
+random | spider:employee_hire_evaluation | pass 1
+cost_only | spider:flight_2 | pass 1
+cost_only | spider:employee_hire_evaluation | pass 1
+docetl | spider:flight_2 | pass 1
+docetl | spider:employee_hire_evaluation | pass 1
+plannerllm | spider:flight_2 | pass 1
+plannerllm | spider:employee_hire_evaluation | pass 1

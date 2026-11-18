@@ -1,0 +1,30 @@
+no_opt | msmarco:location | pass 1
+no_opt | msmarco:entity | pass 1
+random | msmarco:location | pass 1
+random | msmarco:entity | pass 1
+cost_only | msmarco:location | pass 1
+cost_only | msmarco:entity | pass 1
+docetl | msmarco:location | pass 1
+docetl | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+no_opt | cuad:governing law | pass 1
+no_opt | cuad:cap on liability | pass 1
+random | cuad:governing law | pass 1
+random | cuad:cap on liability | pass 1
+cost_only | cuad:governing law | pass 1
+cost_only | cuad:cap on liability | pass 1
+docetl | cuad:governing law | pass 1
+docetl | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+no_opt | spider:orchestra | pass 1
+no_opt | spider:world_1 | pass 1
+random | spider:orchestra | pass 1
+random | spider:world_1 | pass 1
+cost_only | spider:orchestra | pass 1
+cost_only | spider:world_1 | pass 1
+docetl | spider:orchestra | pass 1
+docetl | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1

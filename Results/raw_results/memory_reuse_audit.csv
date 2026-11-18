@@ -1,0 +1,26 @@
+﻿seed,workload,phase,task,directive,match,confidence,reused,fresh
+0,msmarco,repeated,msmarco:location,ADD_RERANK,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:location,ADD_FILTER,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:location,SWAP_INDEX,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:location,TUNE_TOPK,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:location,ADD_RERANK,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:location,ADD_FILTER,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:location,SWAP_INDEX,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:location,TUNE_TOPK,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:entity,ADD_RERANK,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:entity,ADD_FILTER,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:entity,SWAP_INDEX,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:entity,TUNE_TOPK,exact,0.6534657822045035,False,False
+0,msmarco,repeated,msmarco:entity,PROMPT_REWRITE,exact,0.6405262927682154,False,False
+0,cuad,repeated,cuad:governing law,ADD_RERANK,exact,0.6534657822045035,True,True
+0,cuad,repeated,cuad:governing law,DECOMPOSE,exact,0.6534657822045035,False,False
+0,cuad,repeated,cuad:governing law,ADD_RERANK,exact,0.6534657822045035,True,True
+0,cuad,repeated,cuad:governing law,DECOMPOSE,exact,0.6534657822045035,False,False
+0,cuad,repeated,cuad:cap on liability,ADD_RERANK,exact,0.6534657822045035,True,True
+0,cuad,repeated,cuad:cap on liability,DECOMPOSE,exact,0.6534657822045035,False,False
+1,msmarco,repeated,msmarco:numeric,ADD_FILTER,exact,0.6534657822045035,False,False
+1,msmarco,repeated,msmarco:numeric,ADD_RERANK,exact,0.6534657822045035,False,False
+2,cuad,repeated,cuad:parties,SWAP_INDEX,exact,0.6534657822045035,False,False
+2,cuad,repeated,cuad:parties,PROMPT_REWRITE,exact,0.6534657822045035,False,False
+2,cuad,repeated,cuad:parties,SWAP_INDEX,exact,0.6534657822045035,False,False
+2,cuad,repeated,cuad:parties,PROMPT_REWRITE,exact,0.6534657822045035,False,False

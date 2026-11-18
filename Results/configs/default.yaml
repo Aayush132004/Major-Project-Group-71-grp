@@ -1,0 +1,35 @@
+# PlannerLLM run configuration.  Every key mirrors plannerllm/settings.py;
+# anything left out keeps its default.  Section numbers refer to the methodology.
+llm:
+  backend: groq                 # groq | sim (offline simulator, for tests / no key)
+  model: openai/gpt-oss-20b    # open-weight 20B (3.6B active) model served by Groq
+  requests_per_minute: 28       # free tier is ~30 RPM / ~6k TPM for this model
+  tokens_per_minute: 7500
+  price_in_per_m: 0.075         # USD per 1M input tokens (Groq list price)
+  price_out_per_m: 0.30
+
+search:                         # Algorithm 1 (5.6)
+  top_m: 5                      # shortlist after cost ranking
+  max_candidates: 8
+  rounds: 2                     # opportunistic top-down re-expansion
+  lambda_gain: 1.0              # weight of predicted gain in the ranking score
+
+gate:                           # value-of-information gate (5.4)
+  alpha: 0.6                    # history h(dir) vs local-judge agreement
+  theta: 1.0                    # validate iff VoI > theta * tokenCost(validation)
+  w_acc: 0.5                    # USD value of +1.0 accuracy over the reuse horizon
+  reuse_runs: 200               # executions a chosen plan is expected to serve
+  prior_gain: 0.04
+
+memory:                         # plan memory (5.2, 5.5)
+  kappa: 0.02                   # confidence decay per day
+  drift_penalty: 3.0
+  reuse_threshold: 0.55         # needs two agreeing validations before reuse
+  retrain_every_days: 7.0       # "weekly CPU retraining"
+
+sampling:                       # selectivity-aware sampling (DocETL)
+  min_items: 4
+  max_items: 5
+
+budget:
+  optimization_tokens: null     # null = unlimited; experiments sweep this

@@ -1,0 +1,1405 @@
+{
+ "experiment": "gate",
+ "backend": "groq",
+ "model": "openai/gpt-oss-20b",
+ "created": "2026-11-14 17:46:38",
+ "seed": 1,
+ "sampling_seed": 14,
+ "profile": "quick",
+ "per_workload": {
+  "msmarco": {
+   "scores": [
+    {
+     "theta": 0.1,
+     "n": 21,
+     "admitted": 14,
+     "precision": 0.14285714285714285,
+     "recall": 1.0,
+     "flip_rate": 0.09523809523809523,
+     "spend_saved": 0.31523247984853353
+    },
+    {
+     "theta": 0.25,
+     "n": 21,
+     "admitted": 14,
+     "precision": 0.14285714285714285,
+     "recall": 1.0,
+     "flip_rate": 0.09523809523809523,
+     "spend_saved": 0.31523247984853353
+    },
+    {
+     "theta": 0.5,
+     "n": 21,
+     "admitted": 14,
+     "precision": 0.14285714285714285,
+     "recall": 1.0,
+     "flip_rate": 0.09523809523809523,
+     "spend_saved": 0.31523247984853353
+    },
+    {
+     "theta": 1.0,
+     "n": 21,
+     "admitted": 13,
+     "precision": 0.15384615384615385,
+     "recall": 1.0,
+     "flip_rate": 0.09523809523809523,
+     "spend_saved": 0.38498482370390996
+    },
+    {
+     "theta": 2.0,
+     "n": 21,
+     "admitted": 13,
+     "precision": 0.15384615384615385,
+     "recall": 1.0,
+     "flip_rate": 0.09523809523809523,
+     "spend_saved": 0.38498482370390996
+    },
+    {
+     "theta": 4.0,
+     "n": 21,
+     "admitted": 11,
+     "precision": 0.18181818181818182,
+     "recall": 1.0,
+     "flip_rate": 0.09523809523809523,
+     "spend_saved": 0.5027121140540881
+    },
+    {
+     "theta": 8.0,
+     "n": 21,
+     "admitted": 5,
+     "precision": 0.0,
+     "recall": 0.0,
+     "flip_rate": 0.09523809523809523,
+     "spend_saved": 0.76311247861479
+    }
+   ],
+   "calibration": [
+    {
+     "lo": 0.2,
+     "hi": 0.4,
+     "n": 5,
+     "predicted": 0.34400000000000003,
+     "observed": 0.0
+    },
+    {
+     "lo": 0.4,
+     "hi": 0.6,
+     "n": 14,
+     "predicted": 0.4671428571428572,
+     "observed": 0.14285714285714285
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.8,
+     "n": 2,
+     "predicted": 0.6,
+     "observed": 0.0
+    }
+   ],
+   "per_directive": {
+    "ADD_RERANK": {
+     "n": 4,
+     "flips": 1,
+     "admitted": 4,
+     "p_mean": 0.51
+    },
+    "SWAP_INDEX": {
+     "n": 3,
+     "flips": 0,
+     "admitted": 1,
+     "p_mean": 0.4166666666666667
+    },
+    "TUNE_TOPK": {
+     "n": 4,
+     "flips": 0,
+     "admitted": 1,
+     "p_mean": 0.3925
+    },
+    "PROMPT_REWRITE": {
+     "n": 3,
+     "flips": 0,
+     "admitted": 2,
+     "p_mean": 0.4166666666666667
+    },
+    "ADD_FILTER": {
+     "n": 3,
+     "flips": 1,
+     "admitted": 3,
+     "p_mean": 0.5333333333333333
+    },
+    "FILTERED_PROBE": {
+     "n": 1,
+     "flips": 0,
+     "admitted": 1,
+     "p_mean": 0.5
+    },
+    "DECOMPOSE": {
+     "n": 3,
+     "flips": 0,
+     "admitted": 1,
+     "p_mean": 0.4166666666666667
+    }
+   },
+   "agreement": [
+    {
+     "directive": "ADD_RERANK",
+     "agree": 0,
+     "total": 1,
+     "rate": 0.3333333333333333
+    }
+   ],
+   "log": [
+    {
+     "directive": "ADD_RERANK",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.008454443939641952,
+     "token_cost": 0.0010857935729225892,
+     "validated": 1,
+     "flipped": 1,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.00845433132139761,
+     "token_cost": 0.0010857890681928155,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.008454425605543043,
+     "token_cost": 0.0010857928395586328,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.008454443939641952,
+     "token_cost": 0.0010857935729225892,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "ADD_FILTER",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.008482786450068966,
+     "token_cost": 0.001320634091674587,
+     "validated": 1,
+     "flipped": 1,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "ADD_RERANK",
+     "p_raw": 0.6,
+     "p_used": 0.6,
+     "voi": 0.02555780148914237,
+     "token_cost": 0.0013220525187971034,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "FILTERED_PROBE",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.01,
+     "token_cost": 0.0012447734141780354,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.004525,
+     "token_cost": 0.0012447734141780354,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "DECOMPOSE",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.0012642499999999997,
+     "token_cost": 0.0018079859141780354,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 3.279703317466461e-08,
+     "token_cost": 0.001244771364363462,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "ADD_RERANK",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.011717786346584371,
+     "token_cost": 0.0010861535729225892,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "ADD_FILTER",
+     "p_raw": 0.6,
+     "p_used": 0.6,
+     "voi": 0.01772295032075619,
+     "token_cost": 0.0012438062886566848,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "DECOMPOSE",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.004080097458655163,
+     "token_cost": 0.0018067266631353342,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 1.2833869236910929e-08,
+     "token_cost": 0.001024330597144311,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 9.009459547382279e-08,
+     "token_cost": 0.0010243268257784936,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "ADD_FILTER",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.012263743517773085,
+     "token_cost": 0.0012433562886566846,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "ADD_RERANK",
+     "p_raw": 0.44,
+     "p_used": 0.44,
+     "voi": 0.0047771079194103274,
+     "token_cost": 0.0010857935729225892,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "DECOMPOSE",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 9.770962790024411e-05,
+     "token_cost": 0.001805151663135334,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.32,
+     "p_used": 0.32,
+     "voi": 1.1733823302318563e-08,
+     "token_cost": 0.001023970597144311,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 7.883277103959494e-08,
+     "token_cost": 0.0010239668257784936,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "msmarco"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 0.0,
+     "token_cost": 0.0010243313305082673,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "msmarco"
+    }
+   ]
+  },
+  "cuad": {
+   "scores": [
+    {
+     "theta": 0.1,
+     "n": 30,
+     "admitted": 22,
+     "precision": 0.09090909090909091,
+     "recall": 1.0,
+     "flip_rate": 0.06666666666666667,
+     "spend_saved": 0.2567782525491862
+    },
+    {
+     "theta": 0.25,
+     "n": 30,
+     "admitted": 22,
+     "precision": 0.09090909090909091,
+     "recall": 1.0,
+     "flip_rate": 0.06666666666666667,
+     "spend_saved": 0.2567782525491862
+    },
+    {
+     "theta": 0.5,
+     "n": 30,
+     "admitted": 20,
+     "precision": 0.1,
+     "recall": 1.0,
+     "flip_rate": 0.06666666666666667,
+     "spend_saved": 0.3204717367714037
+    },
+    {
+     "theta": 1.0,
+     "n": 30,
+     "admitted": 20,
+     "precision": 0.1,
+     "recall": 1.0,
+     "flip_rate": 0.06666666666666667,
+     "spend_saved": 0.3204717367714037
+    },
+    {
+     "theta": 2.0,
+     "n": 30,
+     "admitted": 19,
+     "precision": 0.10526315789473684,
+     "recall": 1.0,
+     "flip_rate": 0.06666666666666667,
+     "spend_saved": 0.36583575609465535
+    },
+    {
+     "theta": 4.0,
+     "n": 30,
+     "admitted": 14,
+     "precision": 0.14285714285714285,
+     "recall": 1.0,
+     "flip_rate": 0.06666666666666667,
+     "spend_saved": 0.5457329461066859
+    },
+    {
+     "theta": 8.0,
+     "n": 30,
+     "admitted": 7,
+     "precision": 0.14285714285714285,
+     "recall": 0.5,
+     "flip_rate": 0.06666666666666667,
+     "spend_saved": 0.7748995421054146
+    }
+   ],
+   "calibration": [
+    {
+     "lo": 0.0,
+     "hi": 0.2,
+     "n": 5,
+     "predicted": 0.1686695718529475,
+     "observed": 0.0
+    },
+    {
+     "lo": 0.2,
+     "hi": 0.4,
+     "n": 12,
+     "predicted": 0.30909367781664354,
+     "observed": 0.0
+    },
+    {
+     "lo": 0.4,
+     "hi": 0.6,
+     "n": 12,
+     "predicted": 0.4716666666666667,
+     "observed": 0.16666666666666666
+    },
+    {
+     "lo": 0.6,
+     "hi": 0.8,
+     "n": 1,
+     "predicted": 0.6,
+     "observed": 0.0
+    }
+   ],
+   "per_directive": {
+    "ADD_RERANK": {
+     "n": 4,
+     "flips": 2,
+     "admitted": 4,
+     "p_mean": 0.54
+    },
+    "DECOMPOSE": {
+     "n": 6,
+     "flips": 0,
+     "admitted": 6,
+     "p_mean": 0.33525960467697247
+    },
+    "TUNE_TOPK": {
+     "n": 6,
+     "flips": 0,
+     "admitted": 6,
+     "p_mean": 0.3347085949564446
+    },
+    "SWAP_INDEX": {
+     "n": 6,
+     "flips": 0,
+     "admitted": 1,
+     "p_mean": 0.31041919300466936
+    },
+    "PROMPT_REWRITE": {
+     "n": 6,
+     "flips": 0,
+     "admitted": 1,
+     "p_mean": 0.3339801077155602
+    },
+    "FILTERED_PROBE": {
+     "n": 2,
+     "flips": 0,
+     "admitted": 2,
+     "p_mean": 0.3831334954712902
+    }
+   },
+   "agreement": [
+    {
+     "directive": "ADD_RERANK",
+     "agree": 2,
+     "total": 2,
+     "rate": 0.75
+    },
+    {
+     "directive": "DECOMPOSE",
+     "agree": 2,
+     "total": 2,
+     "rate": 0.75
+    },
+    {
+     "directive": "FILTERED_PROBE",
+     "agree": 2,
+     "total": 2,
+     "rate": 0.75
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "agree": 2,
+     "total": 2,
+     "rate": 0.75
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "agree": 4,
+     "total": 4,
+     "rate": 0.8333333333333334
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "agree": 2,
+     "total": 2,
+     "rate": 0.75
+    }
+   ],
+   "log": [
+    {
+     "directive": "ADD_RERANK",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.009198411784249017,
+     "token_cost": 0.0009533061138077617,
+     "validated": 1,
+     "flipped": 1,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "DECOMPOSE",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.009879665655750982,
+     "token_cost": 0.0009994022418077617,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.00897725076740186,
+     "token_cost": 0.0009422480629654039,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.009198279411891783,
+     "token_cost": 0.0009532994951899,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.009198411784249017,
+     "token_cost": 0.0009533061138077617,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.007900000000000004,
+     "token_cost": 0.0009933855245953108,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "DECOMPOSE",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.0060561548800000045,
+     "token_cost": 0.001108625844595311,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "FILTERED_PROBE",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.0027091102851303332,
+     "token_cost": 0.0013579300103387943,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 1.2719653812642492e-07,
+     "token_cost": 0.000993377574811678,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.0,
+     "token_cost": 0.0009933855245953108,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "ADD_RERANK",
+     "p_raw": 0.6,
+     "p_used": 0.6,
+     "voi": 0.06550780521740945,
+     "token_cost": 0.0009683061138077618,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "DECOMPOSE",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 0.005695726617382139,
+     "token_cost": 0.0009768500310202127,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 0.005622076275841174,
+     "token_cost": 0.0009171686521778548,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 9.266065006387577e-08,
+     "token_cost": 0.0009282200844023509,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 0.0,
+     "token_cost": 0.0009282267030202127,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "ADD_RERANK",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.007230219875439239,
+     "token_cost": 0.0009533061138077617,
+     "validated": 1,
+     "flipped": 1,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "DECOMPOSE",
+     "p_raw": 0.17584334234754925,
+     "p_used": 0.17584334234754925,
+     "voi": 0.002709888365353627,
+     "token_cost": 0.0009994022418077617,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.17253728402438226,
+     "p_used": 0.17253728402438226,
+     "voi": 0.0020973436923546187,
+     "token_cost": 0.0009422480629654039,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.1726750641573855,
+     "p_used": 0.1726750641573855,
+     "voi": 0.0002768743079757664,
+     "token_cost": 0.0009532994951899,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.16816636057907558,
+     "p_used": 0.16816636057907558,
+     "voi": 0.00026960034585183523,
+     "token_cost": 0.0009533061138077617,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.3,
+     "p_used": 0.3,
+     "voi": 0.00433030080327563,
+     "token_cost": 0.0009933855245953108,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "DECOMPOSE",
+     "p_raw": 0.3,
+     "p_used": 0.3,
+     "voi": 0.0033601657013847637,
+     "token_cost": 0.001108625844595311,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "FILTERED_PROBE",
+     "p_raw": 0.26626699094258044,
+     "p_used": 0.26626699094258044,
+     "voi": 0.003882646531345109,
+     "token_cost": 0.0013579300103387943,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.15412580815634488,
+     "p_used": 0.15412580815634488,
+     "voi": 4.901067308356144e-08,
+     "token_cost": 0.000993377574811678,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.3,
+     "p_used": 0.3,
+     "voi": 0.0,
+     "token_cost": 0.0009933855245953108,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "ADD_RERANK",
+     "p_raw": 0.56,
+     "p_used": 0.56,
+     "voi": 0.06114061820291549,
+     "token_cost": 0.0009683061138077618,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "DECOMPOSE",
+     "p_raw": 0.2857142857142857,
+     "p_used": 0.2857142857142857,
+     "voi": 0.003899722272618928,
+     "token_cost": 0.0009768500310202127,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.2857142857142857,
+     "p_used": 0.2857142857142857,
+     "voi": 0.0038155274241134024,
+     "token_cost": 0.0009171686521778548,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.2857142857142857,
+     "p_used": 0.2857142857142857,
+     "voi": 7.5641346990919e-08,
+     "token_cost": 0.0009282200844023509,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "cuad"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.2857142857142857,
+     "p_used": 0.2857142857142857,
+     "voi": 0.0,
+     "token_cost": 0.0009282267030202127,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "cuad"
+    }
+   ]
+  },
+  "spider": {
+   "scores": [
+    {
+     "theta": 0.1,
+     "n": 26,
+     "admitted": 26,
+     "precision": 0.15384615384615385,
+     "recall": 1.0,
+     "flip_rate": 0.15384615384615385,
+     "spend_saved": 0.0
+    },
+    {
+     "theta": 0.25,
+     "n": 26,
+     "admitted": 26,
+     "precision": 0.15384615384615385,
+     "recall": 1.0,
+     "flip_rate": 0.15384615384615385,
+     "spend_saved": 0.0
+    },
+    {
+     "theta": 0.5,
+     "n": 26,
+     "admitted": 26,
+     "precision": 0.15384615384615385,
+     "recall": 1.0,
+     "flip_rate": 0.15384615384615385,
+     "spend_saved": 0.0
+    },
+    {
+     "theta": 1.0,
+     "n": 26,
+     "admitted": 25,
+     "precision": 0.16,
+     "recall": 1.0,
+     "flip_rate": 0.15384615384615385,
+     "spend_saved": 0.03364007922777823
+    },
+    {
+     "theta": 2.0,
+     "n": 26,
+     "admitted": 24,
+     "precision": 0.16666666666666666,
+     "recall": 1.0,
+     "flip_rate": 0.15384615384615385,
+     "spend_saved": 0.07065043841874175
+    },
+    {
+     "theta": 4.0,
+     "n": 26,
+     "admitted": 20,
+     "precision": 0.1,
+     "recall": 0.5,
+     "flip_rate": 0.15384615384615385,
+     "spend_saved": 0.23619645401934697
+    },
+    {
+     "theta": 8.0,
+     "n": 26,
+     "admitted": 11,
+     "precision": 0.09090909090909091,
+     "recall": 0.25,
+     "flip_rate": 0.15384615384615385,
+     "spend_saved": 0.5802850673669223
+    }
+   ],
+   "calibration": [
+    {
+     "lo": 0.2,
+     "hi": 0.4,
+     "n": 6,
+     "predicted": 0.32095238095238093,
+     "observed": 0.0
+    },
+    {
+     "lo": 0.4,
+     "hi": 0.6,
+     "n": 20,
+     "predicted": 0.45185714285714296,
+     "observed": 0.2
+    }
+   ],
+   "per_directive": {
+    "SCHEMA_LINK": {
+     "n": 4,
+     "flips": 2,
+     "admitted": 4,
+     "p_mean": 0.45999999999999996
+    },
+    "FEWSHOT": {
+     "n": 6,
+     "flips": 2,
+     "admitted": 6,
+     "p_mean": 0.4495238095238095
+    },
+    "PROMPT_REWRITE": {
+     "n": 6,
+     "flips": 0,
+     "admitted": 6,
+     "p_mean": 0.35928571428571426
+    },
+    "SQL_REPAIR": {
+     "n": 4,
+     "flips": 0,
+     "admitted": 3,
+     "p_mean": 0.3925
+    },
+    "POST_FILTER": {
+     "n": 2,
+     "flips": 0,
+     "admitted": 2,
+     "p_mean": 0.45
+    },
+    "TUNE_TOPK": {
+     "n": 2,
+     "flips": 0,
+     "admitted": 2,
+     "p_mean": 0.45
+    },
+    "SWAP_INDEX": {
+     "n": 2,
+     "flips": 0,
+     "admitted": 2,
+     "p_mean": 0.45
+    }
+   },
+   "agreement": [],
+   "log": [
+    {
+     "directive": "SCHEMA_LINK",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.009999265621063994,
+     "token_cost": 0.0008471950522801336,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "FEWSHOT",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.0089875,
+     "token_cost": 0.0007486466666666666,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.01,
+     "token_cost": 0.0007081466666666666,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "SQL_REPAIR",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.009377241666666666,
+     "token_cost": 0.000733057,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 0.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "FEWSHOT",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.005615446472952177,
+     "token_cost": 0.0008342666666666666,
+     "validated": 1,
+     "flipped": 1,
+     "ts": 1.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "SCHEMA_LINK",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.00380290603689446,
+     "token_cost": 0.0009735325522801336,
+     "validated": 1,
+     "flipped": 1,
+     "ts": 1.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.005925033976100984,
+     "token_cost": 0.000768746041824107,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "SQL_REPAIR",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.005169967309434317,
+     "token_cost": 0.0008064993751574403,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "FEWSHOT",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.02331256977557703,
+     "token_cost": 0.0009422567712269339,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "POST_FILTER",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.009490831362491983,
+     "token_cost": 0.000866173339351533,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.00984343748080066,
+     "token_cost": 0.0008838036452669669,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.00999995283758637,
+     "token_cost": 0.0008916341293476155,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 0.004682118693644902,
+     "token_cost": 0.0008916317712269339,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 1.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "FEWSHOT",
+     "p_raw": 0.44,
+     "p_used": 0.44,
+     "voi": 0.017339210117399965,
+     "token_cost": 0.0007486466666666666,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "SCHEMA_LINK",
+     "p_raw": 0.5,
+     "p_used": 0.5,
+     "voi": 0.005384467667387335,
+     "token_cost": 0.0008471950522801336,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.32,
+     "p_used": 0.32,
+     "voi": 0.0036987876201591842,
+     "token_cost": 0.0007081466666666666,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "SQL_REPAIR",
+     "p_raw": 0.35,
+     "p_used": 0.35,
+     "voi": 0.0004359308333333334,
+     "token_cost": 0.000733057,
+     "validated": 0,
+     "flipped": 0,
+     "ts": 2.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "FEWSHOT",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.01483175770714263,
+     "token_cost": 0.0008342666666666666,
+     "validated": 1,
+     "flipped": 1,
+     "ts": 3.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "SCHEMA_LINK",
+     "p_raw": 0.44,
+     "p_used": 0.44,
+     "voi": 0.0026454919199633527,
+     "token_cost": 0.0009735325522801336,
+     "validated": 1,
+     "flipped": 1,
+     "ts": 3.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.3,
+     "p_used": 0.3,
+     "voi": 0.0029448767418040374,
+     "token_cost": 0.000768746041824107,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "SQL_REPAIR",
+     "p_raw": 0.32,
+     "p_used": 0.32,
+     "voi": 0.0010043833308142887,
+     "token_cost": 0.0008064993751574403,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "FEWSHOT",
+     "p_raw": 0.45714285714285713,
+     "p_used": 0.45714285714285713,
+     "voi": 0.02080059496342136,
+     "token_cost": 0.0009422567712269339,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "POST_FILTER",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.006043251310695589,
+     "token_cost": 0.000866173339351533,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "TUNE_TOPK",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.006325336205342532,
+     "token_cost": 0.0008838036452669669,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "SWAP_INDEX",
+     "p_raw": 0.4,
+     "p_used": 0.4,
+     "voi": 0.0064505484907710995,
+     "token_cost": 0.0008916341293476155,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "spider"
+    },
+    {
+     "directive": "PROMPT_REWRITE",
+     "p_raw": 0.2857142857142857,
+     "p_used": 0.2857142857142857,
+     "voi": 0.0030071016261779436,
+     "token_cost": 0.0008916317712269339,
+     "validated": 1,
+     "flipped": 0,
+     "ts": 3.0,
+     "workload": "spider"
+    }
+   ]
+  }
+ },
+ "overall": {
+  "scores": [
+   {
+    "theta": 0.1,
+    "n": 77,
+    "admitted": 62,
+    "precision": 0.12903225806451613,
+    "recall": 1.0,
+    "flip_rate": 0.1038961038961039,
+    "spend_saved": 0.20422695186648465
+   },
+   {
+    "theta": 0.25,
+    "n": 77,
+    "admitted": 62,
+    "precision": 0.12903225806451613,
+    "recall": 1.0,
+    "flip_rate": 0.1038961038961039,
+    "spend_saved": 0.20422695186648465
+   },
+   {
+    "theta": 0.5,
+    "n": 77,
+    "admitted": 60,
+    "precision": 0.13333333333333333,
+    "recall": 1.0,
+    "flip_rate": 0.1038961038961039,
+    "spend_saved": 0.22878226794829803
+   },
+   {
+    "theta": 1.0,
+    "n": 77,
+    "admitted": 58,
+    "precision": 0.13793103448275862,
+    "recall": 1.0,
+    "flip_rate": 0.1038961038961039,
+    "spend_saved": 0.26150854948268254
+   },
+   {
+    "theta": 2.0,
+    "n": 77,
+    "admitted": 56,
+    "precision": 0.14285714285714285,
+    "recall": 1.0,
+    "flip_rate": 0.1038961038961039,
+    "spend_saved": 0.2893843972441742
+   },
+   {
+    "theta": 4.0,
+    "n": 77,
+    "admitted": 45,
+    "precision": 0.13333333333333333,
+    "recall": 0.75,
+    "flip_rate": 0.1038961038961039,
+    "spend_saved": 0.4444999625698577
+   },
+   {
+    "theta": 8.0,
+    "n": 77,
+    "admitted": 23,
+    "precision": 0.08695652173913043,
+    "recall": 0.25,
+    "flip_rate": 0.1038961038961039,
+    "spend_saved": 0.7163461106315597
+   }
+  ],
+  "calibration": [
+   {
+    "lo": 0.0,
+    "hi": 0.2,
+    "n": 5,
+    "predicted": 0.1686695718529475,
+    "observed": 0.0
+   },
+   {
+    "lo": 0.2,
+    "hi": 0.4,
+    "n": 23,
+    "predicted": 0.3197755834571308,
+    "observed": 0.0
+   },
+   {
+    "lo": 0.4,
+    "hi": 0.6,
+    "n": 46,
+    "predicted": 0.4616770186335402,
+    "observed": 0.17391304347826086
+   },
+   {
+    "lo": 0.6,
+    "hi": 0.8,
+    "n": 3,
+    "predicted": 0.6,
+    "observed": 0.0
+   }
+  ]
+ },
+ "elapsed_s": 12.354886293411255
+}

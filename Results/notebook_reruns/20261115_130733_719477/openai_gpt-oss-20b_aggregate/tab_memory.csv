@@ -1,0 +1,13 @@
+workload,phase,hit_rate_mean,hit_rate_sd,opt_tokens_mean,accuracy_mean,n_audited,reuse_accuracy
+msmarco,first-seen,0.0,0.0,32635.5,0.16831397125136727,0,
+msmarco,repeated,0.9,0.0,30201.5,0.16831397125136727,13,1.0
+msmarco,prompt_edit,0.0,0.0,29533.5,0.20417921767245822,0,
+msmarco,config_change,0.0,0.0,26156.5,0.17919445191432942,0,
+cuad,first-seen,0.0,0.0,31113.0,0.1517094017094017,0,
+cuad,repeated,0.2,0.0,25362.5,0.1517094017094017,6,1.0
+cuad,prompt_edit,0.0,0.0,16887.5,0.08333333333333333,0,
+cuad,config_change,0.0,0.0,29121.5,0.28137207948313425,0,
+spider,first-seen,0.0,0.0,18318.5,0.75,0,
+spider,repeated,0.0,0.0,24593.0,0.75,0,
+spider,prompt_edit,0.0,0.0,18930.5,0.75,0,
+spider,config_change,0.0,0.0,22740.5,0.75,0,

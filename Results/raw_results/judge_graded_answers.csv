@@ -1,0 +1,721 @@
+﻿seed,workload,source,system,task,qid,judge,metric,f1,rouge_l
+0,msmarco,baselines,no_opt,msmarco:location,m16343,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+0,msmarco,baselines,no_opt,msmarco:location,m15656,0.5,0.10931899641577059,0.09523809523809525,0.10931899641577059
+0,msmarco,baselines,no_opt,msmarco:location,m15501,1.0,0.0752157829839704,0.0625,0.0752157829839704
+0,msmarco,baselines,no_opt,msmarco:location,m18225,0.5,0.0,0.0,0.0
+0,msmarco,baselines,no_opt,msmarco:location,m15257,1.0,0.4603773584905661,0.4210526315789473,0.4603773584905661
+0,msmarco,baselines,no_opt,msmarco:location,m14709,0.5,0.2636887608069164,0.23076923076923075,0.2636887608069164
+0,msmarco,baselines,no_opt,msmarco:entity,m9993,0.0,0.09501557632398752,0.13953488372093023,0.09501557632398752
+0,msmarco,baselines,no_opt,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+0,msmarco,baselines,no_opt,msmarco:entity,m12881,1.0,0.13634331694233348,0.1707317073170732,0.13634331694233348
+0,msmarco,baselines,no_opt,msmarco:entity,m12943,1.0,0.15926892950391647,0.14285714285714288,0.15926892950391647
+0,msmarco,baselines,no_opt,msmarco:entity,m14890,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+0,msmarco,baselines,no_opt,msmarco:entity,m18577,0.5,0.0,0.0,0.0
+0,msmarco,baselines,random,msmarco:location,m16343,1.0,0.37888198757763975,0.33333333333333337,0.37888198757763975
+0,msmarco,baselines,random,msmarco:location,m15656,0.5,0.07790549169859513,0.13333333333333333,0.07790549169859513
+0,msmarco,baselines,random,msmarco:location,m15501,1.0,0.07760814249363866,0.06451612903225806,0.07760814249363866
+0,msmarco,baselines,random,msmarco:location,m18225,1.0,0.13990825688073394,0.11764705882352941,0.13990825688073394
+0,msmarco,baselines,random,msmarco:location,m15257,1.0,0.3588235294117647,0.32000000000000006,0.3588235294117647
+0,msmarco,baselines,random,msmarco:location,m14709,1.0,0.2890995260663507,0.25,0.2890995260663507
+0,msmarco,baselines,random,msmarco:entity,m9993,0.0,0.09501557632398752,0.13953488372093023,0.09501557632398752
+0,msmarco,baselines,random,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+0,msmarco,baselines,random,msmarco:entity,m12881,1.0,0.13634331694233348,0.1707317073170732,0.13634331694233348
+0,msmarco,baselines,random,msmarco:entity,m12943,1.0,0.15926892950391647,0.14285714285714288,0.15926892950391647
+0,msmarco,baselines,random,msmarco:entity,m14890,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+0,msmarco,baselines,random,msmarco:entity,m18577,0.5,0.0,0.0,0.0
+0,msmarco,baselines,cost_only,msmarco:location,m16343,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+0,msmarco,baselines,cost_only,msmarco:location,m15656,0.5,0.10931899641577059,0.09523809523809525,0.10931899641577059
+0,msmarco,baselines,cost_only,msmarco:location,m15501,1.0,0.0752157829839704,0.0625,0.0752157829839704
+0,msmarco,baselines,cost_only,msmarco:location,m18225,0.5,0.0,0.0,0.0
+0,msmarco,baselines,cost_only,msmarco:location,m15257,1.0,0.4603773584905661,0.4210526315789473,0.4603773584905661
+0,msmarco,baselines,cost_only,msmarco:location,m14709,0.5,0.2636887608069164,0.23076923076923075,0.2636887608069164
+0,msmarco,baselines,cost_only,msmarco:entity,m9993,0.0,0.09501557632398752,0.13953488372093023,0.09501557632398752
+0,msmarco,baselines,cost_only,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+0,msmarco,baselines,cost_only,msmarco:entity,m12881,1.0,0.13634331694233348,0.1707317073170732,0.13634331694233348
+0,msmarco,baselines,cost_only,msmarco:entity,m12943,1.0,0.15926892950391647,0.14285714285714288,0.15926892950391647
+0,msmarco,baselines,cost_only,msmarco:entity,m14890,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+0,msmarco,baselines,cost_only,msmarco:entity,m18577,0.5,0.0,0.0,0.0
+0,msmarco,baselines,docetl,msmarco:location,m16343,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+0,msmarco,baselines,docetl,msmarco:location,m15656,1.0,0.3433395872420263,0.3,0.3433395872420263
+0,msmarco,baselines,docetl,msmarco:location,m15501,1.0,0.0752157829839704,0.0625,0.0752157829839704
+0,msmarco,baselines,docetl,msmarco:location,m18225,0.5,0.0,0.0,0.0
+0,msmarco,baselines,docetl,msmarco:location,m15257,1.0,0.4603773584905661,0.4210526315789473,0.4603773584905661
+0,msmarco,baselines,docetl,msmarco:location,m14709,0.5,0.2636887608069164,0.23076923076923075,0.2636887608069164
+0,msmarco,baselines,docetl,msmarco:entity,m9993,0.0,0.14829821717990274,0.14634146341463414,0.14829821717990274
+0,msmarco,baselines,docetl,msmarco:entity,m14108,0.0,0.0,0.0,0.0
+0,msmarco,baselines,docetl,msmarco:entity,m12881,1.0,0.14614278869190225,0.1842105263157895,0.14614278869190225
+0,msmarco,baselines,docetl,msmarco:entity,m12943,1.0,0.21554770318021202,0.2,0.21554770318021202
+0,msmarco,baselines,docetl,msmarco:entity,m14890,0.5,0.0,0.0,0.0
+0,msmarco,baselines,docetl,msmarco:entity,m18577,0.0,0.0,0.0,0.0
+0,msmarco,baselines,plannerllm,msmarco:location,m16343,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+0,msmarco,baselines,plannerllm,msmarco:location,m15656,0.5,0.10931899641577059,0.09523809523809525,0.10931899641577059
+0,msmarco,baselines,plannerllm,msmarco:location,m15501,1.0,0.0752157829839704,0.0625,0.0752157829839704
+0,msmarco,baselines,plannerllm,msmarco:location,m18225,0.5,0.0,0.0,0.0
+0,msmarco,baselines,plannerllm,msmarco:location,m15257,1.0,0.4603773584905661,0.4210526315789473,0.4603773584905661
+0,msmarco,baselines,plannerllm,msmarco:location,m14709,0.5,0.2636887608069164,0.23076923076923075,0.2636887608069164
+0,msmarco,baselines,plannerllm,msmarco:entity,m9993,0.0,0.09501557632398752,0.13953488372093023,0.09501557632398752
+0,msmarco,baselines,plannerllm,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+0,msmarco,baselines,plannerllm,msmarco:entity,m12881,1.0,0.13634331694233348,0.1707317073170732,0.13634331694233348
+0,msmarco,baselines,plannerllm,msmarco:entity,m12943,1.0,0.15926892950391647,0.14285714285714288,0.15926892950391647
+0,msmarco,baselines,plannerllm,msmarco:entity,m14890,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+0,msmarco,baselines,plannerllm,msmarco:entity,m18577,0.5,0.0,0.0,0.0
+0,msmarco,ablation,plannerllm,msmarco:location,m16343,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+0,msmarco,ablation,plannerllm,msmarco:location,m15656,0.5,0.10931899641577059,0.09523809523809525,0.10931899641577059
+0,msmarco,ablation,plannerllm,msmarco:location,m15501,1.0,0.0752157829839704,0.0625,0.0752157829839704
+0,msmarco,ablation,plannerllm,msmarco:location,m18225,0.5,0.0,0.0,0.0
+0,msmarco,ablation,plannerllm,msmarco:location,m15257,1.0,0.4603773584905661,0.4210526315789473,0.4603773584905661
+0,msmarco,ablation,plannerllm,msmarco:location,m14709,0.5,0.2636887608069164,0.23076923076923075,0.2636887608069164
+0,msmarco,ablation,plannerllm,msmarco:entity,m9993,0.0,0.09501557632398752,0.13953488372093023,0.09501557632398752
+0,msmarco,ablation,plannerllm,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+0,msmarco,ablation,plannerllm,msmarco:entity,m12881,1.0,0.13634331694233348,0.1707317073170732,0.13634331694233348
+0,msmarco,ablation,plannerllm,msmarco:entity,m12943,1.0,0.15926892950391647,0.14285714285714288,0.15926892950391647
+0,msmarco,ablation,plannerllm,msmarco:entity,m14890,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+0,msmarco,ablation,plannerllm,msmarco:entity,m18577,0.5,0.0,0.0,0.0
+0,msmarco,ablation,no_gate,msmarco:location,m16343,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+0,msmarco,ablation,no_gate,msmarco:location,m15656,0.5,0.10931899641577059,0.09523809523809525,0.10931899641577059
+0,msmarco,ablation,no_gate,msmarco:location,m15501,1.0,0.0752157829839704,0.0625,0.0752157829839704
+0,msmarco,ablation,no_gate,msmarco:location,m18225,0.5,0.0,0.0,0.0
+0,msmarco,ablation,no_gate,msmarco:location,m15257,1.0,0.4603773584905661,0.4210526315789473,0.4603773584905661
+0,msmarco,ablation,no_gate,msmarco:location,m14709,0.5,0.2636887608069164,0.23076923076923075,0.2636887608069164
+0,msmarco,ablation,no_gate,msmarco:entity,m9993,0.0,0.09501557632398752,0.13953488372093023,0.09501557632398752
+0,msmarco,ablation,no_gate,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+0,msmarco,ablation,no_gate,msmarco:entity,m12881,1.0,0.13634331694233348,0.1707317073170732,0.13634331694233348
+0,msmarco,ablation,no_gate,msmarco:entity,m12943,1.0,0.15926892950391647,0.14285714285714288,0.15926892950391647
+0,msmarco,ablation,no_gate,msmarco:entity,m14890,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+0,msmarco,ablation,no_gate,msmarco:entity,m18577,0.5,0.0,0.0,0.0
+0,msmarco,ablation,no_memory,msmarco:location,m16343,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+0,msmarco,ablation,no_memory,msmarco:location,m15656,0.5,0.10931899641577059,0.09523809523809525,0.10931899641577059
+0,msmarco,ablation,no_memory,msmarco:location,m15501,1.0,0.0752157829839704,0.0625,0.0752157829839704
+0,msmarco,ablation,no_memory,msmarco:location,m18225,0.5,0.0,0.0,0.0
+0,msmarco,ablation,no_memory,msmarco:location,m15257,1.0,0.4603773584905661,0.4210526315789473,0.4603773584905661
+0,msmarco,ablation,no_memory,msmarco:location,m14709,0.5,0.2636887608069164,0.23076923076923075,0.2636887608069164
+0,msmarco,ablation,no_memory,msmarco:entity,m9993,0.0,0.09501557632398752,0.13953488372093023,0.09501557632398752
+0,msmarco,ablation,no_memory,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+0,msmarco,ablation,no_memory,msmarco:entity,m12881,1.0,0.13634331694233348,0.1707317073170732,0.13634331694233348
+0,msmarco,ablation,no_memory,msmarco:entity,m12943,1.0,0.15926892950391647,0.14285714285714288,0.15926892950391647
+0,msmarco,ablation,no_memory,msmarco:entity,m14890,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+0,msmarco,ablation,no_memory,msmarco:entity,m18577,0.5,0.0,0.0,0.0
+0,msmarco,ablation,symbolic_only,msmarco:location,m16343,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+0,msmarco,ablation,symbolic_only,msmarco:location,m15656,0.5,0.10931899641577059,0.09523809523809525,0.10931899641577059
+0,msmarco,ablation,symbolic_only,msmarco:location,m15501,1.0,0.0752157829839704,0.0625,0.0752157829839704
+0,msmarco,ablation,symbolic_only,msmarco:location,m18225,0.5,0.0,0.0,0.0
+0,msmarco,ablation,symbolic_only,msmarco:location,m15257,1.0,0.4603773584905661,0.4210526315789473,0.4603773584905661
+0,msmarco,ablation,symbolic_only,msmarco:location,m14709,0.5,0.2636887608069164,0.23076923076923075,0.2636887608069164
+0,msmarco,ablation,symbolic_only,msmarco:entity,m9993,0.0,0.09501557632398752,0.13953488372093023,0.09501557632398752
+0,msmarco,ablation,symbolic_only,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+0,msmarco,ablation,symbolic_only,msmarco:entity,m12881,1.0,0.13634331694233348,0.1707317073170732,0.13634331694233348
+0,msmarco,ablation,symbolic_only,msmarco:entity,m12943,1.0,0.15926892950391647,0.14285714285714288,0.15926892950391647
+0,msmarco,ablation,symbolic_only,msmarco:entity,m14890,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+0,msmarco,ablation,symbolic_only,msmarco:entity,m18577,0.5,0.0,0.0,0.0
+0,msmarco,ablation,neural_only,msmarco:location,m16343,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+0,msmarco,ablation,neural_only,msmarco:location,m15656,0.5,0.10931899641577059,0.09523809523809525,0.10931899641577059
+0,msmarco,ablation,neural_only,msmarco:location,m15501,1.0,0.0752157829839704,0.0625,0.0752157829839704
+0,msmarco,ablation,neural_only,msmarco:location,m18225,0.5,0.0,0.0,0.0
+0,msmarco,ablation,neural_only,msmarco:location,m15257,1.0,0.4603773584905661,0.4210526315789473,0.4603773584905661
+0,msmarco,ablation,neural_only,msmarco:location,m14709,0.5,0.2636887608069164,0.23076923076923075,0.2636887608069164
+0,msmarco,ablation,neural_only,msmarco:entity,m9993,0.0,0.09501557632398752,0.13953488372093023,0.09501557632398752
+0,msmarco,ablation,neural_only,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+0,msmarco,ablation,neural_only,msmarco:entity,m12881,1.0,0.13634331694233348,0.1707317073170732,0.13634331694233348
+0,msmarco,ablation,neural_only,msmarco:entity,m12943,1.0,0.15926892950391647,0.14285714285714288,0.15926892950391647
+0,msmarco,ablation,neural_only,msmarco:entity,m14890,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+0,msmarco,ablation,neural_only,msmarco:entity,m18577,0.5,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:governing law,c41_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:governing law,c59_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,no_opt,cuad:cap on liability,c41_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:governing law,c41_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:governing law,c59_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,random,cuad:cap on liability,c41_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:governing law,c41_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:governing law,c59_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,cost_only,cuad:cap on liability,c41_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:governing law,c41_governing_law,1.0,1.0,1.0,1.0
+0,cuad,baselines,docetl,cuad:governing law,c59_governing_law,0.5,0.6785714285714287,0.6785714285714287,0.584554678692221
+0,cuad,baselines,docetl,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,docetl,cuad:cap on liability,c41_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:governing law,c41_governing_law,1.0,1.0,1.0,1.0
+0,cuad,baselines,plannerllm,cuad:governing law,c59_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,baselines,plannerllm,cuad:cap on liability,c41_cap_on_liability,0.5,0.8205128205128205,0.8205128205128205,0.8268850607173114
+0,cuad,ablation,plannerllm,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:governing law,c41_governing_law,1.0,1.0,1.0,1.0
+0,cuad,ablation,plannerllm,cuad:governing law,c59_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,plannerllm,cuad:cap on liability,c41_cap_on_liability,0.5,0.8205128205128205,0.8205128205128205,0.8268850607173114
+0,cuad,ablation,no_gate,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:governing law,c41_governing_law,1.0,1.0,1.0,1.0
+0,cuad,ablation,no_gate,cuad:governing law,c59_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_gate,cuad:cap on liability,c41_cap_on_liability,0.5,0.8205128205128205,0.8205128205128205,0.8268850607173114
+0,cuad,ablation,no_memory,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:governing law,c41_governing_law,1.0,1.0,1.0,1.0
+0,cuad,ablation,no_memory,cuad:governing law,c59_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,no_memory,cuad:cap on liability,c41_cap_on_liability,0.5,0.8205128205128205,0.8205128205128205,0.8268850607173114
+0,cuad,ablation,symbolic_only,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:governing law,c41_governing_law,1.0,1.0,1.0,1.0
+0,cuad,ablation,symbolic_only,cuad:governing law,c59_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,symbolic_only,cuad:cap on liability,c41_cap_on_liability,0.5,0.8205128205128205,0.8205128205128205,0.8268850607173114
+0,cuad,ablation,neural_only,cuad:governing law,c51_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:governing law,c24_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:governing law,c52_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:governing law,c41_governing_law,1.0,1.0,1.0,1.0
+0,cuad,ablation,neural_only,cuad:governing law,c59_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:governing law,c28_governing_law,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:cap on liability,c14_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:cap on liability,c52_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:cap on liability,c22_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:cap on liability,c26_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:cap on liability,c23_cap_on_liability,0.0,0.0,0.0,0.0
+0,cuad,ablation,neural_only,cuad:cap on liability,c41_cap_on_liability,0.5,0.8205128205128205,0.8205128205128205,0.8268850607173114
+1,msmarco,baselines,no_opt,msmarco:location,m16844,1.0,0.0,0.0,0.0
+1,msmarco,baselines,no_opt,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,baselines,no_opt,msmarco:location,m12829,1.0,0.40705433746425174,0.4736842105263158,0.40705433746425174
+1,msmarco,baselines,no_opt,msmarco:location,m17874,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,baselines,no_opt,msmarco:location,m15818,1.0,0.3775790921595598,0.34615384615384615,0.3775790921595598
+1,msmarco,baselines,no_opt,msmarco:location,m14500,1.0,0.6457036114570361,0.6181818181818182,0.6457036114570361
+1,msmarco,baselines,no_opt,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,baselines,no_opt,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,baselines,no_opt,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,baselines,no_opt,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,baselines,no_opt,msmarco:numeric,m16963,1.0,0.22846441947565543,0.43243243243243246,0.22846441947565543
+1,msmarco,baselines,no_opt,msmarco:numeric,m13490,1.0,0.08015768725361366,0.06666666666666667,0.08015768725361366
+1,msmarco,baselines,random,msmarco:location,m16844,1.0,0.1484184914841849,0.125,0.1484184914841849
+1,msmarco,baselines,random,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,baselines,random,msmarco:location,m12829,1.0,0.47656249999999994,0.4864864864864865,0.47656249999999994
+1,msmarco,baselines,random,msmarco:location,m17874,1.0,0.15307402760351316,0.12903225806451613,0.15307402760351316
+1,msmarco,baselines,random,msmarco:location,m15818,1.0,0.09926769731489014,0.18604651162790697,0.09926769731489014
+1,msmarco,baselines,random,msmarco:location,m14500,1.0,0.6850084222346995,0.6451612903225806,0.6850084222346995
+1,msmarco,baselines,random,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,baselines,random,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,baselines,random,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,baselines,random,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,baselines,random,msmarco:numeric,m16963,0.5,0.11697027804410354,0.16666666666666669,0.11697027804410354
+1,msmarco,baselines,random,msmarco:numeric,m13490,1.0,0.08015768725361366,0.06666666666666667,0.08015768725361366
+1,msmarco,baselines,cost_only,msmarco:location,m16844,1.0,0.0,0.0,0.0
+1,msmarco,baselines,cost_only,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,baselines,cost_only,msmarco:location,m12829,1.0,0.40705433746425174,0.4736842105263158,0.40705433746425174
+1,msmarco,baselines,cost_only,msmarco:location,m17874,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,baselines,cost_only,msmarco:location,m15818,1.0,0.3775790921595598,0.34615384615384615,0.3775790921595598
+1,msmarco,baselines,cost_only,msmarco:location,m14500,1.0,0.6457036114570361,0.6181818181818182,0.6457036114570361
+1,msmarco,baselines,cost_only,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,baselines,cost_only,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,baselines,cost_only,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,baselines,cost_only,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,baselines,cost_only,msmarco:numeric,m16963,0.5,0.11697027804410354,0.16666666666666669,0.11697027804410354
+1,msmarco,baselines,cost_only,msmarco:numeric,m13490,1.0,0.08015768725361366,0.06666666666666667,0.08015768725361366
+1,msmarco,baselines,docetl,msmarco:location,m16844,1.0,0.0,0.0,0.0
+1,msmarco,baselines,docetl,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,baselines,docetl,msmarco:location,m12829,1.0,0.40705433746425174,0.4736842105263158,0.40705433746425174
+1,msmarco,baselines,docetl,msmarco:location,m17874,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,baselines,docetl,msmarco:location,m15818,1.0,0.3775790921595598,0.34615384615384615,0.3775790921595598
+1,msmarco,baselines,docetl,msmarco:location,m14500,1.0,0.6457036114570361,0.6181818181818182,0.6457036114570361
+1,msmarco,baselines,docetl,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,baselines,docetl,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,baselines,docetl,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,baselines,docetl,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,baselines,docetl,msmarco:numeric,m16963,0.5,0.07692307692307691,0.23076923076923078,0.07692307692307691
+1,msmarco,baselines,docetl,msmarco:numeric,m13490,1.0,0.09983633387888706,0.08333333333333333,0.09983633387888706
+1,msmarco,baselines,plannerllm,msmarco:location,m16844,1.0,0.0,0.0,0.0
+1,msmarco,baselines,plannerllm,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,baselines,plannerllm,msmarco:location,m12829,1.0,0.40705433746425174,0.4736842105263158,0.40705433746425174
+1,msmarco,baselines,plannerllm,msmarco:location,m17874,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,baselines,plannerllm,msmarco:location,m15818,1.0,0.3775790921595598,0.34615384615384615,0.3775790921595598
+1,msmarco,baselines,plannerllm,msmarco:location,m14500,1.0,0.6457036114570361,0.6181818181818182,0.6457036114570361
+1,msmarco,baselines,plannerllm,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,baselines,plannerllm,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,baselines,plannerllm,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,baselines,plannerllm,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,baselines,plannerllm,msmarco:numeric,m16963,1.0,0.22846441947565543,0.43243243243243246,0.22846441947565543
+1,msmarco,baselines,plannerllm,msmarco:numeric,m13490,1.0,0.08015768725361366,0.06666666666666667,0.08015768725361366
+1,msmarco,ablation,plannerllm,msmarco:location,m16844,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,plannerllm,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,ablation,plannerllm,msmarco:location,m12829,1.0,0.40705433746425174,0.4736842105263158,0.40705433746425174
+1,msmarco,ablation,plannerllm,msmarco:location,m17874,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,plannerllm,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+1,msmarco,ablation,plannerllm,msmarco:location,m14500,1.0,0.48620478234212144,0.6071428571428571,0.48620478234212144
+1,msmarco,ablation,plannerllm,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,ablation,plannerllm,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,ablation,plannerllm,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,ablation,plannerllm,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,ablation,plannerllm,msmarco:numeric,m16963,1.0,0.22846441947565543,0.43243243243243246,0.22846441947565543
+1,msmarco,ablation,plannerllm,msmarco:numeric,m13490,1.0,0.08015768725361366,0.06666666666666667,0.08015768725361366
+1,msmarco,ablation,no_gate,msmarco:location,m16844,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,no_gate,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,ablation,no_gate,msmarco:location,m12829,1.0,0.40705433746425174,0.4736842105263158,0.40705433746425174
+1,msmarco,ablation,no_gate,msmarco:location,m17874,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,no_gate,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+1,msmarco,ablation,no_gate,msmarco:location,m14500,1.0,0.48620478234212144,0.6071428571428571,0.48620478234212144
+1,msmarco,ablation,no_gate,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,ablation,no_gate,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,ablation,no_gate,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,ablation,no_gate,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,ablation,no_gate,msmarco:numeric,m16963,1.0,0.22846441947565543,0.43243243243243246,0.22846441947565543
+1,msmarco,ablation,no_gate,msmarco:numeric,m13490,1.0,0.08015768725361366,0.06666666666666667,0.08015768725361366
+1,msmarco,ablation,no_memory,msmarco:location,m16844,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,no_memory,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,ablation,no_memory,msmarco:location,m12829,1.0,0.40705433746425174,0.4736842105263158,0.40705433746425174
+1,msmarco,ablation,no_memory,msmarco:location,m17874,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,no_memory,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+1,msmarco,ablation,no_memory,msmarco:location,m14500,1.0,0.48620478234212144,0.6071428571428571,0.48620478234212144
+1,msmarco,ablation,no_memory,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,ablation,no_memory,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,ablation,no_memory,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,ablation,no_memory,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,ablation,no_memory,msmarco:numeric,m16963,1.0,0.22846441947565543,0.43243243243243246,0.22846441947565543
+1,msmarco,ablation,no_memory,msmarco:numeric,m13490,1.0,0.08015768725361366,0.06666666666666667,0.08015768725361366
+1,msmarco,ablation,symbolic_only,msmarco:location,m16844,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,symbolic_only,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,ablation,symbolic_only,msmarco:location,m12829,1.0,0.40705433746425174,0.4736842105263158,0.40705433746425174
+1,msmarco,ablation,symbolic_only,msmarco:location,m17874,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,symbolic_only,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+1,msmarco,ablation,symbolic_only,msmarco:location,m14500,1.0,0.48620478234212144,0.6071428571428571,0.48620478234212144
+1,msmarco,ablation,symbolic_only,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,ablation,symbolic_only,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,ablation,symbolic_only,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,ablation,symbolic_only,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,ablation,symbolic_only,msmarco:numeric,m16963,1.0,0.22846441947565543,0.43243243243243246,0.22846441947565543
+1,msmarco,ablation,symbolic_only,msmarco:numeric,m13490,1.0,0.08015768725361366,0.06666666666666667,0.08015768725361366
+1,msmarco,ablation,neural_only,msmarco:location,m16844,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,neural_only,msmarco:location,m11908,0.5,0.505524861878453,0.72,0.505524861878453
+1,msmarco,ablation,neural_only,msmarco:location,m12829,1.0,0.40705433746425174,0.4736842105263158,0.40705433746425174
+1,msmarco,ablation,neural_only,msmarco:location,m17874,1.0,0.15803108808290156,0.13333333333333333,0.15803108808290156
+1,msmarco,ablation,neural_only,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+1,msmarco,ablation,neural_only,msmarco:location,m14500,1.0,0.48620478234212144,0.6071428571428571,0.48620478234212144
+1,msmarco,ablation,neural_only,msmarco:numeric,m16228,0.0,0.0,0.0,0.0
+1,msmarco,ablation,neural_only,msmarco:numeric,m19379,0.0,0.11338289962825278,0.11111111111111112,0.11338289962825278
+1,msmarco,ablation,neural_only,msmarco:numeric,m14722,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+1,msmarco,ablation,neural_only,msmarco:numeric,m10542,1.0,0.0,0.0,0.0
+1,msmarco,ablation,neural_only,msmarco:numeric,m16963,1.0,0.22846441947565543,0.43243243243243246,0.22846441947565543
+1,msmarco,ablation,neural_only,msmarco:numeric,m13490,1.0,0.08015768725361366,0.06666666666666667,0.08015768725361366
+1,cuad,baselines,no_opt,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:expiration date,c8_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:expiration date,c25_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,no_opt,cuad:renewal term,c12_renewal_term,1.0,1.0,1.0,1.0
+1,cuad,baselines,no_opt,cuad:renewal term,c0_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:expiration date,c8_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:expiration date,c25_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,random,cuad:renewal term,c12_renewal_term,1.0,1.0,1.0,1.0
+1,cuad,baselines,random,cuad:renewal term,c0_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:expiration date,c8_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:expiration date,c25_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,cost_only,cuad:renewal term,c12_renewal_term,1.0,1.0,1.0,1.0
+1,cuad,baselines,cost_only,cuad:renewal term,c0_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,docetl,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,docetl,cuad:expiration date,c8_expiration_date,1.0,1.0,1.0,1.0
+1,cuad,baselines,docetl,cuad:expiration date,c25_expiration_date,0.0,0.02325581395348837,0.02325581395348837,0.020279255319148936
+1,cuad,baselines,docetl,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,docetl,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,docetl,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,docetl,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,docetl,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,docetl,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,docetl,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,docetl,cuad:renewal term,c12_renewal_term,0.5,0.14285714285714288,0.14285714285714288,0.12373225152129817
+1,cuad,baselines,docetl,cuad:renewal term,c0_renewal_term,1.0,0.8611111111111112,0.8611111111111112,0.8400710795202131
+1,cuad,baselines,plannerllm,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,plannerllm,cuad:expiration date,c8_expiration_date,1.0,0.962962962962963,0.962962962962963,0.9694376528117359
+1,cuad,baselines,plannerllm,cuad:expiration date,c25_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,plannerllm,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,plannerllm,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,plannerllm,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,baselines,plannerllm,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,plannerllm,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,plannerllm,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,plannerllm,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,baselines,plannerllm,cuad:renewal term,c12_renewal_term,1.0,1.0,1.0,1.0
+1,cuad,baselines,plannerllm,cuad:renewal term,c0_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:expiration date,c8_expiration_date,1.0,0.962962962962963,0.962962962962963,0.9694376528117359
+1,cuad,ablation,plannerllm,cuad:expiration date,c25_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,plannerllm,cuad:renewal term,c12_renewal_term,1.0,1.0,1.0,1.0
+1,cuad,ablation,plannerllm,cuad:renewal term,c0_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:expiration date,c8_expiration_date,1.0,0.962962962962963,0.962962962962963,0.9694376528117359
+1,cuad,ablation,no_gate,cuad:expiration date,c25_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_gate,cuad:renewal term,c12_renewal_term,1.0,1.0,1.0,1.0
+1,cuad,ablation,no_gate,cuad:renewal term,c0_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:expiration date,c8_expiration_date,1.0,0.962962962962963,0.962962962962963,0.9694376528117359
+1,cuad,ablation,no_memory,cuad:expiration date,c25_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,no_memory,cuad:renewal term,c12_renewal_term,1.0,1.0,1.0,1.0
+1,cuad,ablation,no_memory,cuad:renewal term,c0_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:expiration date,c8_expiration_date,1.0,0.962962962962963,0.962962962962963,0.9694376528117359
+1,cuad,ablation,symbolic_only,cuad:expiration date,c25_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,symbolic_only,cuad:renewal term,c12_renewal_term,1.0,1.0,1.0,1.0
+1,cuad,ablation,symbolic_only,cuad:renewal term,c0_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:expiration date,c26_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:expiration date,c8_expiration_date,1.0,0.962962962962963,0.962962962962963,0.9694376528117359
+1,cuad,ablation,neural_only,cuad:expiration date,c25_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:expiration date,c53_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:expiration date,c58_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:expiration date,c5_expiration_date,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:renewal term,c3_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:renewal term,c48_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:renewal term,c18_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:renewal term,c53_renewal_term,0.0,0.0,0.0,0.0
+1,cuad,ablation,neural_only,cuad:renewal term,c12_renewal_term,1.0,1.0,1.0,1.0
+1,cuad,ablation,neural_only,cuad:renewal term,c0_renewal_term,0.0,0.0,0.0,0.0
+2,msmarco,baselines,no_opt,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,baselines,no_opt,msmarco:location,m17279,1.0,0.7093023255813954,0.6666666666666666,0.7093023255813954
+2,msmarco,baselines,no_opt,msmarco:location,m19628,1.0,0.4174904942965779,0.4347826086956521,0.4174904942965779
+2,msmarco,baselines,no_opt,msmarco:location,m10718,1.0,0.1673066374108612,0.3076923076923077,0.1673066374108612
+2,msmarco,baselines,no_opt,msmarco:location,m11350,1.0,0.23371647509578544,0.19999999999999998,0.23371647509578544
+2,msmarco,baselines,no_opt,msmarco:location,m15818,1.0,0.3775790921595598,0.34615384615384615,0.3775790921595598
+2,msmarco,baselines,no_opt,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,baselines,no_opt,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,baselines,no_opt,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,baselines,no_opt,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,baselines,no_opt,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,baselines,no_opt,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,msmarco,baselines,random,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,baselines,random,msmarco:location,m17279,1.0,1.0,1.0,1.0
+2,msmarco,baselines,random,msmarco:location,m19628,1.0,0.5036697247706422,0.7027027027027029,0.5036697247706422
+2,msmarco,baselines,random,msmarco:location,m10718,1.0,0.2978515625,0.3243243243243243,0.2978515625
+2,msmarco,baselines,random,msmarco:location,m11350,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+2,msmarco,baselines,random,msmarco:location,m15818,1.0,0.09926769731489014,0.18604651162790697,0.09926769731489014
+2,msmarco,baselines,random,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,baselines,random,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,baselines,random,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,baselines,random,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,baselines,random,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,baselines,random,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,msmarco,baselines,cost_only,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,baselines,cost_only,msmarco:location,m17279,1.0,0.7093023255813954,0.6666666666666666,0.7093023255813954
+2,msmarco,baselines,cost_only,msmarco:location,m19628,1.0,0.4174904942965779,0.4347826086956521,0.4174904942965779
+2,msmarco,baselines,cost_only,msmarco:location,m10718,1.0,0.1673066374108612,0.3076923076923077,0.1673066374108612
+2,msmarco,baselines,cost_only,msmarco:location,m11350,1.0,0.23371647509578544,0.19999999999999998,0.23371647509578544
+2,msmarco,baselines,cost_only,msmarco:location,m15818,1.0,0.3775790921595598,0.34615384615384615,0.3775790921595598
+2,msmarco,baselines,cost_only,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,baselines,cost_only,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,baselines,cost_only,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,baselines,cost_only,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,baselines,cost_only,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,baselines,cost_only,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,msmarco,baselines,docetl,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,baselines,docetl,msmarco:location,m17279,1.0,1.0,1.0,1.0
+2,msmarco,baselines,docetl,msmarco:location,m19628,1.0,0.2914675767918089,0.3846153846153846,0.2914675767918089
+2,msmarco,baselines,docetl,msmarco:location,m10718,1.0,0.5684995340167754,0.5714285714285715,0.5684995340167754
+2,msmarco,baselines,docetl,msmarco:location,m11350,1.0,0.3279569892473118,0.2857142857142857,0.3279569892473118
+2,msmarco,baselines,docetl,msmarco:location,m15818,1.0,0.12585969738651995,0.15384615384615385,0.12585969738651995
+2,msmarco,baselines,docetl,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,baselines,docetl,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,baselines,docetl,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,baselines,docetl,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,baselines,docetl,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,baselines,docetl,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,msmarco,baselines,plannerllm,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,baselines,plannerllm,msmarco:location,m17279,1.0,0.7093023255813954,0.6666666666666666,0.7093023255813954
+2,msmarco,baselines,plannerllm,msmarco:location,m19628,1.0,0.3357798165137615,0.4864864864864865,0.3357798165137615
+2,msmarco,baselines,plannerllm,msmarco:location,m10718,1.0,0.2970779220779221,0.36363636363636365,0.2970779220779221
+2,msmarco,baselines,plannerllm,msmarco:location,m11350,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+2,msmarco,baselines,plannerllm,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+2,msmarco,baselines,plannerllm,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,baselines,plannerllm,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,baselines,plannerllm,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,baselines,plannerllm,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,baselines,plannerllm,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,baselines,plannerllm,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,msmarco,ablation,plannerllm,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,ablation,plannerllm,msmarco:location,m17279,1.0,0.7093023255813954,0.6666666666666666,0.7093023255813954
+2,msmarco,ablation,plannerllm,msmarco:location,m19628,1.0,0.3357798165137615,0.4864864864864865,0.3357798165137615
+2,msmarco,ablation,plannerllm,msmarco:location,m10718,1.0,0.2970779220779221,0.36363636363636365,0.2970779220779221
+2,msmarco,ablation,plannerllm,msmarco:location,m11350,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+2,msmarco,ablation,plannerllm,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+2,msmarco,ablation,plannerllm,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,ablation,plannerllm,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,ablation,plannerllm,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,ablation,plannerllm,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,ablation,plannerllm,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,ablation,plannerllm,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,msmarco,ablation,no_gate,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,ablation,no_gate,msmarco:location,m17279,1.0,0.7093023255813954,0.6666666666666666,0.7093023255813954
+2,msmarco,ablation,no_gate,msmarco:location,m19628,1.0,0.3357798165137615,0.4864864864864865,0.3357798165137615
+2,msmarco,ablation,no_gate,msmarco:location,m10718,1.0,0.2970779220779221,0.36363636363636365,0.2970779220779221
+2,msmarco,ablation,no_gate,msmarco:location,m11350,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+2,msmarco,ablation,no_gate,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+2,msmarco,ablation,no_gate,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,ablation,no_gate,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,ablation,no_gate,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,ablation,no_gate,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,ablation,no_gate,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,ablation,no_gate,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,msmarco,ablation,no_memory,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,ablation,no_memory,msmarco:location,m17279,1.0,0.7093023255813954,0.6666666666666666,0.7093023255813954
+2,msmarco,ablation,no_memory,msmarco:location,m19628,1.0,0.3357798165137615,0.4864864864864865,0.3357798165137615
+2,msmarco,ablation,no_memory,msmarco:location,m10718,1.0,0.2970779220779221,0.36363636363636365,0.2970779220779221
+2,msmarco,ablation,no_memory,msmarco:location,m11350,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+2,msmarco,ablation,no_memory,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+2,msmarco,ablation,no_memory,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,ablation,no_memory,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,ablation,no_memory,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,ablation,no_memory,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,ablation,no_memory,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,ablation,no_memory,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,msmarco,ablation,symbolic_only,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,ablation,symbolic_only,msmarco:location,m17279,1.0,0.7093023255813954,0.6666666666666666,0.7093023255813954
+2,msmarco,ablation,symbolic_only,msmarco:location,m19628,1.0,0.3357798165137615,0.4864864864864865,0.3357798165137615
+2,msmarco,ablation,symbolic_only,msmarco:location,m10718,1.0,0.2970779220779221,0.36363636363636365,0.2970779220779221
+2,msmarco,ablation,symbolic_only,msmarco:location,m11350,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+2,msmarco,ablation,symbolic_only,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+2,msmarco,ablation,symbolic_only,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,ablation,symbolic_only,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,ablation,symbolic_only,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,ablation,symbolic_only,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,ablation,symbolic_only,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,ablation,symbolic_only,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,msmarco,ablation,neural_only,msmarco:location,m17071,0.0,0.0,0.0,0.0
+2,msmarco,ablation,neural_only,msmarco:location,m17279,1.0,0.7093023255813954,0.6666666666666666,0.7093023255813954
+2,msmarco,ablation,neural_only,msmarco:location,m19628,1.0,0.3357798165137615,0.4864864864864865,0.3357798165137615
+2,msmarco,ablation,neural_only,msmarco:location,m10718,1.0,0.2970779220779221,0.36363636363636365,0.2970779220779221
+2,msmarco,ablation,neural_only,msmarco:location,m11350,1.0,0.19614147909967847,0.16666666666666669,0.19614147909967847
+2,msmarco,ablation,neural_only,msmarco:location,m15818,1.0,0.08111702127659574,0.14814814814814817,0.08111702127659574
+2,msmarco,ablation,neural_only,msmarco:entity,m15244,1.0,0.30653266331658285,0.4807692307692308,0.30653266331658285
+2,msmarco,ablation,neural_only,msmarco:entity,m14108,0.0,0.3663663663663663,0.3333333333333333,0.3663663663663663
+2,msmarco,ablation,neural_only,msmarco:entity,m11856,0.0,0.0,0.0,0.0
+2,msmarco,ablation,neural_only,msmarco:entity,m12958,0.5,0.164568345323741,0.3243243243243243,0.164568345323741
+2,msmarco,ablation,neural_only,msmarco:entity,m15842,0.0,0.0,0.0,0.0
+2,msmarco,ablation,neural_only,msmarco:entity,m15560,1.0,0.5350877192982456,0.6363636363636364,0.5350877192982456
+2,cuad,baselines,no_opt,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:parties,c30_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:parties,c49_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:expiration date,c2_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:expiration date,c9_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:expiration date,c14_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,no_opt,cuad:expiration date,c42_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:parties,c30_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:parties,c49_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:expiration date,c2_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:expiration date,c9_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:expiration date,c14_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,random,cuad:expiration date,c42_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:parties,c30_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:parties,c49_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:expiration date,c2_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:expiration date,c9_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:expiration date,c14_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,cost_only,cuad:expiration date,c42_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,docetl,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,docetl,cuad:parties,c30_parties,1.0,0.8148148148148148,0.8148148148148148,0.4485294117647059
+2,cuad,baselines,docetl,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,docetl,cuad:parties,c49_parties,0.0,0.16666666666666666,0.16666666666666666,0.18625954198473282
+2,cuad,baselines,docetl,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,docetl,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,docetl,cuad:expiration date,c2_expiration_date,1.0,1.0,1.0,1.0
+2,cuad,baselines,docetl,cuad:expiration date,c9_expiration_date,0.5,0.8444444444444443,0.8444444444444443,0.8214032600992204
+2,cuad,baselines,docetl,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,docetl,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,docetl,cuad:expiration date,c14_expiration_date,1.0,1.0,1.0,1.0
+2,cuad,baselines,docetl,cuad:expiration date,c42_expiration_date,0.0,0.2058823529411765,0.2058823529411765,0.116412213740458
+2,cuad,baselines,plannerllm,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:parties,c30_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:parties,c49_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:expiration date,c2_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:expiration date,c9_expiration_date,0.5,0.32258064516129037,0.32258064516129037,0.2874646559849199
+2,cuad,baselines,plannerllm,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:expiration date,c14_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,baselines,plannerllm,cuad:expiration date,c42_expiration_date,0.0,0.2058823529411765,0.2058823529411765,0.116412213740458
+2,cuad,ablation,plannerllm,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,plannerllm,cuad:parties,c30_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,plannerllm,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,plannerllm,cuad:parties,c49_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,plannerllm,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,plannerllm,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,plannerllm,cuad:expiration date,c2_expiration_date,1.0,0.8387096774193548,0.8387096774193548,0.8150051387461459
+2,cuad,ablation,plannerllm,cuad:expiration date,c9_expiration_date,0.5,0.8444444444444443,0.8444444444444443,0.8214032600992204
+2,cuad,ablation,plannerllm,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,plannerllm,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,plannerllm,cuad:expiration date,c14_expiration_date,1.0,1.0,1.0,1.0
+2,cuad,ablation,plannerllm,cuad:expiration date,c42_expiration_date,0.0,0.208955223880597,0.208955223880597,0.11781747947851279
+2,cuad,ablation,no_gate,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_gate,cuad:parties,c30_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_gate,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_gate,cuad:parties,c49_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_gate,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_gate,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_gate,cuad:expiration date,c2_expiration_date,1.0,0.8387096774193548,0.8387096774193548,0.8150051387461459
+2,cuad,ablation,no_gate,cuad:expiration date,c9_expiration_date,0.5,0.8444444444444443,0.8444444444444443,0.8214032600992204
+2,cuad,ablation,no_gate,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_gate,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_gate,cuad:expiration date,c14_expiration_date,1.0,1.0,1.0,1.0
+2,cuad,ablation,no_gate,cuad:expiration date,c42_expiration_date,0.0,0.208955223880597,0.208955223880597,0.11781747947851279
+2,cuad,ablation,no_memory,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:parties,c30_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:parties,c49_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:expiration date,c2_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:expiration date,c9_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:expiration date,c14_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,no_memory,cuad:expiration date,c42_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,symbolic_only,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,symbolic_only,cuad:parties,c30_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,symbolic_only,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,symbolic_only,cuad:parties,c49_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,symbolic_only,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,symbolic_only,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,symbolic_only,cuad:expiration date,c2_expiration_date,1.0,0.8387096774193548,0.8387096774193548,0.8150051387461459
+2,cuad,ablation,symbolic_only,cuad:expiration date,c9_expiration_date,0.5,0.8444444444444443,0.8444444444444443,0.8214032600992204
+2,cuad,ablation,symbolic_only,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,symbolic_only,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,symbolic_only,cuad:expiration date,c14_expiration_date,1.0,1.0,1.0,1.0
+2,cuad,ablation,symbolic_only,cuad:expiration date,c42_expiration_date,0.0,0.208955223880597,0.208955223880597,0.11781747947851279
+2,cuad,ablation,neural_only,cuad:parties,c8_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,neural_only,cuad:parties,c30_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,neural_only,cuad:parties,c35_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,neural_only,cuad:parties,c49_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,neural_only,cuad:parties,c18_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,neural_only,cuad:parties,c6_parties,0.0,0.0,0.0,0.0
+2,cuad,ablation,neural_only,cuad:expiration date,c2_expiration_date,1.0,0.8387096774193548,0.8387096774193548,0.8150051387461459
+2,cuad,ablation,neural_only,cuad:expiration date,c9_expiration_date,0.5,0.8444444444444443,0.8444444444444443,0.8214032600992204
+2,cuad,ablation,neural_only,cuad:expiration date,c43_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,neural_only,cuad:expiration date,c15_expiration_date,0.0,0.0,0.0,0.0
+2,cuad,ablation,neural_only,cuad:expiration date,c14_expiration_date,1.0,1.0,1.0,1.0
+2,cuad,ablation,neural_only,cuad:expiration date,c42_expiration_date,0.0,0.208955223880597,0.208955223880597,0.11781747947851279

@@ -1,0 +1,567 @@
+{
+ "experiment": "pareto",
+ "backend": "groq",
+ "model": "openai/gpt-oss-20b",
+ "created": "2026-11-15 14:06:16",
+ "seed": 1,
+ "sampling_seed": 14,
+ "profile": "quick",
+ "points": [
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "budget": 3000,
+   "sweep": "budget",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 2769.0,
+   "exec_usd": 6.403895462963027e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "budget": 6000,
+   "sweep": "budget",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 5689.5,
+   "exec_usd": 6.403866212961276e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "budget": 12000,
+   "sweep": "budget",
+   "accuracy": 0.21216043122767156,
+   "opt_tokens": 11531.5,
+   "exec_usd": 6.734295407410978e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "budget": 24000,
+   "sweep": "budget",
+   "accuracy": 0.21216043122767156,
+   "opt_tokens": 23431.0,
+   "exec_usd": 6.41325893518101e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "budget": null,
+   "sweep": "budget",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 37224.0,
+   "exec_usd": 6.404520740737574e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "docetl",
+   "budget": 3000,
+   "sweep": "budget",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 2649.5,
+   "exec_usd": 6.403871787040067e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "docetl",
+   "budget": 6000,
+   "sweep": "budget",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 5825.5,
+   "exec_usd": 6.403901666668157e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "docetl",
+   "budget": 12000,
+   "sweep": "budget",
+   "accuracy": 0.20117187323372945,
+   "opt_tokens": 11979.5,
+   "exec_usd": 6.274769574079955e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "docetl",
+   "budget": 24000,
+   "sweep": "budget",
+   "accuracy": 0.2238296083494391,
+   "opt_tokens": 24026.5,
+   "exec_usd": 0.00015676393935184395
+  },
+  {
+   "workload": "msmarco",
+   "system": "docetl",
+   "budget": null,
+   "sweep": "budget",
+   "accuracy": 0.22599935755997758,
+   "opt_tokens": 71032.0,
+   "exec_usd": 6.216393148157577e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "no_gate",
+   "budget": 3000,
+   "sweep": "budget",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 2769.0,
+   "exec_usd": 6.403887407410808e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "no_gate",
+   "budget": 6000,
+   "sweep": "budget",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 5689.5,
+   "exec_usd": 6.403864268518195e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "no_gate",
+   "budget": 12000,
+   "sweep": "budget",
+   "accuracy": 0.21216043122767156,
+   "opt_tokens": 11531.5,
+   "exec_usd": 6.41327962036471e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "no_gate",
+   "budget": 24000,
+   "sweep": "budget",
+   "accuracy": 0.21216043122767156,
+   "opt_tokens": 23431.0,
+   "exec_usd": 6.413273657412933e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "no_gate",
+   "budget": null,
+   "sweep": "budget",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 58311.5,
+   "exec_usd": 6.404499092583578e-05
+  },
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "theta": 0.25,
+   "sweep": "theta",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 49139.5,
+   "gate_skips": 1.5,
+   "validations": 6.0
+  },
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "theta": 0.5,
+   "sweep": "theta",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 49139.5,
+   "gate_skips": 1.5,
+   "validations": 6.0
+  },
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "theta": 1.0,
+   "sweep": "theta",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 37224.0,
+   "gate_skips": 2.5,
+   "validations": 5.0
+  },
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "theta": 2.0,
+   "sweep": "theta",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 37224.0,
+   "gate_skips": 2.5,
+   "validations": 5.0
+  },
+  {
+   "workload": "msmarco",
+   "system": "plannerllm",
+   "theta": 4.0,
+   "sweep": "theta",
+   "accuracy": 0.23698791555391968,
+   "opt_tokens": 37222.5,
+   "gate_skips": 2.5,
+   "validations": 5.0
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "budget": 3000,
+   "sweep": "budget",
+   "accuracy": 0.08333333333333333,
+   "opt_tokens": 2950.0,
+   "exec_usd": 2.4164570833316194e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "budget": 6000,
+   "sweep": "budget",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 6009.0,
+   "exec_usd": 2.722624379637095e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "budget": 12000,
+   "sweep": "budget",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 11790.5,
+   "exec_usd": 2.7229763333313387e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "budget": 24000,
+   "sweep": "budget",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 19914.0,
+   "exec_usd": 2.7223255370379885e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "budget": null,
+   "sweep": "budget",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 23899.0,
+   "exec_usd": 2.7277552407317477e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "docetl",
+   "budget": 3000,
+   "sweep": "budget",
+   "accuracy": 0.08333333333333333,
+   "opt_tokens": 2681.5,
+   "exec_usd": 2.4194187037004542e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "docetl",
+   "budget": 6000,
+   "sweep": "budget",
+   "accuracy": 0.011904761904761906,
+   "opt_tokens": 5712.0,
+   "exec_usd": 2.570020962956327e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "docetl",
+   "budget": 12000,
+   "sweep": "budget",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 11660.5,
+   "exec_usd": 2.7277988425895348e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "docetl",
+   "budget": 24000,
+   "sweep": "budget",
+   "accuracy": 0.011904761904761906,
+   "opt_tokens": 23878.5,
+   "exec_usd": 2.570529490741944e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "docetl",
+   "budget": null,
+   "sweep": "budget",
+   "accuracy": 0.1689353389934785,
+   "opt_tokens": 63879.0,
+   "exec_usd": 5.933528268528558e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "no_gate",
+   "budget": 3000,
+   "sweep": "budget",
+   "accuracy": 0.08333333333333333,
+   "opt_tokens": 2950.0,
+   "exec_usd": 2.4199418981377624e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "no_gate",
+   "budget": 6000,
+   "sweep": "budget",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 6009.0,
+   "exec_usd": 2.7226037870413036e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "no_gate",
+   "budget": 12000,
+   "sweep": "budget",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 11790.5,
+   "exec_usd": 2.7222663148121558e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "no_gate",
+   "budget": 24000,
+   "sweep": "budget",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 21101.0,
+   "exec_usd": 2.7225344814808126e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "no_gate",
+   "budget": null,
+   "sweep": "budget",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 26898.0,
+   "exec_usd": 2.7224378333405026e-05
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "theta": 0.25,
+   "sweep": "theta",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 23899.0,
+   "gate_skips": 1.5,
+   "validations": 6.0
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "theta": 0.5,
+   "sweep": "theta",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 23899.0,
+   "gate_skips": 1.5,
+   "validations": 6.0
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "theta": 1.0,
+   "sweep": "theta",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 23899.0,
+   "gate_skips": 1.5,
+   "validations": 6.0
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "theta": 2.0,
+   "sweep": "theta",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 23899.0,
+   "gate_skips": 1.5,
+   "validations": 6.0
+  },
+  {
+   "workload": "cuad",
+   "system": "plannerllm",
+   "theta": 4.0,
+   "sweep": "theta",
+   "accuracy": 0.16358024691358025,
+   "opt_tokens": 21192.5,
+   "gate_skips": 2.0,
+   "validations": 5.5
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "budget": 3000,
+   "sweep": "budget",
+   "accuracy": 0.75,
+   "opt_tokens": 2935.0,
+   "exec_usd": 4.317432138878825e-05
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "budget": 6000,
+   "sweep": "budget",
+   "accuracy": 0.75,
+   "opt_tokens": 6079.5,
+   "exec_usd": 4.317492814808652e-05
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "budget": 12000,
+   "sweep": "budget",
+   "accuracy": 0.6666666666666666,
+   "opt_tokens": 12030.0,
+   "exec_usd": 4.910542999998153e-05
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "budget": 24000,
+   "sweep": "budget",
+   "accuracy": 0.8333333333333333,
+   "opt_tokens": 19866.5,
+   "exec_usd": 4.002611620379611e-05
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "budget": null,
+   "sweep": "budget",
+   "accuracy": 0.8333333333333333,
+   "opt_tokens": 28907.5,
+   "exec_usd": 4.0025986944414944e-05
+  },
+  {
+   "workload": "spider",
+   "system": "docetl",
+   "budget": 3000,
+   "sweep": "budget",
+   "accuracy": 0.75,
+   "opt_tokens": 2888.5,
+   "exec_usd": 4.317422712961971e-05
+  },
+  {
+   "workload": "spider",
+   "system": "docetl",
+   "budget": 6000,
+   "sweep": "budget",
+   "accuracy": 0.75,
+   "opt_tokens": 5602.5,
+   "exec_usd": 4.3173142962997636e-05
+  },
+  {
+   "workload": "spider",
+   "system": "docetl",
+   "budget": 12000,
+   "sweep": "budget",
+   "accuracy": 0.8333333333333333,
+   "opt_tokens": 11855.5,
+   "exec_usd": 4.002239648157244e-05
+  },
+  {
+   "workload": "spider",
+   "system": "docetl",
+   "budget": 24000,
+   "sweep": "budget",
+   "accuracy": 0.6666666666666666,
+   "opt_tokens": 23903.5,
+   "exec_usd": 5.187201277772266e-05
+  },
+  {
+   "workload": "spider",
+   "system": "docetl",
+   "budget": null,
+   "sweep": "budget",
+   "accuracy": 0.75,
+   "opt_tokens": 35524.0,
+   "exec_usd": 5.022145638888231e-05
+  },
+  {
+   "workload": "spider",
+   "system": "no_gate",
+   "budget": 3000,
+   "sweep": "budget",
+   "accuracy": 0.75,
+   "opt_tokens": 2935.0,
+   "exec_usd": 4.317293388894845e-05
+  },
+  {
+   "workload": "spider",
+   "system": "no_gate",
+   "budget": 6000,
+   "sweep": "budget",
+   "accuracy": 0.75,
+   "opt_tokens": 6079.5,
+   "exec_usd": 4.317277879627978e-05
+  },
+  {
+   "workload": "spider",
+   "system": "no_gate",
+   "budget": 12000,
+   "sweep": "budget",
+   "accuracy": 0.6666666666666666,
+   "opt_tokens": 12030.0,
+   "exec_usd": 4.910394861104993e-05
+  },
+  {
+   "workload": "spider",
+   "system": "no_gate",
+   "budget": 24000,
+   "sweep": "budget",
+   "accuracy": 0.8333333333333333,
+   "opt_tokens": 19866.5,
+   "exec_usd": 4.0024538425861474e-05
+  },
+  {
+   "workload": "spider",
+   "system": "no_gate",
+   "budget": null,
+   "sweep": "budget",
+   "accuracy": 0.8333333333333333,
+   "opt_tokens": 28907.5,
+   "exec_usd": 4.002168296301043e-05
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "theta": 0.25,
+   "sweep": "theta",
+   "accuracy": 0.8333333333333333,
+   "opt_tokens": 28907.5,
+   "gate_skips": 0.0,
+   "validations": 6.5
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "theta": 0.5,
+   "sweep": "theta",
+   "accuracy": 0.8333333333333333,
+   "opt_tokens": 28907.5,
+   "gate_skips": 0.0,
+   "validations": 6.5
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "theta": 1.0,
+   "sweep": "theta",
+   "accuracy": 0.8333333333333333,
+   "opt_tokens": 28907.5,
+   "gate_skips": 0.0,
+   "validations": 6.5
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "theta": 2.0,
+   "sweep": "theta",
+   "accuracy": 0.8333333333333333,
+   "opt_tokens": 28907.5,
+   "gate_skips": 0.0,
+   "validations": 6.5
+  },
+  {
+   "workload": "spider",
+   "system": "plannerllm",
+   "theta": 4.0,
+   "sweep": "theta",
+   "accuracy": 0.75,
+   "opt_tokens": 21468.5,
+   "gate_skips": 1.0,
+   "validations": 4.5
+  }
+ ],
+ "elapsed_s": 54.23091650009155
+}

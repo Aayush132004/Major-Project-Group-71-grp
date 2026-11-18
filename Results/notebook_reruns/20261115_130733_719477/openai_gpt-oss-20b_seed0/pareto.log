@@ -1,0 +1,120 @@
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+docetl | msmarco:location | pass 1
+docetl | msmarco:entity | pass 1
+docetl | msmarco:location | pass 1
+docetl | msmarco:entity | pass 1
+docetl | msmarco:location | pass 1
+docetl | msmarco:entity | pass 1
+docetl | msmarco:location | pass 1
+docetl | msmarco:entity | pass 1
+docetl | msmarco:location | pass 1
+docetl | msmarco:entity | pass 1
+no_gate | msmarco:location | pass 1
+no_gate | msmarco:entity | pass 1
+no_gate | msmarco:location | pass 1
+no_gate | msmarco:entity | pass 1
+no_gate | msmarco:location | pass 1
+no_gate | msmarco:entity | pass 1
+no_gate | msmarco:location | pass 1
+no_gate | msmarco:entity | pass 1
+no_gate | msmarco:location | pass 1
+no_gate | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+docetl | cuad:governing law | pass 1
+docetl | cuad:cap on liability | pass 1
+docetl | cuad:governing law | pass 1
+docetl | cuad:cap on liability | pass 1
+docetl | cuad:governing law | pass 1
+docetl | cuad:cap on liability | pass 1
+docetl | cuad:governing law | pass 1
+docetl | cuad:cap on liability | pass 1
+docetl | cuad:governing law | pass 1
+docetl | cuad:cap on liability | pass 1
+no_gate | cuad:governing law | pass 1
+no_gate | cuad:cap on liability | pass 1
+no_gate | cuad:governing law | pass 1
+no_gate | cuad:cap on liability | pass 1
+no_gate | cuad:governing law | pass 1
+no_gate | cuad:cap on liability | pass 1
+no_gate | cuad:governing law | pass 1
+no_gate | cuad:cap on liability | pass 1
+no_gate | cuad:governing law | pass 1
+no_gate | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+plannerllm | cuad:governing law | pass 1
+plannerllm | cuad:cap on liability | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1
+docetl | spider:orchestra | pass 1
+docetl | spider:world_1 | pass 1
+docetl | spider:orchestra | pass 1
+docetl | spider:world_1 | pass 1
+docetl | spider:orchestra | pass 1
+docetl | spider:world_1 | pass 1
+docetl | spider:orchestra | pass 1
+docetl | spider:world_1 | pass 1
+docetl | spider:orchestra | pass 1
+docetl | spider:world_1 | pass 1
+no_gate | spider:orchestra | pass 1
+no_gate | spider:world_1 | pass 1
+no_gate | spider:orchestra | pass 1
+no_gate | spider:world_1 | pass 1
+no_gate | spider:orchestra | pass 1
+no_gate | spider:world_1 | pass 1
+no_gate | spider:orchestra | pass 1
+no_gate | spider:world_1 | pass 1
+no_gate | spider:orchestra | pass 1
+no_gate | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1
+plannerllm | spider:orchestra | pass 1
+plannerllm | spider:world_1 | pass 1

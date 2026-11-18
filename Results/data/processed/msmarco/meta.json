@@ -1,0 +1,11 @@
+{
+  "name": "msmarco",
+  "family": "retrieval-heavy",
+  "metric": "rouge_l",
+  "task": "Answer a web search question in one or two sentences using the retrieved passages.",
+  "filterable": [
+    "category"
+  ],
+  "group_field": "category",
+  "source": "MS MARCO v1.1 validation (microsoft/ms_marco on Hugging Face)"
+}

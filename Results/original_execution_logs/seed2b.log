@@ -1,0 +1,6 @@
+
+=== gate (quick, groq) ===
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:entity | pass 2

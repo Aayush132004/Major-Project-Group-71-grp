@@ -1,0 +1,96 @@
+ok    raw vs aggregate: baselines.cuad.cost_only.accuracy
+ok    raw vs aggregate: baselines.cuad.cost_only.n_validations
+ok    raw vs aggregate: baselines.cuad.cost_only.opt_tokens
+ok    raw vs aggregate: baselines.cuad.docetl.accuracy
+ok    raw vs aggregate: baselines.cuad.docetl.n_validations
+ok    raw vs aggregate: baselines.cuad.docetl.opt_tokens
+ok    raw vs aggregate: baselines.cuad.no_opt.accuracy
+ok    raw vs aggregate: baselines.cuad.no_opt.n_validations
+ok    raw vs aggregate: baselines.cuad.no_opt.opt_tokens
+ok    raw vs aggregate: baselines.cuad.plannerllm.accuracy
+ok    raw vs aggregate: baselines.cuad.plannerllm.n_validations
+ok    raw vs aggregate: baselines.cuad.plannerllm.opt_tokens
+ok    raw vs aggregate: baselines.cuad.random.accuracy
+ok    raw vs aggregate: baselines.cuad.random.n_validations
+ok    raw vs aggregate: baselines.cuad.random.opt_tokens
+ok    raw vs aggregate: baselines.msmarco.cost_only.accuracy
+ok    raw vs aggregate: baselines.msmarco.cost_only.n_validations
+ok    raw vs aggregate: baselines.msmarco.cost_only.opt_tokens
+ok    raw vs aggregate: baselines.msmarco.docetl.accuracy
+ok    raw vs aggregate: baselines.msmarco.docetl.n_validations
+ok    raw vs aggregate: baselines.msmarco.docetl.opt_tokens
+ok    raw vs aggregate: baselines.msmarco.no_opt.accuracy
+ok    raw vs aggregate: baselines.msmarco.no_opt.n_validations
+ok    raw vs aggregate: baselines.msmarco.no_opt.opt_tokens
+ok    raw vs aggregate: baselines.msmarco.plannerllm.accuracy
+ok    raw vs aggregate: baselines.msmarco.plannerllm.n_validations
+ok    raw vs aggregate: baselines.msmarco.plannerllm.opt_tokens
+ok    raw vs aggregate: baselines.msmarco.random.accuracy
+ok    raw vs aggregate: baselines.msmarco.random.n_validations
+ok    raw vs aggregate: baselines.msmarco.random.opt_tokens
+ok    raw vs aggregate: baselines.spider.cost_only.accuracy
+ok    raw vs aggregate: baselines.spider.cost_only.n_validations
+ok    raw vs aggregate: baselines.spider.cost_only.opt_tokens
+ok    raw vs aggregate: baselines.spider.docetl.accuracy
+ok    raw vs aggregate: baselines.spider.docetl.n_validations
+ok    raw vs aggregate: baselines.spider.docetl.opt_tokens
+ok    raw vs aggregate: baselines.spider.no_opt.accuracy
+ok    raw vs aggregate: baselines.spider.no_opt.n_validations
+ok    raw vs aggregate: baselines.spider.no_opt.opt_tokens
+ok    raw vs aggregate: baselines.spider.plannerllm.accuracy
+ok    raw vs aggregate: baselines.spider.plannerllm.n_validations
+ok    raw vs aggregate: baselines.spider.plannerllm.opt_tokens
+ok    raw vs aggregate: baselines.spider.random.accuracy
+ok    raw vs aggregate: baselines.spider.random.n_validations
+ok    raw vs aggregate: baselines.spider.random.opt_tokens
+ok    raw vs aggregate: judge_acc.cuad.docetl
+ok    raw vs aggregate: judge_acc.cuad.plannerllm
+ok    raw vs aggregate: judge_acc.msmarco.docetl
+ok    raw vs aggregate: judge_acc.msmarco.plannerllm
+ok    raw vs aggregate: memory.cuad.repeated.hit_rate
+ok    raw vs aggregate: memory.msmarco.repeated.hit_rate
+ok    raw vs aggregate: memory.spider.repeated.hit_rate
+ok    raw vs aggregate: token_reduction.cuad
+ok    raw vs aggregate: token_reduction.msmarco
+ok    raw vs aggregate: token_reduction.spider
+ok    raw vs aggregate: validator_agreement.all
+ok    notebook executed without errors
+ok    notebook's own raw-vs-aggregate checks passed
+ok    report: baselines.msmarco.plannerllm.accuracy = 0.218 ± 0.044
+ok    report: baselines.msmarco.docetl.accuracy = 0.229 ± 0.077
+ok    report: baselines.msmarco.no_opt.accuracy = 0.226 ± 0.053
+ok    report: baselines.cuad.plannerllm.accuracy = 0.120 ± 0.066
+ok    report: baselines.cuad.docetl.accuracy = 0.215 ± 0.106
+ok    report: baselines.cuad.no_opt.accuracy = 0.028 ± 0.048
+ok    report: baselines.spider.plannerllm.accuracy = 0.861 ± 0.127
+ok    report: baselines.spider.docetl.accuracy = 0.806 ± 0.173
+ok    report: baselines.spider.no_opt.accuracy = 0.833 ± 0.144
+ok    report: token_reduction.msmarco = 67%
+ok    report: token_reduction.cuad = 55%
+ok    report: token_reduction.spider = 31%
+ok    report: overall token reduction = 57%
+ok    report: judge_acc.msmarco.plannerllm = 0.694 ± 0.087
+ok    report: judge_acc.msmarco.docetl = 0.667 ± 0.072
+ok    report: judge_acc.cuad.plannerllm = 0.111 ± 0.064
+ok    report: judge_acc.cuad.docetl = 0.208 ± 0.083
+ok    report: spearman msmarco = 0.42
+ok    report: spearman cuad = 0.91
+ok    report: validator_agreement.all = 71%
+ok    report: kappa = 0.18
+ok    report: gate precision θ=1 = 0.16 ± 0.05
+ok    report: gate recall θ=1 = 0.94 ± 0.11
+ok    report: gate spend avoided θ=1 = 26 ± 11
+ok    report: gate ECE = 0.27
+ok    report: memory.msmarco.repeated.hit_rate = 0.37 ± 0.47
+ok    report: memory.cuad.repeated.hit_rate = 0.11 ± 0.10
+ok    report: memory.spider.repeated.hit_rate = 0.00 ± 0.00
+ok    report: reuse accuracy = 100%
+ok    report: q cv symbolic = 1.26 ± 0.06
+ok    report: q cv neural = 1.07 ± 0.04
+ok    report: q cv hybrid = 1.07 ± 0.02
+ok    report: conclusion token reduction = 57%
+ok    report: abstract token reduction = 57%
+ok    report: abstract repeat hit rate = 16%
+ok    report: abstract judge agreement = 71%
+
+94 of 94 checks passed

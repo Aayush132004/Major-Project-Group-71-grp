@@ -1,0 +1,12 @@
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 2
+plannerllm | msmarco:entity | pass 2
+plannerllm | cuad:parties | pass 1
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:parties | pass 2
+plannerllm | cuad:expiration date | pass 2
+plannerllm | spider:flight_2 | pass 1
+plannerllm | spider:employee_hire_evaluation | pass 1
+plannerllm | spider:flight_2 | pass 2
+plannerllm | spider:employee_hire_evaluation | pass 2

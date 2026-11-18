@@ -1,0 +1,11 @@
+{
+  "name": "spider",
+  "family": "sql-heavy",
+  "metric": "execution_accuracy",
+  "task": "Translate a natural-language question into one SQLite query over the given schema.",
+  "filterable": [
+    "db_id"
+  ],
+  "group_field": "db_id",
+  "source": "Spider 1.0 dev split (Yu et al.), SQLite databases"
+}

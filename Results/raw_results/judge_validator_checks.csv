@@ -1,0 +1,70 @@
+﻿seed,workload,system,task,directive,validator_prefers,judge_prefers,candidate,incumbent,tie
+0,msmarco,plannerllm,msmarco:location,PROMPT_REWRITE,False,True,2,1,1
+0,msmarco,plannerllm,msmarco:location,TUNE_TOPK,False,False,0,0,4
+0,msmarco,plannerllm,msmarco:entity,ADD_FILTER,False,False,1,1,3
+0,msmarco,plannerllm,msmarco:entity,ADD_RERANK,False,True,3,0,1
+0,msmarco,plannerllm,msmarco:location,ADD_FILTER,False,False,0,0,5
+0,msmarco,plannerllm,msmarco:location,SWAP_INDEX,False,False,0,0,4
+0,msmarco,plannerllm,msmarco:entity,PROMPT_REWRITE,False,True,3,0,1
+0,msmarco,plannerllm,msmarco:entity,TUNE_TOPK,False,False,0,0,4
+0,msmarco,plannerllm,msmarco:location,ADD_RERANK,False,False,0,1,3
+0,msmarco,plannerllm,msmarco:entity,SWAP_INDEX,False,False,0,0,4
+0,cuad,plannerllm,cuad:cap on liability,TUNE_TOPK,False,False,0,2,3
+0,cuad,plannerllm,cuad:cap on liability,SWAP_INDEX,False,False,0,2,3
+0,cuad,plannerllm,cuad:governing law,TUNE_TOPK,False,False,0,0,5
+0,cuad,plannerllm,cuad:cap on liability,DECOMPOSE,True,True,2,0,3
+0,cuad,plannerllm,cuad:cap on liability,FILTERED_PROBE,False,True,1,0,4
+0,cuad,plannerllm,cuad:governing law,FILTERED_PROBE,False,True,3,0,2
+0,cuad,plannerllm,cuad:governing law,DECOMPOSE,False,True,1,0,4
+0,cuad,plannerllm,cuad:governing law,PROMPT_REWRITE,False,False,0,0,5
+0,cuad,plannerllm,cuad:cap on liability,PROMPT_REWRITE,False,False,0,2,3
+0,cuad,plannerllm,cuad:cap on liability,ADD_RERANK,True,True,1,0,4
+0,cuad,plannerllm,cuad:cap on liability,FILTERED_PROBE,False,False,1,3,1
+0,cuad,plannerllm,cuad:cap on liability,DECOMPOSE,False,False,0,1,4
+0,cuad,plannerllm,cuad:governing law,DECOMPOSE,False,True,1,0,4
+0,cuad,plannerllm,cuad:governing law,ADD_RERANK,True,False,0,0,5
+0,cuad,plannerllm,cuad:governing law,SWAP_INDEX,False,False,0,0,5
+1,msmarco,plannerllm,msmarco:location,FILTERED_PROBE,False,False,0,0,5
+1,msmarco,plannerllm,msmarco:location,SWAP_INDEX,False,True,2,0,2
+1,msmarco,plannerllm,msmarco:numeric,ADD_RERANK,False,True,2,1,1
+1,msmarco,plannerllm,msmarco:location,PROMPT_REWRITE,False,True,3,1,0
+1,msmarco,plannerllm,msmarco:location,ADD_RERANK,False,False,0,2,3
+1,msmarco,plannerllm,msmarco:location,TUNE_TOPK,False,True,2,0,2
+1,msmarco,plannerllm,msmarco:location,ADD_RERANK,True,False,0,2,2
+1,msmarco,plannerllm,msmarco:location,ADD_FILTER,True,True,2,0,3
+1,msmarco,plannerllm,msmarco:numeric,ADD_FILTER,False,False,0,0,5
+1,msmarco,plannerllm,msmarco:location,PROMPT_REWRITE,False,True,5,0,0
+1,cuad,plannerllm,cuad:expiration date,TUNE_TOPK,False,False,0,2,3
+1,cuad,plannerllm,cuad:renewal term,TUNE_TOPK,False,False,0,0,5
+1,cuad,plannerllm,cuad:renewal term,DECOMPOSE,False,False,0,0,5
+1,cuad,plannerllm,cuad:expiration date,DECOMPOSE,False,False,0,3,2
+1,cuad,plannerllm,cuad:expiration date,ADD_RERANK,True,True,2,0,3
+1,cuad,plannerllm,cuad:renewal term,ADD_RERANK,False,False,0,0,5
+1,cuad,plannerllm,cuad:expiration date,SWAP_INDEX,False,False,0,2,3
+1,cuad,plannerllm,cuad:expiration date,DECOMPOSE,False,False,1,1,3
+1,cuad,plannerllm,cuad:renewal term,FILTERED_PROBE,False,True,4,1,0
+1,cuad,plannerllm,cuad:expiration date,FILTERED_PROBE,False,True,1,0,4
+1,cuad,plannerllm,cuad:expiration date,TUNE_TOPK,False,False,0,0,5
+1,cuad,plannerllm,cuad:expiration date,PROMPT_REWRITE,False,False,0,2,3
+2,msmarco,plannerllm,msmarco:location,PROMPT_REWRITE,False,False,1,3,0
+2,msmarco,plannerllm,msmarco:location,ADD_FILTER,False,False,2,2,1
+2,msmarco,plannerllm,msmarco:location,PROMPT_REWRITE,False,False,2,2,0
+2,msmarco,plannerllm,msmarco:location,SWAP_INDEX,False,False,1,1,2
+2,msmarco,plannerllm,msmarco:location,TUNE_TOPK,False,False,1,2,1
+2,msmarco,plannerllm,msmarco:entity,PROMPT_REWRITE,False,True,2,1,1
+2,msmarco,plannerllm,msmarco:location,ADD_RERANK,True,False,1,1,2
+2,msmarco,plannerllm,msmarco:entity,ADD_RERANK,False,True,2,0,2
+2,cuad,plannerllm,cuad:expiration date,SWAP_INDEX,False,False,0,0,5
+2,cuad,plannerllm,cuad:expiration date,PROMPT_REWRITE,False,False,0,0,5
+2,cuad,plannerllm,cuad:parties,DECOMPOSE,False,False,0,0,5
+2,cuad,plannerllm,cuad:expiration date,PROMPT_REWRITE,False,False,0,0,5
+2,cuad,plannerllm,cuad:parties,TUNE_TOPK,False,False,0,0,5
+2,cuad,plannerllm,cuad:expiration date,ADD_RERANK,False,False,0,2,3
+2,cuad,plannerllm,cuad:expiration date,DECOMPOSE,True,False,0,3,2
+2,cuad,plannerllm,cuad:parties,ADD_RERANK,False,False,0,0,5
+2,cuad,plannerllm,cuad:expiration date,TUNE_TOPK,False,False,0,2,3
+2,cuad,plannerllm,cuad:expiration date,SWAP_INDEX,False,False,0,1,4
+2,cuad,plannerllm,cuad:parties,PROMPT_REWRITE,False,False,0,0,5
+2,cuad,plannerllm,cuad:expiration date,POST_FILTER,False,False,0,2,3
+2,cuad,plannerllm,cuad:parties,SWAP_INDEX,False,False,0,0,5
+2,cuad,plannerllm,cuad:expiration date,FILTERED_PROBE,True,True,2,0,3

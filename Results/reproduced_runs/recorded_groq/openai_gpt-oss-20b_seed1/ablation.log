@@ -1,0 +1,60 @@
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:numeric | pass 1
+plannerllm | msmarco:location | pass 2
+plannerllm | msmarco:numeric | pass 2
+no_gate | msmarco:location | pass 1
+no_gate | msmarco:numeric | pass 1
+no_gate | msmarco:location | pass 2
+no_gate | msmarco:numeric | pass 2
+no_memory | msmarco:location | pass 1
+no_memory | msmarco:numeric | pass 1
+no_memory | msmarco:location | pass 2
+no_memory | msmarco:numeric | pass 2
+symbolic_only | msmarco:location | pass 1
+symbolic_only | msmarco:numeric | pass 1
+symbolic_only | msmarco:location | pass 2
+symbolic_only | msmarco:numeric | pass 2
+neural_only | msmarco:location | pass 1
+neural_only | msmarco:numeric | pass 1
+neural_only | msmarco:location | pass 2
+neural_only | msmarco:numeric | pass 2
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:renewal term | pass 1
+plannerllm | cuad:expiration date | pass 2
+plannerllm | cuad:renewal term | pass 2
+no_gate | cuad:expiration date | pass 1
+no_gate | cuad:renewal term | pass 1
+no_gate | cuad:expiration date | pass 2
+no_gate | cuad:renewal term | pass 2
+no_memory | cuad:expiration date | pass 1
+no_memory | cuad:renewal term | pass 1
+no_memory | cuad:expiration date | pass 2
+no_memory | cuad:renewal term | pass 2
+symbolic_only | cuad:expiration date | pass 1
+symbolic_only | cuad:renewal term | pass 1
+symbolic_only | cuad:expiration date | pass 2
+symbolic_only | cuad:renewal term | pass 2
+neural_only | cuad:expiration date | pass 1
+neural_only | cuad:renewal term | pass 1
+neural_only | cuad:expiration date | pass 2
+neural_only | cuad:renewal term | pass 2
+plannerllm | spider:pets_1 | pass 1
+plannerllm | spider:dog_kennels | pass 1
+plannerllm | spider:pets_1 | pass 2
+plannerllm | spider:dog_kennels | pass 2
+no_gate | spider:pets_1 | pass 1
+no_gate | spider:dog_kennels | pass 1
+no_gate | spider:pets_1 | pass 2
+no_gate | spider:dog_kennels | pass 2
+no_memory | spider:pets_1 | pass 1
+no_memory | spider:dog_kennels | pass 1
+no_memory | spider:pets_1 | pass 2
+no_memory | spider:dog_kennels | pass 2
+symbolic_only | spider:pets_1 | pass 1
+symbolic_only | spider:dog_kennels | pass 1
+symbolic_only | spider:pets_1 | pass 2
+symbolic_only | spider:dog_kennels | pass 2
+neural_only | spider:pets_1 | pass 1
+neural_only | spider:dog_kennels | pass 1
+neural_only | spider:pets_1 | pass 2
+neural_only | spider:dog_kennels | pass 2

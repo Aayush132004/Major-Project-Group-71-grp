@@ -1,0 +1,140 @@
+
+=== memory (quick, groq) ===
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:numeric | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:numeric | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:numeric | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:numeric | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:numeric | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:numeric | pass 2
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:numeric | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:numeric | pass 2
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:numeric | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:numeric | pass 2
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:renewal term | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:renewal term | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:renewal term | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:renewal term | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:renewal term | pass 1
+  .. plannerllm | cuad:expiration date | pass 2
+  .. plannerllm | cuad:renewal term | pass 2
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:renewal term | pass 1
+  .. plannerllm | cuad:expiration date | pass 2
+  .. plannerllm | cuad:renewal term | pass 2
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:renewal term | pass 1
+  .. plannerllm | cuad:expiration date | pass 2
+  .. plannerllm | cuad:renewal term | pass 2
+WARNING clustering 80 points to 8 centroids: please provide at least 312 training points
+  .. plannerllm | spider:pets_1 | pass 1
+  .. plannerllm | spider:dog_kennels | pass 1
+  .. plannerllm | spider:pets_1 | pass 1
+  .. plannerllm | spider:dog_kennels | pass 1
+  .. plannerllm | spider:pets_1 | pass 1
+  .. plannerllm | spider:dog_kennels | pass 1
+  .. plannerllm | spider:pets_1 | pass 1
+  .. plannerllm | spider:dog_kennels | pass 1
+  .. plannerllm | spider:pets_1 | pass 1
+  .. plannerllm | spider:dog_kennels | pass 1
+  .. plannerllm | spider:pets_1 | pass 2
+  .. plannerllm | spider:dog_kennels | pass 2
+  .. plannerllm | spider:pets_1 | pass 1
+  .. plannerllm | spider:dog_kennels | pass 1
+  .. plannerllm | spider:pets_1 | pass 2
+  .. plannerllm | spider:dog_kennels | pass 2
+  .. plannerllm | spider:pets_1 | pass 1
+  .. plannerllm | spider:dog_kennels | pass 1
+  .. plannerllm | spider:pets_1 | pass 2
+  .. plannerllm | spider:dog_kennels | pass 2
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed1\memory.json
+
+=== cost_model (quick, groq) ===
+  .. cost telemetry | msmarco
+  .. cost telemetry | cuad
+  .. cost telemetry | spider
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed1\cost_model.json
+
+=== latency (quick, groq) ===
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed1\latency.json
+
+=== ablation (quick, groq) ===
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:numeric | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:numeric | pass 2
+  .. no_gate | msmarco:location | pass 1
+  .. no_gate | msmarco:numeric | pass 1
+  .. no_gate | msmarco:location | pass 2
+  .. no_gate | msmarco:numeric | pass 2
+  .. no_memory | msmarco:location | pass 1
+  .. no_memory | msmarco:numeric | pass 1
+  .. no_memory | msmarco:location | pass 2
+  .. no_memory | msmarco:numeric | pass 2
+  .. symbolic_only | msmarco:location | pass 1
+  .. symbolic_only | msmarco:numeric | pass 1
+  .. symbolic_only | msmarco:location | pass 2
+  .. symbolic_only | msmarco:numeric | pass 2
+  .. neural_only | msmarco:location | pass 1
+  .. neural_only | msmarco:numeric | pass 1
+  .. neural_only | msmarco:location | pass 2
+  .. neural_only | msmarco:numeric | pass 2
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:renewal term | pass 1
+  .. plannerllm | cuad:expiration date | pass 2
+  .. plannerllm | cuad:renewal term | pass 2
+  .. no_gate | cuad:expiration date | pass 1
+  .. no_gate | cuad:renewal term | pass 1
+  .. no_gate | cuad:expiration date | pass 2
+  .. no_gate | cuad:renewal term | pass 2
+  .. no_memory | cuad:expiration date | pass 1
+  .. no_memory | cuad:renewal term | pass 1
+  .. no_memory | cuad:expiration date | pass 2
+  .. no_memory | cuad:renewal term | pass 2
+  .. symbolic_only | cuad:expiration date | pass 1
+  .. symbolic_only | cuad:renewal term | pass 1
+  .. symbolic_only | cuad:expiration date | pass 2
+  .. symbolic_only | cuad:renewal term | pass 2
+  .. neural_only | cuad:expiration date | pass 1
+  .. neural_only | cuad:renewal term | pass 1
+  .. neural_only | cuad:expiration date | pass 2
+  .. neural_only | cuad:renewal term | pass 2
+  .. plannerllm | spider:pets_1 | pass 1
+  .. plannerllm | spider:dog_kennels | pass 1
+  .. plannerllm | spider:pets_1 | pass 2
+  .. plannerllm | spider:dog_kennels | pass 2
+  .. no_gate | spider:pets_1 | pass 1
+  .. no_gate | spider:dog_kennels | pass 1
+  .. no_gate | spider:pets_1 | pass 2
+  .. no_gate | spider:dog_kennels | pass 2
+  .. no_memory | spider:pets_1 | pass 1
+  .. no_memory | spider:dog_kennels | pass 1
+  .. no_memory | spider:pets_1 | pass 2
+  .. no_memory | spider:dog_kennels | pass 2
+  .. symbolic_only | spider:pets_1 | pass 1
+  .. symbolic_only | spider:dog_kennels | pass 1
+  .. symbolic_only | spider:pets_1 | pass 2
+  .. symbolic_only | spider:dog_kennels | pass 2
+  .. neural_only | spider:pets_1 | pass 1
+  .. neural_only | spider:dog_kennels | pass 1
+  .. neural_only | spider:pets_1 | pass 2
+  .. neural_only | spider:dog_kennels | pass 2
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed1\ablation.json
+
+=== transcripts (quick, groq) ===
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed1\transcripts.json
+total 16.4 min

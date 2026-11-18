@@ -1,0 +1,618 @@
+{
+ "experiment": "transcripts",
+ "backend": "groq",
+ "model": "openai/gpt-oss-20b",
+ "created": "2026-11-14 11:22:16",
+ "seed": 1,
+ "sampling_seed": 14,
+ "transcripts": [
+  {
+   "workload": "msmarco",
+   "task": "msmarco:location",
+   "round": 0,
+   "directive": "ADD_RERANK",
+   "detail": "retrieve top_k 10->20, cross-encoder keeps 10",
+   "plan": "retrieve(k=20,hnsw) -> rerank(k=10) -> generate",
+   "score": -0.017599198511712804,
+   "cost_usd": 6.200400744143597e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=4.31 vs p=3.12, 4 items, 0.0s",
+   "gate": {
+    "validate": true,
+    "voi": 0.009627914227690071,
+    "threshold": 0.0010388486286390906,
+    "p_flip": 0.5,
+    "p_raw": 0.5,
+    "h_dir": 0.5,
+    "h_trials": 0,
+    "judge_p": 0.5306445732937392,
+    "agreement": 0.5,
+    "d_acc": 0.04,
+    "d_cost": 0.0007441715446198581,
+    "d_value": 0.019255828455380142,
+    "val_cost_usd": 0.0010388486286390906,
+    "val_cost_tokens": 10856.8,
+    "rationale": "P(flip)=0.50 [h=0.50 over 0, judge=0.53, agree=0.50] x |dV|=$0.01926 (dAcc^=+0.040, dC=$+0.00074) = VoI $0.00963 > theta*tokenCost $0.00104 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 4.3125,
+    "score_p": 3.125,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The answer correctly reflects the information contained in the retrieved passages and does not introduce unsupported facts."
+     },
+     {
+      "name": "Completeness",
+      "description": "The answer addresses all parts of the user\u2019s question using the relevant passages, without omitting essential details."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The answer is directly supported by the passages, avoiding hallucinations or misinterpretations of the source material."
+     },
+     {
+      "name": "Format",
+      "description": "The answer is concise (one or two sentences) and follows the required output style, with no extraneous content."
+     }
+    ],
+    "pairwise_win_rate": null,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 9839,
+    "note": "rating c=4.31 vs p=3.12, 4 items, 0.0s",
+    "items": [
+     {
+      "qid": "m18241",
+      "question": "where is dolomite found",
+      "candidate": "Dolomite is found throughout the world, especially in sedimentary dolostones such as those in Wisconsin\u2019s Prairie du\u202fChien, Sinnepee, and Niagaran groups, as well as in sedimentary basins across the United States, Canada, Europe, Africa, and Mexico. It is mined in places like Ontario, Canada, and the USA for industrial and agricultural use.",
+      "incumbent": "Dolomite is found worldwide, occurring in sedimentary basins and massive beds several hundred feet thick across the globe\u30101\u3011\u30102\u3011\u30104\u3011. It is mined in places such as Ontario, Canada; Mexico; Switzerland; Pamplona, Spain; and the United States, and is abundant in Wisconsin\u2019s Prairie du Chien and Niagaran dolostones\u30101\u3011\u30105\u3011.",
+      "score_c": 4.0,
+      "score_p": 3.5
+     },
+     {
+      "qid": "m14634",
+      "question": "where does clownfish live",
+      "candidate": "Clownfish live at the bottom of the sea in sheltered reefs or shallow lagoons, usually in pairs, in the warmer waters of the Pacific and Indian Oceans. They are found in places such as northwest Australia, southeast Asia, Japan, and the Indo\u2011Malaysian region.",
+      "incumbent": "Clownfish live in the warmer waters of the Pacific and Indian Oceans, typically in sheltered reefs or shallow lagoons, often in symbiosis with sea anemones\u30101\u3011\u30102\u3011.",
+      "score_c": 4.75,
+      "score_p": 3.0
+     },
+     {
+      "qid": "m19459",
+      "question": "where is marco island florida located",
+      "candidate": "Marco Island is a city in Collier County, Florida, United States, located on an island by the same name in the Gulf of\u202fMexico off the coast of Southwest Florida\u30101\u3011\u30102\u3011.",
+      "incumbent": "Marco Island is a city in Collier County, Florida, United States, located on an island by the same name in the Gulf of\u202fMexico off the coast of Southwest Florida\u30101\u3011\u30102\u3011.",
+      "score_c": 5.0,
+      "score_p": 3.0
+     },
+     {
+      "qid": "m13731",
+      "question": "where is the kalahari desert located on a world map",
+      "candidate": "The Kalahari Desert is located in southern Africa, covering nearly all of Botswana and parts of South Africa\u30101\u3011\u30102\u3011. It also extends into Namibia, Angola, Zambia, and Zimbabwe\u30104\u3011.",
+      "incumbent": "The Kalahari Desert is located in southern Africa, covering nearly all of Botswana and parts of South Africa, and extending into Namibia, Angola, Zambia, and Zimbabwe\u30101\u3011\u30103\u3011.",
+      "score_c": 3.5,
+      "score_p": 3.0
+     }
+    ],
+    "acc_delta": 0.296875
+   },
+   "signature": "c3f09247aa41e9d8"
+  },
+  {
+   "workload": "msmarco",
+   "task": "msmarco:location",
+   "round": 0,
+   "directive": "ADD_FILTER",
+   "detail": "pre-filter rows with 'category = {category}' before the probe",
+   "plan": "filter -> retrieve(k=10,hnsw) -> generate",
+   "score": -0.008337448770444464,
+   "cost_usd": 5.831275614777768e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=5.00 vs p=4.45, pairwise win-rate 1.00, 5 items, 2.9s",
+   "gate": {
+    "validate": true,
+    "voi": 0.00963087487063417,
+    "threshold": 0.0012606838179460682,
+    "p_flip": 0.5,
+    "p_raw": 0.5,
+    "h_dir": 0.5,
+    "h_trials": 0,
+    "judge_p": 0.4839411793708175,
+    "agreement": 0.5,
+    "d_acc": 0.04,
+    "d_cost": -0.0007382502587316591,
+    "d_value": 0.01926174974126834,
+    "val_cost_usd": 0.0012606838179460682,
+    "val_cost_tokens": 13181.0,
+    "rationale": "P(flip)=0.50 [h=0.50 over 0, judge=0.48, agree=0.50] x |dV|=$0.01926 (dAcc^=+0.040, dC=$-0.00074) = VoI $0.00963 > theta*tokenCost $0.00126 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 5.0,
+    "score_p": 4.45,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The answer correctly reflects the information contained in the retrieved passages and does not introduce unsupported facts."
+     },
+     {
+      "name": "Completeness",
+      "description": "The answer addresses all parts of the user\u2019s question using the relevant passages, without omitting essential details."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The answer is directly supported by the passages, avoiding hallucinations or misinterpretations of the source material."
+     },
+     {
+      "name": "Format",
+      "description": "The answer is concise (one or two sentences) and follows the required output style, with no extraneous content."
+     }
+    ],
+    "pairwise_win_rate": 1.0,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 8214,
+    "note": "rating c=5.00 vs p=4.45, pairwise win-rate 1.00, 5 items, 2.9s",
+    "items": [
+     {
+      "qid": "m18241",
+      "question": "where is dolomite found",
+      "candidate": "Dolomite is found worldwide, occurring in sedimentary basins and massive beds several hundred feet thick across the globe\u30101\u3011\u30102\u3011\u30104\u3011. It is mined in places such as Ontario, Canada; Mexico; Switzerland; Pamplona, Spain; and the United States, and is abundant in Wisconsin\u2019s Prairie du Chien and Niagaran dolostones\u30101\u3011\u30105\u3011.",
+      "incumbent": "Dolomite is found throughout the world, especially in sedimentary dolostones such as those in Wisconsin\u2019s Prairie du\u202fChien, Sinnepee, and Niagaran groups, as well as in sedimentary basins across the United States, Canada, Europe, Africa, and Mexico. It is mined in places like Ontario, Canada, and the USA for industrial and agricultural use.",
+      "score_c": 5.0,
+      "score_p": 4.0,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "m11350",
+      "question": "where are aphids origin",
+      "candidate": "The soybean aphid is native to Asia. (See passage\u202f1.)",
+      "incumbent": "The soybean aphid is native to Asia. (See passage\u202f1 and\u202f2.)",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "m14634",
+      "question": "where does clownfish live",
+      "candidate": "Clownfish live in the warmer waters of the Pacific and Indian Oceans, typically in sheltered reefs or shallow lagoons, often in symbiosis with sea anemones\u30101\u3011\u30102\u3011.",
+      "incumbent": "Clownfish live at the bottom of the sea in sheltered reefs or shallow lagoons, usually in pairs, in the warmer waters of the Pacific and Indian Oceans. They are found in places such as northwest Australia, southeast Asia, Japan, and the Indo\u2011Malaysian region.",
+      "score_c": 5.0,
+      "score_p": 4.75
+     },
+     {
+      "qid": "m19459",
+      "question": "where is marco island florida located",
+      "candidate": "Marco Island is a city in Collier County, Florida, United States, located on an island by the same name in the Gulf of\u202fMexico off the coast of Southwest Florida\u30101\u3011\u30102\u3011.",
+      "incumbent": "Marco Island is a city in Collier County, Florida, United States, located on an island by the same name in the Gulf of\u202fMexico off the coast of Southwest Florida\u30101\u3011\u30102\u3011.",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "m13731",
+      "question": "where is the kalahari desert located on a world map",
+      "candidate": "The Kalahari Desert is located in southern Africa, covering nearly all of Botswana and parts of South Africa, and extending into Namibia, Angola, Zambia, and Zimbabwe\u30101\u3011\u30103\u3011.",
+      "incumbent": "The Kalahari Desert is located in southern Africa, covering nearly all of Botswana and parts of South Africa\u30101\u3011\u30102\u3011. It also extends into Namibia, Angola, Zambia, and Zimbabwe\u30104\u3011.",
+      "score_c": 5.0,
+      "score_p": 3.5,
+      "pairwise": "candidate"
+     }
+    ],
+    "acc_delta": 0.13749999999999996
+   },
+   "signature": "b24bfe8e4d3e56ee"
+  },
+  {
+   "workload": "cuad",
+   "task": "cuad:expiration date",
+   "round": 0,
+   "directive": "ADD_RERANK",
+   "detail": "retrieve top_k 8->20, cross-encoder keeps 8",
+   "plan": "retrieve(k=20,hnsw) -> filter -> rerank(k=8) -> generate",
+   "score": -0.023527619748043203,
+   "cost_usd": 3.2361901259783984e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=4.85 vs p=1.00, 5 items, 0.1s",
+   "gate": {
+    "validate": true,
+    "voi": 0.009304961059056191,
+    "threshold": 0.0009479670655506493,
+    "p_flip": 0.5,
+    "p_raw": 0.5,
+    "h_dir": 0.5,
+    "h_trials": 0,
+    "judge_p": 0.9990038149507909,
+    "agreement": 0.5,
+    "d_acc": 0.04,
+    "d_cost": 0.0013900778818876191,
+    "d_value": 0.018609922118112382,
+    "val_cost_usd": 0.0009479670655506493,
+    "val_cost_tokens": 9239.939999999999,
+    "rationale": "P(flip)=0.50 [h=0.50 over 0, judge=1.00, agree=0.50] x |dV|=$0.01861 (dAcc^=+0.040, dC=$+0.00139) = VoI $0.00930 > theta*tokenCost $0.00095 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 4.85,
+    "score_p": 1.0,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The extracted clause must precisely match the text in the contract that directly answers the question, with no additions or omissions."
+     },
+     {
+      "name": "Completeness",
+      "description": "All relevant clauses that answer the question should be extracted; if none exist, the output must be exactly \"NONE\"."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The output must not alter, paraphrase, or infer beyond the literal wording of the contract; it should reflect the original language verbatim."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a single string containing the clause text or the word \"NONE\"; no extra characters, headings, or annotations are allowed."
+     }
+    ],
+    "pairwise_win_rate": null,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 5283,
+    "note": "rating c=4.85 vs p=1.00, 5 items, 0.1s",
+    "items": [
+     {
+      "qid": "c4_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "shall expire on December\u202f31,\u202f2021.",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 1.0
+     },
+     {
+      "qid": "c23_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 1.0
+     },
+     {
+      "qid": "c40_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 1.0
+     },
+     {
+      "qid": "c18_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "The terms of this Agreement shall be one year from the effective date and will be automatically renewed on each anniversary of the effective date, for a renewal term of one year unless either party provides written notification of its intention not to renew this.",
+      "incumbent": "NONE",
+      "score_c": 4.25,
+      "score_p": 1.0
+     },
+     {
+      "qid": "c12_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 1.0
+     }
+    ],
+    "acc_delta": 0.9624999999999999
+   },
+   "signature": "c007f1464d13b9a4"
+  },
+  {
+   "workload": "spider",
+   "task": "spider:dog_kennels",
+   "round": 0,
+   "directive": "FEWSHOT",
+   "detail": "3 nearest training question/SQL pairs as demonstrations",
+   "plan": "sql_generate(shots=3) -> sql_execute",
+   "score": -0.016168757606903998,
+   "cost_usd": 3.963333333333333e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=5.00 vs p=3.31, 4 items, 0.0s",
+   "gate": {
+    "validate": true,
+    "voi": 0.005615446472952177,
+    "threshold": 0.0008342666666666666,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": null,
+    "agreement": 0.5,
+    "d_acc": 0.03212723236476089,
+    "d_cost": 0.0020250000000000003,
+    "d_value": 0.014038616182380443,
+    "val_cost_usd": 0.0008342666666666666,
+    "val_cost_tokens": 8444.0,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=-, agree=0.50] x |dV|=$0.01404 (dAcc^=+0.032, dC=$+0.00203) = VoI $0.00562 > theta*tokenCost $0.00083 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 5.0,
+    "score_p": 3.3125,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The generated SQL query must correctly answer the natural-language question based on the provided schema."
+     },
+     {
+      "name": "Completeness",
+      "description": "All necessary clauses (SELECT, FROM, WHERE, JOIN, etc.) required to produce the intended result should be present."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The query should reflect the semantics of the question without adding or omitting information not implied by the input."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a valid SQLite query string, properly syntactically correct and ready for execution."
+     }
+    ],
+    "pairwise_win_rate": null,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 6864,
+    "note": "rating c=5.00 vs p=3.31, 4 items, 0.0s",
+    "items": [
+     {
+      "qid": "s934",
+      "question": "What is the name of the breed with the most dogs?",
+      "candidate": "SQL: SELECT b.breed_name FROM Breeds b JOIN Dogs d ON b.breed_code = d.breed_code GROUP BY b.breed_name ORDER BY COUNT(*) DESC LIMIT 1\nResult (first rows): [('Bulldog',)]\nError: none",
+      "incumbent": "SQL: SELECT b.breed_name FROM Breeds b JOIN Dogs d ON b.breed_code = d.breed_code GROUP BY b.breed_code, b.breed_name ORDER BY COUNT(*) DESC LIMIT 1\nResult (first rows): [('Bulldog',)]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "s938",
+      "question": "What is the description of the treatment type that costs the least money in total?",
+      "candidate": "SQL: SELECT tt.treatment_type_description FROM Treatment_Types tt JOIN ( SELECT treatment_type_code, SUM(cost_of_treatment) AS total_cost FROM Treatments GROUP BY treatment_type_code ORDER BY total_cost ASC LIMIT 1 ) AS t ON tt.treatment_type_code = t.treatment_type_code\nResult (first rows): [('Take for a Walk',)]\nError: none",
+      "incumbent": "SQL: SELECT tt.treatment_type_description FROM Treatment_Types tt JOIN ( SELECT treatment_type_code, SUM(cost_of_treatment) AS total_cost FROM Treatments GROUP BY treatment_type_code ) t ON tt.treatment_type_code = t.treatment_type_code WHERE t.total_cost = ( SELECT MIN(total_cost) FROM ( SELECT SUM(cost_of_treatment) AS total_cost FROM Treatments GROUP BY treatment_type_code ) AS sub )\nResult (fi",
+      "score_c": 5.0,
+      "score_p": 2.75
+     },
+     {
+      "qid": "s945",
+      "question": "Which professionals have operated a treatment that costs less than the average? Give me theor first names and last names.",
+      "candidate": "SQL: SELECT DISTINCT p.first_name, p.last_name FROM Professionals p JOIN Treatments t ON p.professional_id = t.professional_id WHERE t.cost_of_treatment < (SELECT AVG(cost_of_treatment) FROM Treatments)\nResult (first rows): [('Domenica', 'Jacobs'), ('Vernice', 'Tillman'), ('Karley', 'Hyatt'), ('Ruben', \"O'Reilly\"), ('Monte', 'Kshlerin')]\nError: none",
+      "incumbent": "SQL: SELECT DISTINCT p.first_name, p.last_name FROM Professionals p JOIN Treatments t ON p.professional_id = t.professional_id WHERE t.cost_of_treatment < (SELECT AVG(cost_of_treatment) FROM Treatments)\nResult (first rows): [('Domenica', 'Jacobs'), ('Vernice', 'Tillman'), ('Karley', 'Hyatt'), ('Ruben', \"O'Reilly\"), ('Monte', 'Kshlerin')]\nError: none",
+      "score_c": 5.0,
+      "score_p": 2.75
+     },
+     {
+      "qid": "s919",
+      "question": "Find the states where both owners and professionals live.",
+      "candidate": "SQL: SELECT state FROM Owners INTERSECT SELECT state FROM Professionals\nResult (first rows): [('Indiana',), ('Mississippi',), ('Wisconsin',)]\nError: none",
+      "incumbent": "SQL: SELECT state FROM Owners WHERE state IN (SELECT state FROM Professionals) UNION SELECT state FROM Professionals WHERE state IN (SELECT state FROM Owners)\nResult (first rows): [('Indiana',), ('Mississippi',), ('Wisconsin',)]\nError: none",
+      "score_c": 5.0,
+      "score_p": 2.75
+     }
+    ],
+    "acc_delta": 0.421875
+   },
+   "signature": "06a6d17dff3b0d96"
+  },
+  {
+   "workload": "spider",
+   "task": "spider:dog_kennels",
+   "round": 0,
+   "directive": "SCHEMA_LINK",
+   "detail": "retrieve the 4 most relevant tables instead of the whole schema",
+   "plan": "retrieve(k=4,flat,where) -> sql_generate(shots=0) -> sql_execute",
+   "score": -0.016164747941263023,
+   "cost_usd": 2.3251782421456666e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=5.00 vs p=5.00, pairwise win-rate 1.00, 5 items, 99.1s",
+   "gate": {
+    "validate": true,
+    "voi": 0.003802794460795521,
+    "threshold": 0.0009735255787739499,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": null,
+    "agreement": 0.5,
+    "d_acc": 0.02556659266872827,
+    "d_cost": -0.0032763101823753333,
+    "d_value": 0.009506986151988802,
+    "val_cost_usd": 0.0009735255787739499,
+    "val_cost_tokens": 9747.5,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=-, agree=0.50] x |dV|=$0.00951 (dAcc^=+0.026, dC=$-0.00328) = VoI $0.00380 > theta*tokenCost $0.00097 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 5.0,
+    "score_p": 5.0,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The generated SQL query must correctly answer the natural-language question based on the provided schema."
+     },
+     {
+      "name": "Completeness",
+      "description": "All necessary clauses (SELECT, FROM, WHERE, JOIN, etc.) required to produce the intended result should be present."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The query should reflect the semantics of the question without adding or omitting information not implied by the input."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a valid SQLite query string, properly syntactically correct and ready for execution."
+     }
+    ],
+    "pairwise_win_rate": 1.0,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 4961,
+    "note": "rating c=5.00 vs p=5.00, pairwise win-rate 1.00, 5 items, 99.1s",
+    "items": [
+     {
+      "qid": "s948",
+      "question": "List the cost of each treatment and the corresponding treatment type description.",
+      "candidate": "SQL: SELECT t.cost_of_treatment, tt.treatment_type_description FROM Treatments t JOIN Treatment_Types tt ON t.treatment_type_code = tt.treatment_type_code\nResult (first rows): [(567, 'Take for a Walk'), (147, 'Vaccination'), (429, 'Physical examination'), (266, 'Vaccination'), (668, 'Vaccination')]\nError: none",
+      "incumbent": "SQL: SELECT t.cost_of_treatment, tt.treatment_type_description FROM Treatments t JOIN Treatment_Types tt ON t.treatment_type_code = tt.treatment_type_code\nResult (first rows): [(567, 'Take for a Walk'), (147, 'Vaccination'), (429, 'Physical examination'), (266, 'Vaccination'), (668, 'Vaccination')]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "s934",
+      "question": "What is the name of the breed with the most dogs?",
+      "candidate": "SQL: SELECT b.breed_name FROM Breeds b JOIN Dogs d ON b.breed_code = d.breed_code GROUP BY b.breed_code, b.breed_name ORDER BY COUNT(*) DESC LIMIT 1\nResult (first rows): [('Bulldog',)]\nError: none",
+      "incumbent": "SQL: SELECT b.breed_name FROM Breeds b JOIN Dogs d ON b.breed_code = d.breed_code GROUP BY b.breed_name ORDER BY COUNT(*) DESC LIMIT 1\nResult (first rows): [('Bulldog',)]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "s938",
+      "question": "What is the description of the treatment type that costs the least money in total?",
+      "candidate": "SQL: SELECT tt.treatment_type_description FROM Treatment_Types tt JOIN ( SELECT treatment_type_code, SUM(cost_of_treatment) AS total_cost FROM Treatments GROUP BY treatment_type_code ) t ON tt.treatment_type_code = t.treatment_type_code ORDER BY t.total_cost ASC LIMIT 1\nResult (first rows): [('Take for a Walk',)]\nError: none",
+      "incumbent": "SQL: SELECT tt.treatment_type_description FROM Treatment_Types tt JOIN ( SELECT treatment_type_code, SUM(cost_of_treatment) AS total_cost FROM Treatments GROUP BY treatment_type_code ORDER BY total_cost ASC LIMIT 1 ) AS t ON tt.treatment_type_code = t.treatment_type_code\nResult (first rows): [('Take for a Walk',)]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "s945",
+      "question": "Which professionals have operated a treatment that costs less than the average? Give me theor first names and last names.",
+      "candidate": "SQL: SELECT DISTINCT p.first_name, p.last_name FROM Treatments t JOIN Professionals p ON t.professional_id = p.professional_id WHERE t.cost_of_treatment < (SELECT AVG(cost_of_treatment) FROM Treatments)\nResult (first rows): [('Domenica', 'Jacobs'), ('Vernice', 'Tillman'), ('Karley', 'Hyatt'), ('Ruben', \"O'Reilly\"), ('Monte', 'Kshlerin')]\nError: none",
+      "incumbent": "SQL: SELECT DISTINCT p.first_name, p.last_name FROM Professionals p JOIN Treatments t ON p.professional_id = t.professional_id WHERE t.cost_of_treatment < (SELECT AVG(cost_of_treatment) FROM Treatments)\nResult (first rows): [('Domenica', 'Jacobs'), ('Vernice', 'Tillman'), ('Karley', 'Hyatt'), ('Ruben', \"O'Reilly\"), ('Monte', 'Kshlerin')]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "s919",
+      "question": "Find the states where both owners and professionals live.",
+      "candidate": "SQL: SELECT state FROM Owners INTERSECT SELECT state FROM Professionals\nResult (first rows): [('Indiana',), ('Mississippi',), ('Wisconsin',)]\nError: none",
+      "incumbent": "SQL: SELECT state FROM Owners INTERSECT SELECT state FROM Professionals\nResult (first rows): [('Indiana',), ('Mississippi',), ('Wisconsin',)]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0
+     }
+    ],
+    "acc_delta": 0.0
+   },
+   "signature": "f07bf7c34f3d049d"
+  },
+  {
+   "workload": "msmarco",
+   "task": "msmarco:location",
+   "round": 1,
+   "directive": "DECOMPOSE",
+   "detail": "per-record extraction before the final answer",
+   "plan": "filter -> retrieve(k=10,hnsw) -> map -> generate",
+   "score": 0.0041910512295555355,
+   "cost_usd": 0.00017095525614777766,
+   "source": "gate-skip",
+   "verdict": "skip",
+   "note": "P(flip)=0.50 [h=0.50 over 0, judge=-, agree=0.50] x |dV|=$0.00253 (dAcc^=+0.040, dC=$+0.02253) = VoI $0.00126 <= theta*tokenCost $0.00181 -> SKIP",
+   "gate": {
+    "validate": false,
+    "voi": 0.0012642499999999997,
+    "threshold": 0.0018054400614777766,
+    "p_flip": 0.5,
+    "p_raw": 0.5,
+    "h_dir": 0.5,
+    "h_trials": 0,
+    "judge_p": null,
+    "agreement": 0.5,
+    "d_acc": 0.04,
+    "d_cost": 0.0225285,
+    "d_value": -0.0025284999999999995,
+    "val_cost_usd": 0.0018054400614777766,
+    "val_cost_tokens": 18065.5,
+    "rationale": "P(flip)=0.50 [h=0.50 over 0, judge=-, agree=0.50] x |dV|=$0.00253 (dAcc^=+0.040, dC=$+0.02253) = VoI $0.00126 <= theta*tokenCost $0.00181 -> SKIP"
+   },
+   "memory": null,
+   "validation": null,
+   "signature": "c4e073f4bdf3bac0"
+  },
+  {
+   "workload": "msmarco",
+   "task": "msmarco:location",
+   "round": 1,
+   "directive": "TUNE_TOPK",
+   "detail": "retrieve top_k 10 -> 5",
+   "plan": "filter -> retrieve(k=5,hnsw) -> generate",
+   "score": 0.017350013616355246,
+   "cost_usd": 5.831256808177623e-05,
+   "source": "gate-skip",
+   "verdict": "skip",
+   "note": "P(flip)=0.40 [h=0.33 over 1, judge=0.50, agree=0.50] x |dV|=$0.00000 (dAcc^=+0.000, dC=$-0.00000) = VoI $0.00000 <= theta*tokenCost $0.00124 -> SKIP",
+   "gate": {
+    "validate": false,
+    "voi": 1.5045280116155954e-08,
+    "threshold": 0.0012422266211477694,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": 0.5,
+    "agreement": 0.5,
+    "d_acc": 0.0,
+    "d_cost": -3.7613200290389885e-08,
+    "d_value": -3.7613200290389885e-08,
+    "val_cost_usd": 0.0012422266211477694,
+    "val_cost_tokens": 13181.0,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=0.50, agree=0.50] x |dV|=$0.00000 (dAcc^=+0.000, dC=$-0.00000) = VoI $0.00000 <= theta*tokenCost $0.00124 -> SKIP"
+   },
+   "memory": null,
+   "validation": null,
+   "signature": "35db8819a875ac81"
+  },
+  {
+   "workload": "msmarco",
+   "task": "msmarco:numeric",
+   "round": 0,
+   "directive": "DECOMPOSE",
+   "detail": "per-record extraction before the final answer",
+   "plan": "retrieve(k=10,hnsw) -> map -> generate",
+   "score": 0.00423912994366734,
+   "cost_usd": 0.00017119564971833668,
+   "source": "gate-skip",
+   "verdict": "skip",
+   "note": "P(flip)=0.50 [h=0.50 over 0, judge=-, agree=0.33] x |dV|=$0.00257 (dAcc^=+0.040, dC=$+0.02257) = VoI $0.00129 <= theta*tokenCost $0.00181 -> SKIP",
+   "gate": {
+    "validate": false,
+    "voi": 0.0012867499999999997,
+    "threshold": 0.0018067189971833666,
+    "p_flip": 0.5,
+    "p_raw": 0.5,
+    "h_dir": 0.5,
+    "h_trials": 0,
+    "judge_p": null,
+    "agreement": 0.3333333333333333,
+    "d_acc": 0.04,
+    "d_cost": 0.0225735,
+    "d_value": -0.0025734999999999994,
+    "val_cost_usd": 0.0018067189971833666,
+    "val_cost_tokens": 18086.5,
+    "rationale": "P(flip)=0.50 [h=0.50 over 0, judge=-, agree=0.33] x |dV|=$0.00257 (dAcc^=+0.040, dC=$+0.02257) = VoI $0.00129 <= theta*tokenCost $0.00181 -> SKIP"
+   },
+   "memory": null,
+   "validation": null,
+   "signature": "1ba47a8a075c76b2"
+  }
+ ],
+ "counts": {
+  "accepted": 5,
+  "gate_skipped": 8,
+  "memory_reused": 0
+ },
+ "elapsed_s": 0.003988504409790039
+}

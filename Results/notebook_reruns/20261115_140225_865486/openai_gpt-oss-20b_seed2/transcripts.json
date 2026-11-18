@@ -1,0 +1,612 @@
+{
+ "experiment": "transcripts",
+ "backend": "groq",
+ "model": "openai/gpt-oss-20b",
+ "created": "2026-11-15 14:10:25",
+ "seed": 2,
+ "sampling_seed": 15,
+ "transcripts": [
+  {
+   "workload": "msmarco",
+   "task": "msmarco:location",
+   "round": 0,
+   "directive": "ADD_RERANK",
+   "detail": "retrieve top_k 10->20, cross-encoder keeps 10",
+   "plan": "retrieve(k=20,hnsw) -> rerank(k=10) -> generate",
+   "score": -0.016229774269778202,
+   "cost_usd": 6.8851128651109e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=4.69 vs p=3.94, 4 items, 0.0s",
+   "gate": {
+    "validate": true,
+    "voi": 0.008938757314642727,
+    "threshold": 0.0010660593217945808,
+    "p_flip": 0.5,
+    "p_raw": 0.5,
+    "h_dir": 0.5,
+    "h_trials": 0,
+    "judge_p": 0.503106355436481,
+    "agreement": 0.5,
+    "d_acc": 0.04,
+    "d_cost": 0.0021224853707145475,
+    "d_value": 0.017877514629285454,
+    "val_cost_usd": 0.0010660593217945808,
+    "val_cost_tokens": 10852.0,
+    "rationale": "P(flip)=0.50 [h=0.50 over 0, judge=0.50, agree=0.50] x |dV|=$0.01788 (dAcc^=+0.040, dC=$+0.00212) = VoI $0.00894 > theta*tokenCost $0.00107 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 4.6875,
+    "score_p": 3.9375,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The answer correctly reflects the information contained in the retrieved passages and does not introduce unsupported facts."
+     },
+     {
+      "name": "Completeness",
+      "description": "The answer addresses all parts of the user\u2019s question using the relevant passages, without omitting essential details."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The answer is directly supported by the passages, avoiding hallucinations or misinterpretations of the source material."
+     },
+     {
+      "name": "Format",
+      "description": "The answer is concise (one or two sentences) and follows the required output style, with no extraneous content."
+     }
+    ],
+    "pairwise_win_rate": null,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 9551,
+    "note": "rating c=4.69 vs p=3.94, 4 items, 0.0s",
+    "items": [
+     {
+      "qid": "m14634",
+      "question": "where does clownfish live",
+      "candidate": "Clownfish live at the bottom of the sea in sheltered reefs or shallow lagoons, usually in pairs, in the warmer waters of the Pacific and Indian Oceans. They are found in places such as northwest Australia, southeast Asia, Japan, and the Indo\u2011Malaysian region.",
+      "incumbent": "Clownfish live in the warmer waters of the Pacific and Indian Oceans, typically in sheltered reefs or shallow lagoons, often in symbiosis with sea anemones\u30101\u3011\u30102\u3011.",
+      "score_c": 3.75,
+      "score_p": 4.75
+     },
+     {
+      "qid": "m13387",
+      "question": "where was the movie twilight filmed",
+      "candidate": "The Twilight movie was filmed mainly in Oregon and Washington, with locations such as Kalama High School in Kalama, Washington, and various sites in the Portland area and Columbia River Gorge, Oregon.",
+      "incumbent": "The Twilight movie was filmed mainly in Oregon, particularly around Portland and the Columbia River Gorge, with additional scenes shot in Washington at Kalama High School and other locations.",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "m15899",
+      "question": "where is antidiuretic hormone released from",
+      "candidate": "Antidiuretic hormone is released from the posterior pituitary gland. (See passage\u202f2 and passage\u202f5.)",
+      "incumbent": "Antidiuretic hormone is released from the posterior pituitary gland. (Passages\u202f1,\u202f2,\u202f4,\u202f5)",
+      "score_c": 5.0,
+      "score_p": 3.0
+     },
+     {
+      "qid": "m17825",
+      "question": "where do i see my medicare claims",
+      "candidate": "You can view your Medicare claims by logging into MyMedicare.gov and checking your personalized Medicare information, or by using the Blue Button to download and save your Part\u202fA, Part\u202fB, or Part\u202fD claims. For Part\u202fD claims, you can also check your Explanation of Benefits (EOB).",
+      "incumbent": "You can view your Medicare claims by logging into **MyMedicare.gov** and accessing your personalized information (or using the Blue Button to download the claims).",
+      "score_c": 5.0,
+      "score_p": 3.0
+     }
+    ],
+    "acc_delta": 0.1875
+   },
+   "signature": "c3f09247aa41e9d8"
+  },
+  {
+   "workload": "cuad",
+   "task": "cuad:expiration date",
+   "round": 0,
+   "directive": "FILTERED_PROBE",
+   "detail": "predicate 'contract_id = {contract_id}' evaluated inside the ANN probe",
+   "plan": "retrieve(k=8,hnsw,where) -> generate",
+   "score": -0.00529728255462642,
+   "cost_usd": 7.35135872268679e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=5.00 vs p=1.00, 5 items, 0.0s",
+   "gate": {
+    "validate": true,
+    "voi": 0.005189815424239008,
+    "threshold": 0.0011537266434806293,
+    "p_flip": 0.5,
+    "p_raw": 0.5,
+    "h_dir": 0.5,
+    "h_trials": 0,
+    "judge_p": 0.8624113519833625,
+    "agreement": 0.6,
+    "d_acc": 0.04,
+    "d_cost": 0.009620369151521984,
+    "d_value": 0.010379630848478016,
+    "val_cost_usd": 0.0011537266434806293,
+    "val_cost_tokens": 12002.84,
+    "rationale": "P(flip)=0.50 [h=0.50 over 0, judge=0.86, agree=0.60] x |dV|=$0.01038 (dAcc^=+0.040, dC=$+0.00962) = VoI $0.00519 > theta*tokenCost $0.00115 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 5.0,
+    "score_p": 1.0,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The extracted clause must precisely match the text in the contract that directly answers the question, with no additions or omissions."
+     },
+     {
+      "name": "Completeness",
+      "description": "All relevant clauses that answer the question should be extracted; if none exist, the output must be exactly \"NONE\"."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The output must not alter, paraphrase, or infer beyond the literal wording of the contract; it should reflect the original language verbatim."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a single string containing the clause text or the word \"NONE\"; no extra characters, headings, or annotations are allowed."
+     }
+    ],
+    "pairwise_win_rate": null,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 5361,
+    "note": "rating c=5.00 vs p=1.00, 5 items, 0.0s",
+    "items": [
+     {
+      "qid": "c40_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 1.0
+     },
+     {
+      "qid": "c51_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "\"commencing on November 1st, 2017 and concluding November 2nd, 2020, unless terminated sooner or extended as provided in this Agreement.\"",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 1.0
+     },
+     {
+      "qid": "c56_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 1.0
+     },
+     {
+      "qid": "c38_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 1.0
+     },
+     {
+      "qid": "c25_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "\"Effective Date and ending twenty\u2011four (24) months thereafter.\"",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 1.0
+     }
+    ],
+    "acc_delta": 1.0
+   },
+   "signature": "d96e279a5aca2d9d"
+  },
+  {
+   "workload": "cuad",
+   "task": "cuad:expiration date",
+   "round": 1,
+   "directive": "DECOMPOSE",
+   "detail": "per-record extraction before the final answer",
+   "plan": "retrieve(k=8,hnsw,where) -> map -> generate",
+   "score": 0.0801518900371391,
+   "cost_usd": 0.00018295358722686793,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=4.80 vs p=5.00, pairwise win-rate 1.00, 5 items, 0.0s",
+   "gate": {
+    "validate": true,
+    "voi": 0.008755200000000003,
+    "threshold": 0.001941435872268679,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": null,
+    "agreement": 0.75,
+    "d_acc": 0.0,
+    "d_cost": 0.021888000000000005,
+    "d_value": -0.021888000000000005,
+    "val_cost_usd": 0.001941435872268679,
+    "val_cost_tokens": 20404.0,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=-, agree=0.75] x |dV|=$0.02189 (dAcc^=+0.000, dC=$+0.02189) = VoI $0.00876 > theta*tokenCost $0.00194 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 4.8,
+    "score_p": 5.0,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The extracted clause must precisely match the text in the contract that directly answers the question, with no additions or omissions."
+     },
+     {
+      "name": "Completeness",
+      "description": "All relevant clauses that answer the question should be extracted; if none exist, the output must be exactly \"NONE\"."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The output must not alter, paraphrase, or infer beyond the literal wording of the contract; it should reflect the original language verbatim."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a single string containing the clause text or the word \"NONE\"; no extra characters, headings, or annotations are allowed."
+     }
+    ],
+    "pairwise_win_rate": 1.0,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 12092,
+    "note": "rating c=4.80 vs p=5.00, pairwise win-rate 1.00, 5 items, 0.0s",
+    "items": [
+     {
+      "qid": "c40_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "ending on the date that is the earliest of: (i) the Company's failure to appoint the ValueAct Designee to the Board following the ValueAct Group's written request to the Company to have the ValueAct Designee appointed to the Board pursuant to Section 1(a) of this Agreement; (ii) the failure of the Company to comply in good faith with Section 1(e) of this Agreement; or (iii) the date which is the 6",
+      "incumbent": "NONE",
+      "score_c": 4.0,
+      "score_p": 5.0,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "c51_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "\"concluding November\u202f2nd,\u202f2020\"\u30101\u3011  \n\"expire on November\u202f2nd,\u202f2020\"\u30102\u3011",
+      "incumbent": "\"commencing on November 1st, 2017 and concluding November 2nd, 2020, unless terminated sooner or extended as provided in this Agreement.\"",
+      "score_c": 5.0,
+      "score_p": 5.0,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "c56_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "c38_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "NONE",
+      "incumbent": "NONE",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "c25_expiration_date",
+      "question": "Expiration Date: find the text of this contract that states it. (On what date will the contract's initial term expire?)",
+      "candidate": "he Effective Date and ending twenty-four (24) months thereafter.",
+      "incumbent": "\"Effective Date and ending twenty\u2011four (24) months thereafter.\"",
+      "score_c": 5.0,
+      "score_p": 5.0
+     }
+    ],
+    "acc_delta": -0.050000000000000044
+   },
+   "signature": "be6d3ea6e3d3ad28"
+  },
+  {
+   "workload": "spider",
+   "task": "spider:employee_hire_evaluation",
+   "round": 0,
+   "directive": "FEWSHOT",
+   "detail": "3 nearest training question/SQL pairs as demonstrations",
+   "plan": "sql_generate(shots=3) -> sql_execute",
+   "score": -0.017935757606904,
+   "cost_usd": 3.0798333333333326e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=5.00 vs p=4.81, pairwise win-rate 1.00, 4 items, 0.0s",
+   "gate": {
+    "validate": true,
+    "voi": 0.005615446472952178,
+    "threshold": 0.0007635866666666665,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": null,
+    "agreement": 0.5,
+    "d_acc": 0.03212723236476089,
+    "d_cost": 0.002024999999999999,
+    "d_value": 0.014038616182380444,
+    "val_cost_usd": 0.0007635866666666665,
+    "val_cost_tokens": 7501.6,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=-, agree=0.50] x |dV|=$0.01404 (dAcc^=+0.032, dC=$+0.00202) = VoI $0.00562 > theta*tokenCost $0.00076 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 5.0,
+    "score_p": 4.8125,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The generated SQL query must correctly answer the natural-language question based on the provided schema."
+     },
+     {
+      "name": "Completeness",
+      "description": "All necessary clauses (SELECT, FROM, WHERE, JOIN, etc.) required to produce the intended result should be present."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The query should reflect the semantics of the question without adding or omitting information not implied by the input."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a valid SQLite query string, properly syntactically correct and ready for execution."
+     }
+    ],
+    "pairwise_win_rate": 1.0,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 3655,
+    "note": "rating c=5.00 vs p=4.81, pairwise win-rate 1.00, 4 items, 0.0s",
+    "items": [
+     {
+      "qid": "s269",
+      "question": "Find the manager name and district of the shop whose number of products is the largest.",
+      "candidate": "SQL: SELECT Manager_name, District FROM shop ORDER BY Number_products DESC LIMIT 1\nResult (first rows): [('Ilkka M\u00e4kel\u00e4', 'Lahden Stadion')]\nError: none",
+      "incumbent": "SQL: SELECT s.Manager_name, s.District FROM shop s WHERE s.Number_products = ( SELECT MAX(Number_products) FROM shop )\nResult (first rows): [('Ilkka M\u00e4kel\u00e4', 'Lahden Stadion')]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "s294",
+      "question": "Find the districts in which there are both shops selling less than 3000 products and shops selling more than 10000 products.",
+      "candidate": "SQL: SELECT DISTINCT s1.District FROM shop s1 WHERE EXISTS ( SELECT 1 FROM shop s2 WHERE s2.District = s1.District AND s2.Number_products > 10000 ) AND s1.Number_products < 3000\nResult (first rows): []\nError: none",
+      "incumbent": "SQL: SELECT District FROM shop WHERE Number_products < 3000 OR Number_products > 10000 GROUP BY District HAVING COUNT(DISTINCT CASE WHEN Number_products < 3000 THEN 1 END) > 0 AND COUNT(DISTINCT CASE WHEN Number_products > 10000 THEN 1 END) > 0\nResult (first rows): []\nError: none",
+      "score_c": 5.0,
+      "score_p": 4.25,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "s276",
+      "question": "Which shops' number products is above the average? Give me the shop names.",
+      "candidate": "SQL: SELECT Name FROM shop WHERE Number_products > (SELECT AVG(Number_products) FROM shop)\nResult (first rows): [('HJK',), ('FC Inter',), ('FC Lahti',)]\nError: none",
+      "incumbent": "SQL: SELECT s.Name FROM shop s WHERE s.Number_products > ( SELECT AVG(Number_products) FROM shop )\nResult (first rows): [('HJK',), ('FC Inter',), ('FC Lahti',)]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "s265",
+      "question": "Which cities do more than one employee under age 30 come from?",
+      "candidate": "SQL: SELECT City FROM employee WHERE Age < 30 GROUP BY City HAVING COUNT(*) > 1\nResult (first rows): [('Bath',)]\nError: none",
+      "incumbent": "SQL: SELECT City FROM employee WHERE Age < 30 GROUP BY City HAVING COUNT(*) > 1\nResult (first rows): [('Bath',)]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0
+     }
+    ],
+    "acc_delta": 0.046875
+   },
+   "signature": "bc982f009ccd8326"
+  },
+  {
+   "workload": "spider",
+   "task": "spider:employee_hire_evaluation",
+   "round": 1,
+   "directive": "PROMPT_REWRITE",
+   "detail": "agent-rewritten instruction for 'write_sql'",
+   "plan": "sql_generate(shots=3) -> sql_execute",
+   "score": -0.005510446813771347,
+   "cost_usd": 3.0798333333333326e-05,
+   "source": "validation",
+   "verdict": "prefer",
+   "note": "rating c=5.00 vs p=5.00, pairwise win-rate 1.00, 4 items, 0.0s",
+   "gate": {
+    "validate": true,
+    "voi": 0.004084539718153304,
+    "threshold": 0.0008040866666666666,
+    "p_flip": 0.35,
+    "p_raw": 0.35,
+    "h_dir": 0.25,
+    "h_trials": 2,
+    "judge_p": null,
+    "agreement": 0.5,
+    "d_acc": 0.023340226960876023,
+    "d_cost": 0.0,
+    "d_value": 0.011670113480438012,
+    "val_cost_usd": 0.0008040866666666666,
+    "val_cost_tokens": 8041.6,
+    "rationale": "P(flip)=0.35 [h=0.25 over 2, judge=-, agree=0.50] x |dV|=$0.01167 (dAcc^=+0.023, dC=$+0.00000) = VoI $0.00408 > theta*tokenCost $0.00080 -> VALIDATE"
+   },
+   "memory": null,
+   "validation": {
+    "prefer_candidate": true,
+    "score_c": 5.0,
+    "score_p": 5.0,
+    "criteria": [
+     {
+      "name": "Accuracy",
+      "description": "The generated SQL query must correctly answer the natural-language question based on the provided schema."
+     },
+     {
+      "name": "Completeness",
+      "description": "All necessary clauses (SELECT, FROM, WHERE, JOIN, etc.) required to produce the intended result should be present."
+     },
+     {
+      "name": "Faithfulness",
+      "description": "The query should reflect the semantics of the question without adding or omitting information not implied by the input."
+     },
+     {
+      "name": "Format",
+      "description": "The output must be a valid SQLite query string, properly syntactically correct and ready for execution."
+     }
+    ],
+    "pairwise_win_rate": 1.0,
+    "source": "validation",
+    "confidence": 1.0,
+    "tokens": 3692,
+    "note": "rating c=5.00 vs p=5.00, pairwise win-rate 1.00, 4 items, 0.0s",
+    "items": [
+     {
+      "qid": "s269",
+      "question": "Find the manager name and district of the shop whose number of products is the largest.",
+      "candidate": "SQL: SELECT Manager_name, District FROM shop ORDER BY Number_products DESC LIMIT 1\nResult (first rows): [('Ilkka M\u00e4kel\u00e4', 'Lahden Stadion')]\nError: none",
+      "incumbent": "SQL: SELECT Manager_name, District FROM shop ORDER BY Number_products DESC LIMIT 1\nResult (first rows): [('Ilkka M\u00e4kel\u00e4', 'Lahden Stadion')]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "s294",
+      "question": "Find the districts in which there are both shops selling less than 3000 products and shops selling more than 10000 products.",
+      "candidate": "SQL: SELECT DISTINCT District FROM shop WHERE Number_products < 3000 INTERSECT SELECT DISTINCT District FROM shop WHERE Number_products > 10000\nResult (first rows): []\nError: none",
+      "incumbent": "SQL: SELECT DISTINCT s1.District FROM shop s1 WHERE EXISTS ( SELECT 1 FROM shop s2 WHERE s2.District = s1.District AND s2.Number_products > 10000 ) AND s1.Number_products < 3000\nResult (first rows): []\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0,
+      "pairwise": "candidate"
+     },
+     {
+      "qid": "s276",
+      "question": "Which shops' number products is above the average? Give me the shop names.",
+      "candidate": "SQL: SELECT Name FROM shop WHERE Number_products > (SELECT AVG(Number_products) FROM shop)\nResult (first rows): [('HJK',), ('FC Inter',), ('FC Lahti',)]\nError: none",
+      "incumbent": "SQL: SELECT Name FROM shop WHERE Number_products > (SELECT AVG(Number_products) FROM shop)\nResult (first rows): [('HJK',), ('FC Inter',), ('FC Lahti',)]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0
+     },
+     {
+      "qid": "s265",
+      "question": "Which cities do more than one employee under age 30 come from?",
+      "candidate": "SQL: SELECT City FROM employee WHERE Age < 30 GROUP BY City HAVING COUNT(*) > 1\nResult (first rows): [('Bath',)]\nError: none",
+      "incumbent": "SQL: SELECT City FROM employee WHERE Age < 30 GROUP BY City HAVING COUNT(*) > 1\nResult (first rows): [('Bath',)]\nError: none",
+      "score_c": 5.0,
+      "score_p": 5.0
+     }
+    ],
+    "acc_delta": 0.0
+   },
+   "signature": "e10dbfd3ec3fcf11"
+  },
+  {
+   "workload": "msmarco",
+   "task": "msmarco:location",
+   "round": 1,
+   "directive": "DECOMPOSE",
+   "detail": "per-record extraction before the final answer",
+   "plan": "retrieve(k=20,hnsw) -> rerank(k=10) -> map -> generate",
+   "score": 0.006253725730221794,
+   "cost_usd": 0.00018126862865110898,
+   "source": "gate-skip",
+   "verdict": "skip",
+   "note": "P(flip)=0.50 [h=0.50 over 0, judge=-, agree=0.50] x |dV|=$0.00248 (dAcc^=+0.040, dC=$+0.02248) = VoI $0.00124 <= theta*tokenCost $0.00191 -> SKIP",
+   "gate": {
+    "validate": false,
+    "voi": 0.001241749999999998,
+    "threshold": 0.0019096987865110898,
+    "p_flip": 0.5,
+    "p_raw": 0.5,
+    "h_dir": 0.5,
+    "h_trials": 0,
+    "judge_p": null,
+    "agreement": 0.5,
+    "d_acc": 0.04,
+    "d_cost": 0.022483499999999997,
+    "d_value": -0.002483499999999996,
+    "val_cost_usd": 0.0019096987865110898,
+    "val_cost_tokens": 18044.5,
+    "rationale": "P(flip)=0.50 [h=0.50 over 0, judge=-, agree=0.50] x |dV|=$0.00248 (dAcc^=+0.040, dC=$+0.02248) = VoI $0.00124 <= theta*tokenCost $0.00191 -> SKIP"
+   },
+   "memory": null,
+   "validation": null,
+   "signature": "a9679951a88202b5"
+  },
+  {
+   "workload": "msmarco",
+   "task": "msmarco:location",
+   "round": 1,
+   "directive": "TUNE_TOPK",
+   "detail": "rerank top_k 10 -> 5",
+   "plan": "retrieve(k=20,hnsw) -> rerank(k=5) -> generate",
+   "score": 0.008520225730221799,
+   "cost_usd": 6.8851128651109e-05,
+   "source": "gate-skip",
+   "verdict": "skip",
+   "note": "P(flip)=0.40 [h=0.33 over 1, judge=0.50, agree=0.50] x |dV|=$0.00000 (dAcc^=+0.000, dC=$+0.00000) = VoI $0.00000 <= theta*tokenCost $0.00111 -> SKIP",
+   "gate": {
+    "validate": false,
+    "voi": 0.0,
+    "threshold": 0.001108509029208872,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": 0.5,
+    "agreement": 0.5,
+    "d_acc": 0.0,
+    "d_cost": 0.0,
+    "d_value": 0.0,
+    "val_cost_usd": 0.001108509029208872,
+    "val_cost_tokens": 10852.0,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=0.50, agree=0.50] x |dV|=$0.00000 (dAcc^=+0.000, dC=$+0.00000) = VoI $0.00000 <= theta*tokenCost $0.00111 -> SKIP"
+   },
+   "memory": null,
+   "validation": null,
+   "signature": "a12b6171216d3e63"
+  },
+  {
+   "workload": "msmarco",
+   "task": "msmarco:location",
+   "round": 1,
+   "directive": "SWAP_INDEX",
+   "detail": "index hnsw -> ivf",
+   "plan": "retrieve(k=20,ivf) -> rerank(k=10) -> generate",
+   "score": 0.01651998981392794,
+   "cost_usd": 6.884994906963971e-05,
+   "source": "gate-skip",
+   "verdict": "skip",
+   "note": "P(flip)=0.40 [h=0.33 over 1, judge=0.50, agree=0.50] x |dV|=$0.00000 (dAcc^=+0.000, dC=$-0.00000) = VoI $0.00000 <= theta*tokenCost $0.00111 -> SKIP",
+   "gate": {
+    "validate": false,
+    "voi": 9.436651754284042e-08,
+    "threshold": 0.0011085043108829949,
+    "p_flip": 0.4,
+    "p_raw": 0.4,
+    "h_dir": 0.3333333333333333,
+    "h_trials": 1,
+    "judge_p": 0.5,
+    "agreement": 0.5,
+    "d_acc": 0.0,
+    "d_cost": -2.3591629385710106e-07,
+    "d_value": -2.3591629385710106e-07,
+    "val_cost_usd": 0.0011085043108829949,
+    "val_cost_tokens": 10852.0,
+    "rationale": "P(flip)=0.40 [h=0.33 over 1, judge=0.50, agree=0.50] x |dV|=$0.00000 (dAcc^=+0.000, dC=$-0.00000) = VoI $0.00000 <= theta*tokenCost $0.00111 -> SKIP"
+   },
+   "memory": null,
+   "validation": null,
+   "signature": "52947f4c29f507db"
+  }
+ ],
+ "counts": {
+  "accepted": 5,
+  "gate_skipped": 8,
+  "memory_reused": 0
+ },
+ "elapsed_s": 0.005298614501953125
+}

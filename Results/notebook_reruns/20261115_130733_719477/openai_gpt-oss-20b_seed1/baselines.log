@@ -1,0 +1,30 @@
+no_opt | msmarco:location | pass 1
+no_opt | msmarco:numeric | pass 1
+random | msmarco:location | pass 1
+random | msmarco:numeric | pass 1
+cost_only | msmarco:location | pass 1
+cost_only | msmarco:numeric | pass 1
+docetl | msmarco:location | pass 1
+docetl | msmarco:numeric | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:numeric | pass 1
+no_opt | cuad:expiration date | pass 1
+no_opt | cuad:renewal term | pass 1
+random | cuad:expiration date | pass 1
+random | cuad:renewal term | pass 1
+cost_only | cuad:expiration date | pass 1
+cost_only | cuad:renewal term | pass 1
+docetl | cuad:expiration date | pass 1
+docetl | cuad:renewal term | pass 1
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:renewal term | pass 1
+no_opt | spider:pets_1 | pass 1
+no_opt | spider:dog_kennels | pass 1
+random | spider:pets_1 | pass 1
+random | spider:dog_kennels | pass 1
+cost_only | spider:pets_1 | pass 1
+cost_only | spider:dog_kennels | pass 1
+docetl | spider:pets_1 | pass 1
+docetl | spider:dog_kennels | pass 1
+plannerllm | spider:pets_1 | pass 1
+plannerllm | spider:dog_kennels | pass 1

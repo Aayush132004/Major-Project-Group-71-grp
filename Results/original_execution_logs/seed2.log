@@ -1,0 +1,174 @@
+
+=== baselines (quick, groq) ===
+  .. no_opt | msmarco:location | pass 1
+  .. no_opt | msmarco:entity | pass 1
+  .. random | msmarco:location | pass 1
+  .. random | msmarco:entity | pass 1
+  .. cost_only | msmarco:location | pass 1
+  .. cost_only | msmarco:entity | pass 1
+  .. docetl | msmarco:location | pass 1
+  .. docetl | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. no_opt | cuad:parties | pass 1
+  .. no_opt | cuad:expiration date | pass 1
+  .. random | cuad:parties | pass 1
+  .. random | cuad:expiration date | pass 1
+  .. cost_only | cuad:parties | pass 1
+  .. cost_only | cuad:expiration date | pass 1
+  .. docetl | cuad:parties | pass 1
+  .. docetl | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+WARNING clustering 80 points to 8 centroids: please provide at least 312 training points
+  .. no_opt | spider:flight_2 | pass 1
+  .. no_opt | spider:employee_hire_evaluation | pass 1
+  .. random | spider:flight_2 | pass 1
+  .. random | spider:employee_hire_evaluation | pass 1
+  .. cost_only | spider:flight_2 | pass 1
+  .. cost_only | spider:employee_hire_evaluation | pass 1
+  .. docetl | spider:flight_2 | pass 1
+  .. docetl | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed2\baselines.json
+
+=== pareto (quick, groq) ===
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. docetl | msmarco:location | pass 1
+  .. docetl | msmarco:entity | pass 1
+  .. docetl | msmarco:location | pass 1
+  .. docetl | msmarco:entity | pass 1
+  .. docetl | msmarco:location | pass 1
+  .. docetl | msmarco:entity | pass 1
+  .. docetl | msmarco:location | pass 1
+  .. docetl | msmarco:entity | pass 1
+  .. docetl | msmarco:location | pass 1
+  .. docetl | msmarco:entity | pass 1
+  .. no_gate | msmarco:location | pass 1
+  .. no_gate | msmarco:entity | pass 1
+  .. no_gate | msmarco:location | pass 1
+  .. no_gate | msmarco:entity | pass 1
+  .. no_gate | msmarco:location | pass 1
+  .. no_gate | msmarco:entity | pass 1
+  .. no_gate | msmarco:location | pass 1
+  .. no_gate | msmarco:entity | pass 1
+  .. no_gate | msmarco:location | pass 1
+  .. no_gate | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. docetl | cuad:parties | pass 1
+  .. docetl | cuad:expiration date | pass 1
+  .. docetl | cuad:parties | pass 1
+  .. docetl | cuad:expiration date | pass 1
+  .. docetl | cuad:parties | pass 1
+  .. docetl | cuad:expiration date | pass 1
+  .. docetl | cuad:parties | pass 1
+  .. docetl | cuad:expiration date | pass 1
+  .. docetl | cuad:parties | pass 1
+  .. docetl | cuad:expiration date | pass 1
+  .. no_gate | cuad:parties | pass 1
+  .. no_gate | cuad:expiration date | pass 1
+  .. no_gate | cuad:parties | pass 1
+  .. no_gate | cuad:expiration date | pass 1
+  .. no_gate | cuad:parties | pass 1
+  .. no_gate | cuad:expiration date | pass 1
+  .. no_gate | cuad:parties | pass 1
+  .. no_gate | cuad:expiration date | pass 1
+  .. no_gate | cuad:parties | pass 1
+  .. no_gate | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | cuad:parties | pass 1
+  .. plannerllm | cuad:expiration date | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. docetl | spider:flight_2 | pass 1
+  .. docetl | spider:employee_hire_evaluation | pass 1
+  .. docetl | spider:flight_2 | pass 1
+  .. docetl | spider:employee_hire_evaluation | pass 1
+  .. docetl | spider:flight_2 | pass 1
+  .. docetl | spider:employee_hire_evaluation | pass 1
+  .. docetl | spider:flight_2 | pass 1
+  .. docetl | spider:employee_hire_evaluation | pass 1
+  .. docetl | spider:flight_2 | pass 1
+  .. docetl | spider:employee_hire_evaluation | pass 1
+  .. no_gate | spider:flight_2 | pass 1
+  .. no_gate | spider:employee_hire_evaluation | pass 1
+  .. no_gate | spider:flight_2 | pass 1
+  .. no_gate | spider:employee_hire_evaluation | pass 1
+  .. no_gate | spider:flight_2 | pass 1
+  .. no_gate | spider:employee_hire_evaluation | pass 1
+  .. no_gate | spider:flight_2 | pass 1
+  .. no_gate | spider:employee_hire_evaluation | pass 1
+  .. no_gate | spider:flight_2 | pass 1
+  .. no_gate | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  .. plannerllm | spider:flight_2 | pass 1
+  .. plannerllm | spider:employee_hire_evaluation | pass 1
+  saved C:\Users\aayus\OneDrive\Desktop\LLMPlanner\runs\openai_gpt-oss-20b_seed2\pareto.json
+
+=== gate (quick, groq) ===
+  .. plannerllm | msmarco:location | pass 1
+  .. plannerllm | msmarco:entity | pass 1
+  .. plannerllm | msmarco:location | pass 2
+  .. plannerllm | msmarco:entity | pass 2
+Traceback (most recent call last):
+  File "C:\Users\aayus\OneDrive\Desktop\LLMPlanner\scripts\run_experiments.py", line 55, in <module>
+    main()
+  File "C:\Users\aayus\OneDrive\Desktop\LLMPlanner\scripts\run_experiments.py", line 44, in main
+    path = run_experiment(name, settings, args.profile, args.workloads,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aayus\OneDrive\Desktop\LLMPlanner\plannerllm\eval\experiments.py", line 626, in run_experiment
+    payload = EXPERIMENTS[name](settings, profile=profile, workloads=workloads or WORKLOADS, progress=progress)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aayus\OneDrive\Desktop\LLMPlanner\plannerllm\eval\experiments.py", line 246, in exp_gate
+    object address  : 00000277A8D1B34

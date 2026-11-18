@@ -1,0 +1,22 @@
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:entity | pass 1
+plannerllm | msmarco:location | pass 2
+plannerllm | msmarco:entity | pass 2
+no_gate | msmarco:location | pass 1
+no_gate | msmarco:entity | pass 1
+no_gate | msmarco:location | pass 2
+no_gate | msmarco:entity | pass 2
+no_memory | msmarco:location | pass 1
+no_memory | msmarco:entity | pass 1
+no_memory | msmarco:location | pass 2
+no_memory | msmarco:entity | pass 2
+symbolic_only | msmarco:location | pass 1
+symbolic_only | msmarco:entity | pass 1
+symbolic_only | msmarco:location | pass 2
+symbolic_only | msmarco:entity | pass 2
+neural_only | msmarco:location | pass 1
+neural_only | msmarco:entity | pass 1
+neural_only | msmarco:location | pass 2
+neural_only | msmarco:entity | pass 2
+plannerllm | cuad:parties | pass 1
+Missing original Groq response: openai/gpt-oss-20b, answer, dfc73983c58ab3fc7e956c87489f11e067a880f4398763b6ab54e117c83b25d5

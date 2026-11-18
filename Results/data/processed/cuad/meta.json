@@ -1,0 +1,11 @@
+{
+  "name": "cuad",
+  "family": "mixed",
+  "metric": "token_f1",
+  "task": "Extract the exact clause text from a legal contract that answers the question; reply NONE if the contract has no such clause.",
+  "filterable": [
+    "contract_id"
+  ],
+  "group_field": "group",
+  "source": "CUAD v1 (The Atticus Project), contracts chunked to ~1.1k chars"
+}

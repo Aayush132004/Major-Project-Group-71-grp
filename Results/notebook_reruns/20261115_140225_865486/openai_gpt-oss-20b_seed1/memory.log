@@ -1,0 +1,60 @@
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:numeric | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:numeric | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:numeric | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:numeric | pass 1
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:numeric | pass 1
+plannerllm | msmarco:location | pass 2
+plannerllm | msmarco:numeric | pass 2
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:numeric | pass 1
+plannerllm | msmarco:location | pass 2
+plannerllm | msmarco:numeric | pass 2
+plannerllm | msmarco:location | pass 1
+plannerllm | msmarco:numeric | pass 1
+plannerllm | msmarco:location | pass 2
+plannerllm | msmarco:numeric | pass 2
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:renewal term | pass 1
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:renewal term | pass 1
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:renewal term | pass 1
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:renewal term | pass 1
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:renewal term | pass 1
+plannerllm | cuad:expiration date | pass 2
+plannerllm | cuad:renewal term | pass 2
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:renewal term | pass 1
+plannerllm | cuad:expiration date | pass 2
+plannerllm | cuad:renewal term | pass 2
+plannerllm | cuad:expiration date | pass 1
+plannerllm | cuad:renewal term | pass 1
+plannerllm | cuad:expiration date | pass 2
+plannerllm | cuad:renewal term | pass 2
+plannerllm | spider:pets_1 | pass 1
+plannerllm | spider:dog_kennels | pass 1
+plannerllm | spider:pets_1 | pass 1
+plannerllm | spider:dog_kennels | pass 1
+plannerllm | spider:pets_1 | pass 1
+plannerllm | spider:dog_kennels | pass 1
+plannerllm | spider:pets_1 | pass 1
+plannerllm | spider:dog_kennels | pass 1
+plannerllm | spider:pets_1 | pass 1
+plannerllm | spider:dog_kennels | pass 1
+plannerllm | spider:pets_1 | pass 2
+plannerllm | spider:dog_kennels | pass 2
+plannerllm | spider:pets_1 | pass 1
+plannerllm | spider:dog_kennels | pass 1
+plannerllm | spider:pets_1 | pass 2
+plannerllm | spider:dog_kennels | pass 2
+plannerllm | spider:pets_1 | pass 1
+plannerllm | spider:dog_kennels | pass 1
+plannerllm | spider:pets_1 | pass 2
+plannerllm | spider:dog_kennels | pass 2

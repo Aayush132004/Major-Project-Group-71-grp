@@ -1,0 +1,91 @@
+﻿seed,workload,system,task,opt_llm_s,opt_tokens
+0,msmarco,no_opt,msmarco:location,0.0,0
+0,msmarco,no_opt,msmarco:entity,0.0,0
+0,msmarco,random,msmarco:location,0.0,0
+0,msmarco,random,msmarco:entity,0.0,0
+0,msmarco,cost_only,msmarco:location,0.5565306404829156,1540
+0,msmarco,cost_only,msmarco:entity,0.5576600510457352,1541
+0,msmarco,docetl,msmarco:location,22.55367727728456,92539
+0,msmarco,docetl,msmarco:entity,41.90375503081019,130750
+0,msmarco,plannerllm,msmarco:location,6.715042527032896,31717
+0,msmarco,plannerllm,msmarco:entity,7.001721783017944,33554
+0,cuad,no_opt,cuad:governing law,0.0,0
+0,cuad,no_opt,cuad:cap on liability,0.0,0
+0,cuad,random,cuad:governing law,0.0,0
+0,cuad,random,cuad:cap on liability,0.0,0
+0,cuad,cost_only,cuad:governing law,0.509754114892901,1558
+0,cuad,cost_only,cuad:cap on liability,0.509754114892901,1558
+0,cuad,docetl,cuad:governing law,13.147254203438159,50709
+0,cuad,docetl,cuad:cap on liability,13.927187718080653,55072
+0,cuad,plannerllm,cuad:governing law,6.03236284629874,23111
+0,cuad,plannerllm,cuad:cap on liability,9.973989045001092,39115
+0,spider,no_opt,spider:orchestra,0.0,0
+0,spider,no_opt,spider:world_1,0.0,0
+0,spider,random,spider:orchestra,0.0,0
+0,spider,random,spider:world_1,0.0,0
+0,spider,cost_only,spider:orchestra,0.24508615290079802,695
+0,spider,cost_only,spider:world_1,0.24508615290079802,695
+0,spider,docetl,spider:orchestra,10.568265060493028,40885
+0,spider,docetl,spider:world_1,8.28732020246443,28685
+0,spider,plannerllm,spider:orchestra,4.489697720538902,17849
+0,spider,plannerllm,spider:world_1,5.554503462583351,18788
+1,msmarco,no_opt,msmarco:location,0.0,0
+1,msmarco,no_opt,msmarco:numeric,0.0,0
+1,msmarco,random,msmarco:location,0.0,0
+1,msmarco,random,msmarco:numeric,0.0,0
+1,msmarco,cost_only,msmarco:location,0.5512152648086901,1548
+1,msmarco,cost_only,msmarco:numeric,0.5326743599769015,1535
+1,msmarco,docetl,msmarco:location,25.31458983122548,88986
+1,msmarco,docetl,msmarco:numeric,20.581567004595005,90311
+1,msmarco,plannerllm,msmarco:location,13.586356887402426,54484
+1,msmarco,plannerllm,msmarco:numeric,4.860734684902928,19964
+1,cuad,no_opt,cuad:expiration date,0.0,0
+1,cuad,no_opt,cuad:renewal term,0.0,0
+1,cuad,random,cuad:expiration date,0.0,0
+1,cuad,random,cuad:renewal term,0.0,0
+1,cuad,cost_only,cuad:expiration date,0.5893124565191308,1670
+1,cuad,cost_only,cuad:renewal term,0.6029337986409524,1665
+1,cuad,docetl,cuad:expiration date,17.555347346129615,79636
+1,cuad,docetl,cuad:renewal term,11.923570877074908,48122
+1,cuad,plannerllm,cuad:expiration date,9.46005050408675,31841
+1,cuad,plannerllm,cuad:renewal term,4.041722175631396,15957
+1,spider,no_opt,spider:pets_1,0.0,0
+1,spider,no_opt,spider:dog_kennels,0.0,0
+1,spider,random,spider:pets_1,0.0,0
+1,spider,random,spider:dog_kennels,0.0,0
+1,spider,cost_only,spider:pets_1,0.24530566298048348,706
+1,spider,cost_only,spider:dog_kennels,0.5060337902656077,1469
+1,spider,docetl,spider:pets_1,10.858730376593224,37766
+1,spider,docetl,spider:dog_kennels,8.744669994399738,33282
+1,spider,plannerllm,spider:pets_1,4.845836449079006,16754
+1,spider,plannerllm,spider:dog_kennels,12.190801842726021,41061
+2,msmarco,no_opt,msmarco:location,0.0,0
+2,msmarco,no_opt,msmarco:entity,0.0,0
+2,msmarco,random,msmarco:location,0.0,0
+2,msmarco,random,msmarco:entity,0.0,0
+2,msmarco,cost_only,msmarco:location,0.5506063279910325,1541
+2,msmarco,cost_only,msmarco:entity,0.5294912627859081,1518
+2,msmarco,docetl,msmarco:location,43.81197942601815,136578
+2,msmarco,docetl,msmarco:entity,11.686967524521386,48381
+2,msmarco,plannerllm,msmarco:location,9.78049997996489,38939
+2,msmarco,plannerllm,msmarco:entity,3.544989619649064,16319
+2,cuad,no_opt,cuad:parties,0.0,0
+2,cuad,no_opt,cuad:expiration date,0.0,0
+2,cuad,random,cuad:parties,0.0,0
+2,cuad,random,cuad:expiration date,0.0,0
+2,cuad,cost_only,cuad:parties,0.6097183831348439,1612
+2,cuad,cost_only,cuad:expiration date,0.5895178072380837,1670
+2,cuad,docetl,cuad:parties,16.381902212004828,77395
+2,cuad,docetl,cuad:expiration date,15.763156104279044,79319
+2,cuad,plannerllm,cuad:parties,4.861789019695719,16099
+2,cuad,plannerllm,cuad:expiration date,10.363726045105848,49242
+2,spider,no_opt,spider:flight_2,0.0,0
+2,spider,no_opt,spider:employee_hire_evaluation,0.0,0
+2,spider,random,spider:flight_2,0.0,0
+2,spider,random,spider:employee_hire_evaluation,0.0,0
+2,spider,cost_only,spider:flight_2,0.2506578787332903,722
+2,spider,cost_only,spider:employee_hire_evaluation,0.23353830473845355,706
+2,spider,docetl,spider:flight_2,13.552356161282681,40189
+2,spider,docetl,spider:employee_hire_evaluation,7.554038058071608,26017
+2,spider,plannerllm,spider:flight_2,5.895361309061427,17372
+2,spider,plannerllm,spider:employee_hire_evaluation,8.151574682571919,30385
